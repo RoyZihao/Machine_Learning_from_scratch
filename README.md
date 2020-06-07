@@ -15,5 +15,5 @@
 
 - [Trees and Gradient Boosting Machine](https://github.com/RoyZihao/Machine_Learning_from_scratch/tree/master/Trees_Gradient_Boosting)
 
--[Neural Network with Backpropagation and Computational Graph](https://github.com/RoyZihao/Machine_Learning_from_scratch/tree/master/Neural_Network_Backpropagation)
+- [Neural Network with Backpropagation and Computational Graph](https://github.com/RoyZihao/Machine_Learning_from_scratch/tree/master/Neural_Network_Backpropagation)
 
