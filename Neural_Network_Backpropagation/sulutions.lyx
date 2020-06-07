@@ -1,0 +1,1950 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\end_preamble
+\options ruled
+\use_default_options false
+\begin_modules
+algorithm2e
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 60
+InsetLayout Flex:Code
+    LyxType               charstyle
+    LabelString           code
+    LatexType             command
+    LatexName             code
+    Font
+      Family              Typewriter
+    EndFont
+    Preamble
+    \newcommand{\code}[1]{\texttt{#1}}
+    EndPreamble
+    InToc                 true
+    HTMLTag               code
+ResetsFont true
+End
+\end_local_layout
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch solutions
+\selected 0
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\loss}{\ell}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+{\mbox{argmax}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\mbox{argmin}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Homework 7: Computation Graphs, Backpropagation, and Neural Networks
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instructions
+\series default
+: Your answers to the questions below, including plots and mathematical
+ work, should be submitted as a single PDF file.
+ It's preferred that you write your answers using software that typesets
+ mathematics (e.g.
+ \SpecialChar LaTeX
+, \SpecialChar LyX
+, or MathJax via iPython), though if you need to you may scan handwritten
+ work.
+ You may find the 
+\begin_inset CommandInset href
+LatexCommand href
+name "minted"
+target "https://github.com/gpoore/minted"
+literal "false"
+
+\end_inset
+
+ package convenient for including source code in your \SpecialChar LaTeX
+ document.
+ If you are using \SpecialChar LyX
+, then the 
+\begin_inset CommandInset href
+LatexCommand href
+name "listings"
+target "https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+literal "false"
+
+\end_inset
+
+ package tends to work better.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+There is no doubt that neural networks are a very important class of machine
+ learning models.
+ Given the sheer number of people who are achieving impressive results with
+ neural networks, one might think that it's relatively easy to get them
+ working.
+ This is a partly an illusion.
+ One reason so many people have success is that, thanks to GitHub, they
+ can copy the exact settings that others have used to achieve success.
+ In fact, in most cases they can start with 
+\begin_inset Quotes eld
+\end_inset
+
+pre-trained
+\begin_inset Quotes erd
+\end_inset
+
+ models that already work for a similar problem, and 
+\begin_inset Quotes eld
+\end_inset
+
+fine-tune
+\begin_inset Quotes erd
+\end_inset
+
+ them for their own purposes.
+ It's far easier to tweak and improve a working system than to get one working
+ from scratch.
+ If you create a new model, you're kind of on your own to figure out how
+ to get it working: there's not much theory to guide you and the rules of
+ thumb do not always work.
+ Understanding even the most basic questions, such as the preferred variant
+ of SGD to use for optimization, is still a very active area of research.
+\end_layout
+
+\begin_layout Standard
+One thing is clear, however: If you do need to start from scratch, or debug
+ a neural network model that doesn't seem to be learning, it can be immensely
+ helpful to understand the low-level details of how your neural network
+ works – specifically, back-propagation.
+ With this assignment, you'll have the opportunity to linger on these low-level
+ implementation details.
+ Every major neural network type (RNNs, CNNs, Resnets, etc.) can be implemented
+ using the basic framework we'll develop in this assignment.
+\end_layout
+
+\begin_layout Standard
+To help things along, we
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Philipp Meerkamp, Pierre Garapon, and David Rosenberg
+\end_layout
+
+\end_inset
+
+ have designed a minimalist framework for computation graphs and put together
+ some support code.
+ The intent is for you to read, or at least skim, every line of code provided,
+ so that you'll know you understand all the crucial components and could,
+ in theory, create your own from scratch.
+ In fact, creating your own computation graph framework from scratch is
+ highly encouraged – you'll learn a lot.
+ 
+\end_layout
+
+\begin_layout Section
+Computation Graph Framework 
+\end_layout
+
+\begin_layout Standard
+To get started, please read the 
+\begin_inset CommandInset href
+LatexCommand href
+name "tutorial"
+target "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/computation-graph/computation-graph-framework.ipynb"
+literal "false"
+
+\end_inset
+
+ on the computation graph framework we'll be working with.
+ (Note that it renders better if you view it locally.) The use of computation
+ graphs is not specific to machine learning or neural networks.
+ Computation graphs are just a way to represent a function that facilitates
+ efficient computation of the function's values and its gradients with respect
+ to inputs.
+ The tutorial takes this perspective, and there is very little in it about
+ machine learning, per se.
+ 
+\end_layout
+
+\begin_layout Standard
+To see how the framework can be used for machine learning tasks, we've provided
+ a full implementation of linear regression.
+ You should start by working your way through the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+__init__
+\end_layout
+
+\end_inset
+
+ of the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+LinearRegression
+\end_layout
+
+\end_inset
+
+ class in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+linear_regression.py
+\end_layout
+
+\end_inset
+
+.
+ From there, you'll want to review the node class definitions in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+nodes.py
+\end_layout
+
+\end_inset
+
+, and finally the class 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ComputationGraphFunction
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+graph.py
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ComputationGraphFunction
+\end_layout
+
+\end_inset
+
+ is where we repackage a raw computation graph into something that's more
+ friendly to work with for machine learning.
+ The rest of 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+linear_regression.py
+\end_layout
+
+\end_inset
+
+ is fairly routine, but it illustrates how to interact with the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ComputationGraphFunction
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As we've noted earlier in the course, getting gradient calculations correct
+ can be difficult.
+ To help things along, we've provided two functions that can be used to
+ test the backward method of a node and the overall gradient calculation
+ of a 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ComputationGraphFunction
+\end_layout
+
+\end_inset
+
+.
+ The functions are in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+test_utils.py
+\end_layout
+
+\end_inset
+
+, and it's recommended that you review the tests provided for the linear
+ regression implementation in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+linear_regression.t.py
+\end_layout
+
+\end_inset
+
+.
+ (You can run these tests from the command line with 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+python3 linear_regression.t.py.
+\end_layout
+
+\end_inset
+
+) The functions actually doing the testing, 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+test_node_backward
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+test_ComputationGraphFunction
+\end_layout
+
+\end_inset
+
+, may seem a bit intricate, but they're implementging the exact same 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+gradient_checker
+\end_layout
+
+\end_inset
+
+ logic we saw in the first homework assignment.
+\end_layout
+
+\begin_layout Standard
+Once you've understood how linear regression works in our framework, you're
+ ready to start implementing your own algorithms...
+\end_layout
+
+\begin_layout Section
+Ridge Regression
+\end_layout
+
+\begin_layout Standard
+When moving to a new system, it's always good to start with something familiar.
+ But that's not the only reason we're doing ridge regression in this homework.
+ As we discussed in class, in ridge regression the parameter vector is 
+\begin_inset Quotes eld
+\end_inset
+
+shared
+\begin_inset Quotes erd
+\end_inset
+
+, in the sense that it's used twice in the objective function.
+ In the computation graph, this can be seen in the fact that the node for
+ the parameter vector has two outgoing edges.
+ While we don't have this sharing in the multilayer perceptron, we do have
+ it in RNNs and CNNs, which are two of the most important neural network
+ architectures in use today.
+ In the context of RNNs and CNNs, this parameter sharing is also referred
+ to as 
+\series bold
+parameter tying
+\series default
+.
+ So being able to handle the shared parameters in ridge regression is an
+ important prerequisite to handling more sophisticated models.
+\end_layout
+
+\begin_layout Standard
+We've provided some skeleton code in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ridge_regression.py
+\end_layout
+
+\end_inset
+
+ and some test code in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ridge_regression.t.py
+\end_layout
+
+\end_inset
+
+, which you should eventually be able to pass.
+\end_layout
+
+\begin_layout Enumerate
+Complete the class 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+L2NormPenaltyNode
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+nodes.py
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Complete the class 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+SumNode
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+nodes.py
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Implement ridge regression with 
+\begin_inset Formula $w$
+\end_inset
+
+ regularized and 
+\begin_inset Formula $b$
+\end_inset
+
+ unregularized.
+ Do this by completing the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+__init__
+\end_layout
+
+\end_inset
+
+ method in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ridge_regression.py
+\end_layout
+
+\end_inset
+
+, using the classes created above.
+ When complete, you should be able to pass the tests in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ridge_regression.t.py
+\end_layout
+
+\end_inset
+
+.
+ Report the average square error on the 
+\series bold
+training
+\series default
+ set for the parameter settings given in the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+main()
+\end_layout
+
+\end_inset
+
+ function.
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Create a new implementation of ridge regression that supports
+ efficient minibatching.
+ You will replace the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ValueNode x
+\end_layout
+
+\end_inset
+
+, which contains a vector, with a 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+ValueNode X
+\end_layout
+
+\end_inset
+
+, which contains a matrix.
+ The convention is that the first dimension indexes examples and the second
+ indexes features, as we have done throughout the course.
+ Many of the nodes will have to be adapted to this use case.
+ Demonstrate the use of minibatching for your ridge regression network,
+ and note the amount of speedup you get.
+\end_layout
+
+\begin_layout Section
+Multilayer Perceptron
+\end_layout
+
+\begin_layout Standard
+In this problem, we'll be implement a multilayer perceptron (MLP) with a
+ single hidden layer and a square loss.
+ We'll implement the computation graph illustrated below:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/MLP-computation-graph.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The crucial new piece here is the nonlinear 
+\series bold
+hidden layer
+\series default
+, which is what makes the multilayer perceptron a significantly larger hypothesi
+s space than linear prediction functions.
+\end_layout
+
+\begin_layout Subsection
+The standard non-linear layer
+\end_layout
+
+\begin_layout Standard
+The multilayer perceptron consists of a sequence of 
+\begin_inset Quotes eld
+\end_inset
+
+layers
+\begin_inset Quotes erd
+\end_inset
+
+ implementing the following non-linear function
+\begin_inset Formula 
+\[
+h(x)=\sigma\left(Wx+b\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $x\in\reals^{d}$
+\end_inset
+
+, 
+\begin_inset Formula $W\in\reals^{m\times d},$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\reals^{m}$
+\end_inset
+
+, and where 
+\begin_inset Formula $m$
+\end_inset
+
+ is often referred to as the number of
+\series bold
+ hidden units 
+\series default
+or
+\series bold
+ hidden nodes
+\series default
+.
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is some non-linear function, typically 
+\begin_inset Formula $\tanh$
+\end_inset
+
+ or ReLU, applied element-wise to the argument of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Referring to the computation graph illustration above, we will implement
+ this nonlinear layer with two nodes, one implementing the affine transform
+ 
+\begin_inset Formula $L=W_{1}x+b_{1}$
+\end_inset
+
+, and the other implementing the nonlinear function 
+\begin_inset Formula $h=\tanh(L)$
+\end_inset
+
+.
+ In this problem, we'll work out how to implement the backward method for
+ each of these nodes.
+\end_layout
+
+\begin_layout Subsubsection
+The Affine Transformation
+\end_layout
+
+\begin_layout Standard
+In a general neural network, there may be quite a lot of computation between
+ any given affine transformation 
+\begin_inset Formula $Wx+b$
+\end_inset
+
+ and the final objective function value 
+\begin_inset Formula $J$
+\end_inset
+
+.
+ We will capture all of that in a function 
+\begin_inset Formula $f:\reals^{m}\to\reals$
+\end_inset
+
+, for which 
+\begin_inset Formula $J=f(Wx+b)$
+\end_inset
+
+.
+ Our goal is to find the partial derivative of 
+\begin_inset Formula $J$
+\end_inset
+
+ with respect to each element of 
+\begin_inset Formula $W$
+\end_inset
+
+, namely 
+\begin_inset Formula $\partial J/\partial W_{ij}$
+\end_inset
+
+, as well as the partials 
+\begin_inset Formula $\partial J/\partial b_{i}$
+\end_inset
+
+, for each element of 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ For convenience, let 
+\begin_inset Formula $y=Wx+b$
+\end_inset
+
+, so we can write 
+\begin_inset Formula $J=f(y)$
+\end_inset
+
+.
+ Suppose we have already computed the partial derivatives of 
+\begin_inset Formula $J$
+\end_inset
+
+ with respect to the entries of 
+\begin_inset Formula $y=\left(y_{1},\ldots,y_{m}\right)^{T}$
+\end_inset
+
+, namely 
+\begin_inset Formula $\frac{\partial J}{\partial y_{i}}$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,\ldots,m$
+\end_inset
+
+.
+ Then by the chain rule, we have
+\begin_inset Formula 
+\[
+\frac{\partial J}{\partial W_{ij}}=\sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}\frac{\partial y_{r}}{\partial W_{ij}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\frac{\partial J}{\partial W_{ij}}=\frac{\partial J}{\partial y_{i}}x_{j}$
+\end_inset
+
+, where 
+\begin_inset Formula $x=\left(x_{1},\ldots,x_{d}\right)^{T}$
+\end_inset
+
+.
+ [Hint: Although not necessary, you might find it helpful to use the notation
+ 
+\begin_inset Formula $\delta_{ij}=\begin{cases}
+1 & i=j\\
+0 & \text{else}
+\end{cases}$
+\end_inset
+
+.
+ So, for examples, 
+\begin_inset Formula $\partial_{x_{j}}\left(\sum_{i=1}^{n}x_{i}^{2}\right)=2x_{i}\delta_{ij}=2x_{j}$
+\end_inset
+
+.]
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+ Let 
+\begin_inset Formula $b=\left(b_{1},\ldots,b_{m}\right)^{T}$
+\end_inset
+
+, and let 
+\begin_inset Formula $W_{r\cdot}$
+\end_inset
+
+ denote the 
+\begin_inset Formula $r$
+\end_inset
+
+'th row of 
+\begin_inset Formula $W$
+\end_inset
+
+ (as a row vector).
+ Note that 
+\begin_inset Formula $y_{r}=W_{r\cdot}x+b_{r}=b_{r}+\sum_{k=1}^{d}W_{rk}x_{k}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial y_{r}}{\partial W_{ij}} & = & x_{k}\delta_{ir}\delta_{jk}=x_{j}\delta_{ir},
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta_{ij}=\begin{cases}
+1 & i=j\\
+0 & \text{else}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Putting it together we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial J}{\partial W_{ij}} & = & \sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}x_{j}\delta_{ir}\\
+ & = & \frac{\partial J}{\partial y_{i}}x_{j}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now let's vectorize this.
+ Let's write 
+\begin_inset Formula $\frac{\partial J}{\partial y}\in\reals^{m\times1}$
+\end_inset
+
+ for the column vector whose 
+\begin_inset Formula $i$
+\end_inset
+
+th entry is 
+\begin_inset Formula $\frac{\partial J}{\partial y_{i}}$
+\end_inset
+
+.
+ Let's also define the matrix 
+\begin_inset Formula $\frac{\partial J}{\partial W}\in\reals^{m\times d}$
+\end_inset
+
+, whose 
+\begin_inset Formula $ij$
+\end_inset
+
+'th entry is 
+\begin_inset Formula $\frac{\partial J}{\partial W_{ij}}$
+\end_inset
+
+.
+ Generally speaking, we'll always take 
+\begin_inset Formula $\frac{\partial J}{\partial A}$
+\end_inset
+
+ to be an array of the same size (
+\begin_inset Quotes eld
+\end_inset
+
+shape
+\begin_inset Quotes erd
+\end_inset
+
+ in numpy) as 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Give a vectorized expression for 
+\begin_inset Formula $\frac{\partial J}{\partial W}$
+\end_inset
+
+ in terms of the column vectors 
+\begin_inset Formula $\frac{\partial J}{\partial y}$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ [Hint: Outer product.] 
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial J}{\partial W} & = & \frac{\partial J}{\partial y}x^{T}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In the usual way, define 
+\begin_inset Formula $\frac{\partial J}{\partial x}\in\reals^{d}$
+\end_inset
+
+, whose 
+\begin_inset Formula $i$
+\end_inset
+
+'th entry is 
+\begin_inset Formula $\frac{\partial J}{\partial x_{i}}$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula 
+\[
+\frac{\partial J}{\partial x}=W^{T}\left(\frac{\partial J}{\partial y}\right)
+\]
+
+\end_inset
+
+[Note, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is just data, technically we won't need this derivative.
+ However, in a multilayer perceptron, 
+\begin_inset Formula $x$
+\end_inset
+
+ may actually be the output of a previous hidden layer, in which case we
+ will need to propagate the derivative through 
+\begin_inset Formula $x$
+\end_inset
+
+ as well.]
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+Note that 
+\begin_inset Formula $\frac{\partial y_{r}}{x_{i}}=W_{ri}$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial J}{\partial x_{i}} & = & \sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}\frac{\partial y_{r}}{\partial x_{i}}\\
+ & = & \sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}W_{ri}\\
+ & = & \left(\frac{\partial J}{\partial y}\right)^{T}W_{\cdot i}
+\end{eqnarray*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+\frac{\partial J}{\partial x}=W^{T}\left(\frac{\partial J}{\partial y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\frac{\partial J}{\partial b}=\frac{\partial J}{\partial y}$
+\end_inset
+
+, where 
+\begin_inset Formula $\frac{\partial J}{\partial b}$
+\end_inset
+
+ is defined in the usual way.
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial J}{\partial b_{i}} & = & \sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}\frac{\partial y_{r}}{\partial b_{i}}\\
+ & = & \sum_{r=1}^{m}\frac{\partial J}{\partial y_{r}}\delta_{ir}\\
+ & = & \frac{\partial J}{\partial y_{i}}
+\end{eqnarray*}
+
+\end_inset
+
+Since the elements of the vectors are equal, we get the claim.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Element-wise Transformers
+\end_layout
+
+\begin_layout Standard
+Our nonlinear activation function nodes take an array (e.g.
+ a vector, matrix, higher-order tensor, etc), and apply the same nonlinear
+ transformation 
+\begin_inset Formula $\sigma:\reals\to\reals$
+\end_inset
+
+ to every element of the array.
+ Let's abuse notation a bit, as is usually done in this context, and write
+ 
+\begin_inset Formula $\sigma(A)$
+\end_inset
+
+ for the array that results from applying 
+\begin_inset Formula $\sigma(\cdot)$
+\end_inset
+
+ to each element of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $x\in\reals$
+\end_inset
+
+, then we'll write 
+\begin_inset Formula $\sigma'(x)$
+\end_inset
+
+ for the derivative of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ at 
+\begin_inset Formula $x$
+\end_inset
+
+, with 
+\begin_inset Formula $\sigma'(A)$
+\end_inset
+
+ defined analogously to 
+\begin_inset Formula $\sigma(A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose the objective function value 
+\begin_inset Formula $J$
+\end_inset
+
+ is written as 
+\begin_inset Formula $J=f(\sigma(A))$
+\end_inset
+
+, for some function 
+\begin_inset Formula $f:S\mapsto\reals$
+\end_inset
+
+, where 
+\begin_inset Formula $S$
+\end_inset
+
+ is an array of the same dimensions as 
+\begin_inset Formula $\sigma(A)$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ As before, we want to find the array 
+\begin_inset Formula $\frac{\partial J}{\partial A}$
+\end_inset
+
+ for any 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Suppose for some 
+\begin_inset Formula $A$
+\end_inset
+
+ we have already computed the array 
+\begin_inset Formula $\frac{\partial J}{\partial S}=\frac{\partial f(S)}{\partial S}$
+\end_inset
+
+ for 
+\begin_inset Formula $S=\sigma(A)$
+\end_inset
+
+.
+ At this point, we'll want to use the chain rule to figure out 
+\begin_inset Formula $\frac{\partial J}{\partial A}$
+\end_inset
+
+.
+ However, because we're dealing with arrays of arbitrary shapes, it can
+ be tricky to write down the chain rule.
+ Appropriately, we'll use a tricky convention: We'll assume all entries
+ of an array 
+\begin_inset Formula $A$
+\end_inset
+
+ are indexed by a single variable.
+ So, for example, to sum over all entries of an array 
+\begin_inset Formula $A$
+\end_inset
+
+, we'll just write 
+\begin_inset Formula $\sum_{i}A_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\frac{\partial J}{\partial A}=\frac{\partial J}{\partial S}\odot\sigma'(A)$
+\end_inset
+
+, where we're using 
+\begin_inset Formula $\odot$
+\end_inset
+
+ to represent the 
+\series bold
+Hadamard product
+\series default
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are arrays of the same shape, then their Hadamard product 
+\begin_inset Formula $A\odot B$
+\end_inset
+
+ is an array with the same shape as 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, and for which 
+\begin_inset Formula $\left(A\odot B\right)_{i}=A_{i}B_{i}$
+\end_inset
+
+.
+ That is, it's just the array formed by multiplying corresponding elements
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Conveniently, in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+numpy
+\end_layout
+
+\end_inset
+
+ if 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+
+ are arrays of the same shape, then 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+A*B
+\end_layout
+
+\end_inset
+
+ is their Hadamard product.
+ 
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial J}{\partial A_{i}} & = & \sum_{j}\frac{\partial J}{\partial S_{j}}\frac{\partial S_{j}}{\partial A_{i}}\\
+ & = & \sum_{j}\frac{\partial J}{\partial S_{j}}\delta_{ij}\sigma'(A_{i})\\
+ & = & \frac{\partial J}{\partial S_{i}}\sigma'(A_{i})
+\end{eqnarray*}
+
+\end_inset
+
+This shows the claim.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+MLP Implementation
+\end_layout
+
+\begin_layout Enumerate
+Complete the class 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+AffineNode
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+nodes.py
+\end_layout
+
+\end_inset
+
+.
+ Be sure to propagate the gradient with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+ as well, since when we stack these layers, 
+\begin_inset Formula $x$
+\end_inset
+
+ will itself be the output of another node that depends on our optimization
+ parameters.
+\end_layout
+
+\begin_layout Enumerate
+Complete the class 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+TanhNode
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+nodes.py
+\end_layout
+
+\end_inset
+
+.
+ As you'll recall, 
+\begin_inset Formula $\frac{d}{dx}\tanh(x)=1-\tanh^{2}x$
+\end_inset
+
+.
+ Note that in the forward pass, we'll already have computed 
+\begin_inset Formula $\tanh$
+\end_inset
+
+ of the input and stored it in self.out.
+ So make sure to use 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+self.out
+\end_layout
+
+\end_inset
+
+ and not recalculate it in the backward pass.
+\end_layout
+
+\begin_layout Enumerate
+Implement an MLP by completing the skeleton code in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+mlp_regression.py
+\end_layout
+
+\end_inset
+
+ and making use of the nodes above.
+ Your code should pass the tests provided in 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+mlp_regression.t.py
+\end_layout
+
+\end_inset
+
+.
+ Note that to break the symmetry of the problem, we initialize our weights
+ to small random values, rather than all zeros, as we often do for convex
+ optimization problems.
+ Run the MLP for the two settings given in the 
+\begin_inset Flex Code
+status open
+
+\begin_layout Plain Layout
+main()
+\end_layout
+
+\end_inset
+
+ function and report the average 
+\series bold
+training
+\series default
+ error.
+ Note that with an MLP, we can take the original scalar as input, in the
+ hopes that it will learn nonlinear features on its own, using the hidden
+ layers.
+ In practice, it is quite challenging to get such a neural network to fit
+ as well as one where we provide features.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] See if you can get a fit on the training set with an MLP that
+ uses just the scalar input that is about as good as the fit using the featurize
+d inputs.
+ You can do that by tweaking model parameters (e.g.
+ the number of hidden nodes or layers) and/or the parameters of optimization.
+ You 
+\series bold
+may use
+\series default
+ any neural network framework (PyTorch, TensorFlow, etc), which can help
+ by providing more advanced optimization techniques (e.g.
+ Adam), variable initialization methods, and/or various normalization approaches
+ (batch norm, etc).
+ 
+\end_layout
+
+\begin_layout Subsection
+[OPTIONAL]
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Implement a Softmax node.
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Implement a negative log-likelihood loss node for multiclass
+ classification.
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Use the classes above to apply an MLP to the simple multiclass
+ classification dataset we had on a previous assignment.
+\end_layout
+
+\end_body
+\end_document

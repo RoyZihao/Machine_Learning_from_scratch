@@ -1,0 +1,7094 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\end_preamble
+\options ruled
+\use_default_options false
+\begin_modules
+algorithm2e
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 60
+InsetLayout Flex:Code
+    LyxType               charstyle
+    LabelString           code
+    LatexType             command
+    LatexName             code
+    Font
+      Family              Typewriter
+    EndFont
+    Preamble
+    \newcommand{\code}[1]{\texttt{#1}}
+    EndPreamble
+    InToc                 true
+    HTMLTag               code
+ResetsFont true
+End
+\end_local_layout
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch solutions
+\selected 0
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\loss}{\ell}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+{\mbox{argmax}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\mbox{argmin}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\minimizer}[1]{#1_{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Next year consider hash kernels? http://www2.mta.ac.il/~gideon/papers/shi09a_jmlr.pd
+f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Homework 4: Kernel Methods
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instructions
+\series default
+: Your answers to the questions below, including plots and mathematical
+ work, should be submitted as a single PDF file.
+ It's preferred that you write your answers using software that typesets
+ mathematics (e.g.
+ \SpecialChar LaTeX
+, \SpecialChar LyX
+, or MathJax via iPython), though if you need to you may scan handwritten
+ work.
+ You may find the 
+\begin_inset CommandInset href
+LatexCommand href
+name "minted"
+target "https://github.com/gpoore/minted"
+literal "false"
+
+\end_inset
+
+ package convenient for including source code in your \SpecialChar LaTeX
+ document.
+ If you are using \SpecialChar LyX
+, then the 
+\begin_inset CommandInset href
+LatexCommand href
+name "listings"
+target "https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+literal "false"
+
+\end_inset
+
+ package tends to work better.
+\end_layout
+
+\begin_layout Section
+Introduction 
+\end_layout
+
+\begin_layout Standard
+The problem set begins with a couple problems on kernel methods: the first
+ explores what geometric information about the data is stored in the kernel
+ matrix, and the second revisits kernel ridge regression with a direct approach,
+ rather than using the Representer Theorem.
+ At the end of the assignment you will find an Appendix that reviews some
+ relevant definitions from linear algebra, and gives some review exercises
+ (
+\series bold
+not for credit
+\series default
+).
+ Next we have a problem that explores an interesting way to re-express the
+ Pegasos-style SSGD on any 
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+ -regularized empirical risk objective function (i.e.
+ not just SVM).
+ The new expression also happens to allow efficient updates in the sparse
+ feature setting.
+ In the next problem, we take a direct approach to kernelizing Pegasos.
+ Finally we get to our coding problem, in which you'll have the opportunity
+ to see how kernel ridge regression works with different kernels on a one-dimens
+ional, highly non-linear regression problem.
+ There is also an optional coding problem, in which you can code a kernelized
+ SVM and see how it works on a classification problem with a two-dimensional
+ input space.
+ The problem set ends with two theoretical problems.
+ The first of these reviews the proof of the Representer Theorem.
+ The second applies Lagrangian duality to show the equivalence of Tikhonov
+ and Ivanov regularization (this material is optional).
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+And the third introduces an approach to 
+\begin_inset Quotes eld
+\end_inset
+
+novelty
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+anomaly
+\begin_inset Quotes erd
+\end_inset
+
+ detection as an exercise in the machinery of Lagrangian duality.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+[Optional] Kernel Matrices
+\end_layout
+
+\begin_layout Standard
+The following problem
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+This problem is from Michael Jordan's Stat 241b Problem Set #1, Spring 2004.
+\end_layout
+
+\end_inset
+
+ will gives us some additional insight into what information is encoded
+ in the kernel matrix.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Consider a set of vectors 
+\begin_inset Formula $S=\{x_{1},\ldots,x_{m}\}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $X$
+\end_inset
+
+ denote the matrix whose rows are these vectors.
+ Form the Gram matrix 
+\begin_inset Formula $K=XX^{T}$
+\end_inset
+
+.
+ Show that knowing 
+\begin_inset Formula $K$
+\end_inset
+
+ is equivalent to knowing the set of pairwise distances among the vectors
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ as well as the vector lengths.
+ [Hint: The distance between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ is given by 
+\begin_inset Formula $d(x,y)=\|x-y\|$
+\end_inset
+
+, and the norm of a vector 
+\begin_inset Formula $x$
+\end_inset
+
+ is defined as 
+\begin_inset Formula $\|x\|=$
+\end_inset
+
+
+\begin_inset Formula $\sqrt{\left\langle x,x\right\rangle }=\sqrt{x^{T}x}$
+\end_inset
+
+.] 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ We use the distance corresponding to the standard inner product:
+\begin_inset Formula 
+\begin{eqnarray*}
+d(x,y) & := & \sqrt{\left\langle x-y,x-y\right\rangle }\\
+ & = & \sqrt{\left\langle x,x\right\rangle +\left\langle y,y\right\rangle -2\left\langle x,y\right\rangle }
+\end{eqnarray*}
+
+\end_inset
+
+ It is clear that 
+\begin_inset Formula $K(i,j)=\left\langle x_{i},x_{j}\right\rangle $
+\end_inset
+
+, so we can use the formula above to get all pairwise distances from the
+ Gram matrix 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ The length of vector 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ is just 
+\begin_inset Formula $\sqrt{K(i,i)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Conversely, we can write 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle x,y\right\rangle  & = & \frac{1}{2}\left[\left\langle x,x\right\rangle +\left\langle y,y\right\rangle -d^{2}(x,y)\right]
+\end{eqnarray*}
+
+\end_inset
+
+ Noting that 
+\begin_inset Formula $\left\langle x,x\right\rangle $
+\end_inset
+
+ is the square of the length of 
+\begin_inset Formula $x$
+\end_inset
+
+, we see that we can recover the Gram matrix from the distances and the
+ lengths.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kernel Ridge Regression
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I'd prefer to make this problem optional...
+ In any case, consider changing this problem to verify and then using the
+ matrix inversion identity, per Brett's suggestion: https://github.com/davidrosen
+berg/mlcourse-homework/issues/53
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In lecture, we discussed how to kernelize ridge regression using the representer
+ theorem.
+ Here we pursue a bare-hands approach.
+ 
+\end_layout
+
+\begin_layout Standard
+Suppose our input space is 
+\begin_inset Formula $\mbox{\cx=}\reals^{d}$
+\end_inset
+
+ and our output space is 
+\begin_inset Formula $\cy=\reals$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\cd=\left\{ \left(x_{1},y_{1}\right),\ldots,\left(x_{n},y_{n}\right)\right\} $
+\end_inset
+
+ be a training set from 
+\begin_inset Formula $\cx\times\cy$
+\end_inset
+
+.
+ We'll use the 
+\begin_inset Quotes eld
+\end_inset
+
+design matrix
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $X\in\reals^{n\times d}$
+\end_inset
+
+, which has the input vectors as rows: 
+\begin_inset Formula 
+\[
+X=\begin{pmatrix}-x_{1}-\\
+\vdots\\
+-x_{n}-
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Recall the ridge regression objective function:
+\begin_inset Formula 
+\[
+J(w)=||Xw-y||^{2}+\lambda||w||^{2},
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show that for 
+\begin_inset Formula $w$
+\end_inset
+
+ to be a minimizer of 
+\begin_inset Formula $J(w)$
+\end_inset
+
+, we must have 
+\begin_inset Formula $X^{T}Xw+\lambda Iw=X^{T}y$
+\end_inset
+
+.
+ Show that the minimizer of 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ is 
+\begin_inset Formula $w=(X^{T}X+\lambda I)^{-1}X^{T}y$
+\end_inset
+
+.
+ Justify that the matrix 
+\begin_inset Formula $X^{T}X+\lambda I$
+\end_inset
+
+ is invertible, for 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+ (The last part should follow easily from the exercises on psd and spd matrices
+ in the Appendix.) 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+J(w) & = & \left(Xw-y\right)^{T}\left(Xw-y\right)+\lambda w^{T}w\\
+\partial_{w}J(w) & = & 2X^{T}\left(Xw-y\right)+2\lambda w\\
+\partial_{w}J(w)=0 & \iff & 2X^{T}Xw+2\lambda w-2X^{T}y=0\\
+ & \iff & (X^{T}X+\lambda I)w=X^{T}y\\
+ & \iff & w=(X^{T}X+\lambda I)^{-1}X^{T}y
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $X^{T}X$
+\end_inset
+
+ is PSD, and adding 
+\begin_inset Formula $\lambda I$
+\end_inset
+
+ to it makes it spd, by an earlier problem.
+ Thus it's invertible for 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rewrite 
+\begin_inset Formula $X^{T}Xw+\lambda Iw=X^{T}y$
+\end_inset
+
+ as 
+\begin_inset Formula $w=\frac{1}{\lambda}(X^{T}y-X^{T}Xw)$
+\end_inset
+
+.
+ Based on this, show that we can write 
+\begin_inset Formula $w=X^{T}\alpha$
+\end_inset
+
+ for some 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, and give an expression for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ (NOTE: At this stage, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ may depend on 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Don't worry about having 
+\begin_inset Formula $w$
+\end_inset
+
+ on both the left and right side of the equality.
+ The point here is to show that 
+\begin_inset Formula $w$
+\end_inset
+
+ is in the span of the rows of 
+\begin_inset Formula $X$
+\end_inset
+
+ (i.e.
+ the data points), which you'll explain in the next problem.
+ Showing 
+\begin_inset Formula $w=X^{T}\alpha$
+\end_inset
+
+ for some 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ will demonstrate that, whether or not 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ depends on 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ In a later part, we will get an expession for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ that doesn't depend on 
+\begin_inset Formula $w$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+w & = & X^{T}\left[\frac{1}{\lambda}\left(y-Xw\right)\right]\\
+\implies\alpha & = & \frac{1}{\lambda}\left(y-Xw\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Based on the fact that 
+\begin_inset Formula $w=X^{T}\alpha$
+\end_inset
+
+, explain why we say w is 
+\begin_inset Quotes eld
+\end_inset
+
+in the span of the data.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula $X^{T}\alpha$
+\end_inset
+
+ is a linear combination of the columns of 
+\begin_inset Formula $X^{T}$
+\end_inset
+
+, which contain the input vectors 
+\begin_inset Formula $x_{1},\ldots,x_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+w= & \begin{pmatrix}| & \cdots & |\\
+x_{1} & \cdots & x_{n}\\
+| & \cdots & |
+\end{pmatrix}\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}=\alpha_{1}x_{1}+\cdots\alpha_{n}x_{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\alpha=(\lambda I+XX^{T})^{-1}y$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ is the kernel matrix for the standard vector dot product.
+ (Hint: Replace 
+\begin_inset Formula $w$
+\end_inset
+
+ by 
+\begin_inset Formula $X^{T}\alpha$
+\end_inset
+
+ in the expression for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, and then solve for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha & = & \lambda^{-1}(y-Xw)\\
+\lambda\alpha & = & y-XX^{T}\alpha\\
+XX^{T}\alpha+\lambda\alpha & = & y\\
+\left(XX^{T}+\lambda I\right)\alpha & = & y\\
+\alpha & = & (\lambda I+XX^{T})^{-1}y
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give a kernelized expression for the 
+\begin_inset Formula $Xw$
+\end_inset
+
+, the predicted values on the training points.
+ (Hint: Replace 
+\begin_inset Formula $w$
+\end_inset
+
+ by 
+\begin_inset Formula $X^{T}\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ by its expression in terms of the kernel matrix 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+Xw & = & X\left(X^{T}\alpha\right)\\
+ & = & \left(XX^{T}\right)(\lambda I+XX^{T})^{-1}y
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give an expression for the prediction 
+\begin_inset Formula $f(x)=x^{T}w^{*}$
+\end_inset
+
+ for a new point 
+\begin_inset Formula $x$
+\end_inset
+
+, not in the training set.
+ The expression should only involve 
+\begin_inset Formula $x$
+\end_inset
+
+ via inner products with other 
+\begin_inset Formula $x$
+\end_inset
+
+'s.
+ [Hint: It is often convenient to define the column vector
+\begin_inset Formula 
+\[
+k_{x}=\begin{pmatrix}x^{T}x_{1}\\
+\vdots\\
+x^{T}x_{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+to simplify the expression.] 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: We have
+\begin_inset Formula 
+\begin{eqnarray*}
+f(x) & = & x^{T}w^{*}=x^{T}X^{T}\alpha^{*}\\
+ & = & x^{T}X^{T}\left(\lambda I+XX^{T}\right)^{-1}y\\
+ & = & k_{x}^{T}\left(\lambda I+XX^{T}\right)^{-1}y\\
+ & = & k_{x}^{T}\alpha
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
+[Matrix Inversion Lemma] There is a very useful matrix identity called the
+ 
+\series bold
+Sherman-Morrison-Woodbury formula 
+\series default
+or the
+\series bold
+ matrix inversion lemma.
+ 
+\series default
+Given matrices 
+\begin_inset Formula $A\in\reals^{n\times n}$
+\end_inset
+
+ and 
+\begin_inset Formula $U,V\in\reals^{n\times k}$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(A+UBV\right)^{-1} & = & A^{-1}-A^{-1}UB\left(B+BVA^{-1}UB\right)^{-1}BVA^{-1}\\
+ & = & A^{-1}-A^{-1}U\left(B^{-1}+VA^{-1}U\right)^{-1}VA^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+(A+UV^{T})^{-1} & = & A^{-1}-A^{-1}U(I+V^{T}A^{-1}U)^{-1}V^{T}A^{-1},
+\end{eqnarray*}
+
+\end_inset
+
+where we have assumed that the matrices 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(A+UV^{T}\right)$
+\end_inset
+
+ are invertible.
+ Apply the identity to 
+\begin_inset Formula $(X^{T}X+\lambda I)^{-1}$
+\end_inset
+
+ to get a kernelized expression for 
+\begin_inset Formula $Xw=X(X^{T}X+\lambda I)^{-1}X^{T}y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution: 
+\series default
+Take 
+\begin_inset Formula $A=\lambda I$
+\end_inset
+
+ and 
+\begin_inset Formula $U=V=X^{T}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+(X^{T}X+\lambda I)^{-1} & = & \frac{1}{\lambda}I-\frac{1}{\lambda^{2}}X^{T}(I+\frac{1}{\lambda}XX^{T})^{-1}X\\
+\implies X(X^{T}X+\lambda I)^{-1}X^{T}y & = & \frac{1}{\lambda}XX^{T}y-\frac{1}{\lambda^{2}}XX^{T}(I+\frac{1}{\lambda}XX^{T})^{-1}XX^{T}y\\
+ & = & \frac{1}{\lambda}XX^{T}\left(I-(\lambda I+XX^{T})^{-1}XX^{T}\right)y
+\end{eqnarray*}
+
+\end_inset
+
+ That should be equal to this.
+ Easiest way to simplify would be with spectral theorem...
+ but this makes me think the matrix inversion lemma was not the best approach
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\left(XX^{T}\right)(\lambda I+XX^{T})^{-1}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Another approach that's simpler:
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula 
+\[
+\left(I+AB\right)^{-1}A=A\left(I+BA\right)^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+X(\lambda I+X^{T}X)^{-1}X^{T} & = & \frac{1}{\sqrt{\lambda}}X(I+\frac{1}{\lambda}X^{T}X)^{-1}\frac{1}{\sqrt{\lambda}}X^{T}\\
+ & = & \frac{1}{\lambda}XX^{T}(I+\frac{1}{\lambda}XX^{T})^{-1}\\
+ & = & \frac{1}{\lambda}XX^{T}(I+\frac{1}{\lambda}XX^{T})^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:[Optional]-Pegasos-and-SSGD"
+
+\end_inset
+
+[Optional] Pegasos and SSGD for 
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+-regularized ERM
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This problem is based on Shalev-Shwartz and Ben-David's book 
+\begin_inset CommandInset href
+LatexCommand href
+name "Understanding Machine Learning: From Theory to Algorithms"
+target "http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/index.html"
+literal "false"
+
+\end_inset
+
+, Sections 14.5.3, 15.5, and 16.3).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the objective function
+\begin_inset Formula 
+\[
+J(w)=\frac{\lambda}{2}\|w\|_{2}^{2}+\frac{1}{n}\sum_{i=1}^{n}\ell_{i}(w),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\ell_{i}(w)$
+\end_inset
+
+ represents the loss on the 
+\begin_inset Formula $i$
+\end_inset
+
+th training point 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $\ell_{i}(w):\reals^{d}\to\reals$
+\end_inset
+
+ is a convex function.
+ Let's write
+\begin_inset Formula 
+\[
+J_{i}(w)=\frac{\lambda}{2}\|w\|_{2}^{2}+\ell_{i}(w),
+\]
+
+\end_inset
+
+for the one-point approximation to 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ using the 
+\begin_inset Formula $i$
+\end_inset
+
+th training point.
+ 
+\begin_inset Formula $J_{i}(w)$
+\end_inset
+
+ is probably a very poor approximation of 
+\begin_inset Formula $J(w)$
+\end_inset
+
+.
+ However, if we choose 
+\begin_inset Formula $i$
+\end_inset
+
+ uniformly at random from 
+\begin_inset Formula $1,\ldots,n$
+\end_inset
+
+, then we do have 
+\begin_inset Formula $\ex J_{i}(w)=J(w)$
+\end_inset
+
+.
+ We'll now show that subgradients of 
+\begin_inset Formula $J_{i}(w)$
+\end_inset
+
+ are unbiased estimators of some subgradient of 
+\begin_inset Formula $J(w)$
+\end_inset
+
+, which is our justification for using SSGD methods.
+\end_layout
+
+\begin_layout Standard
+In the problems below, you may use the following facts about subdifferentials
+ without proof (as in Homework #3): 1) If 
+\begin_inset Formula $f_{1},\ldots,f_{m}:\reals^{d}\to\reals$
+\end_inset
+
+ are convex functions and 
+\begin_inset Formula $f=f_{1}+\cdots+f_{m}$
+\end_inset
+
+, then 
+\begin_inset Formula $\partial f(x)=\partial f_{1}(x)+\cdots+\partial f_{m}(x)$
+\end_inset
+
+ [
+\series bold
+additivity
+\series default
+].
+ 2) For 
+\begin_inset Formula $\alpha\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\partial\left(\alpha f\right)(x)=\alpha\partial f(x)$
+\end_inset
+
+ [
+\series bold
+positive homogeneity]
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+[Optional] For each 
+\begin_inset Formula $i=1,\ldots,n$
+\end_inset
+
+, let 
+\begin_inset Formula $g_{i}(w)$
+\end_inset
+
+ be a subgradient of 
+\begin_inset Formula $J_{i}(w)$
+\end_inset
+
+ at 
+\begin_inset Formula $w\in\reals^{d}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $v_{i}(w)$
+\end_inset
+
+ be a subgradient of 
+\begin_inset Formula $\ell_{i}(w)$
+\end_inset
+
+ at 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Give an expression for 
+\begin_inset Formula $g_{i}(w)$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{i}(w)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution: 
+\series default
+Since the regularization term is convex and 
+\begin_inset Formula $\ell_{i}(w)$
+\end_inset
+
+ is convex, we can just add a subgradient of each.
+ So we can take
+\begin_inset Formula 
+\[
+g_{i}(w)=\lambda w+v_{i}(w).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Show that 
+\begin_inset Formula $\ex g_{i}(w)\in\partial J(w)$
+\end_inset
+
+, where the expectation is over the randomly selected 
+\begin_inset Formula $i\in1,\ldots,n$
+\end_inset
+
+.
+ (In words, the expectation of our subgradient of a randomly chosen 
+\begin_inset Formula $J_{i}(w)$
+\end_inset
+
+ is in the subdifferential of 
+\begin_inset Formula $J$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution: 
+\series default
+We have
+\begin_inset Formula 
+\begin{eqnarray*}
+\ex g_{i}(w) & = & \frac{1}{n}\sum_{i=1}^{n}\left[\lambda w+v_{i}(w)\right]\\
+ & = & \lambda w+\frac{1}{n}\sum_{i=1}^{n}v_{i}(w)
+\end{eqnarray*}
+
+\end_inset
+
+By the additivity of subdifferentials and the positive homogeneity, this
+ is a subgradient for 
+\begin_inset Formula $J(w)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Now suppose we are carrying out SSGD with the Pegasos step-size
+ 
+\begin_inset Formula $\eta^{(t)}=1/\left(\lambda t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $t=1,2,\ldots$
+\end_inset
+
+., starting from 
+\begin_inset Formula $w^{(1)}=0$
+\end_inset
+
+.
+ In the 
+\begin_inset Formula $t$
+\end_inset
+
+'th step, suppose we select the 
+\begin_inset Formula $i$
+\end_inset
+
+th point and thus take the step 
+\begin_inset Formula $w^{(t+1)}=w^{(t)}-\eta^{(t)}g_{i}(w^{(t)})$
+\end_inset
+
+.
+ Let's write 
+\begin_inset Formula $v^{(t)}=v_{i}(w^{(t)})$
+\end_inset
+
+, which is the subgradient of the loss part of 
+\begin_inset Formula $J_{i}(w^{(t)})$
+\end_inset
+
+ that is used in step 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Show that
+\begin_inset Formula 
+\[
+w^{(t+1)}=-\frac{1}{\lambda t}\sum_{\tau=1}^{t}v^{(\tau)}
+\]
+
+\end_inset
+
+[Hint: One approach is proof by induction.
+ First show it's true for 
+\begin_inset Formula $w^{(2)}$
+\end_inset
+
+.
+ Then assume it's true for 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ and prove it's true for 
+\begin_inset Formula $w^{(t+1)}$
+\end_inset
+
+.
+ This will prove that it's true for all 
+\begin_inset Formula $t=2,3,\ldots$
+\end_inset
+
+ by induction.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution: 
+\series default
+Let's start with 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ Suppose we choose the 
+\begin_inset Formula $i$
+\end_inset
+
+'th point for the first step.
+ Then since 
+\begin_inset Formula $w^{(1)}=0$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+w^{(2)}=-\eta^{(1)}g_{i}(0)=-\frac{1}{\lambda t}\left[v_{i}(0)\right]=-\frac{1}{\lambda t}v^{(1)}.
+\]
+
+\end_inset
+
+Now assume the claim is true for 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ and we'll prove it for 
+\begin_inset Formula $w^{(t+1)}$
+\end_inset
+
+.
+ We have
+\begin_inset Formula 
+\begin{eqnarray*}
+w^{(t+1)} & = & w^{(t)}-\eta^{(t)}\left[\lambda w^{(t)}+v_{i}(w^{(t)})\right]\\
+ & = & w^{(t)}-\left[\frac{1}{t}w^{(t)}+\frac{1}{\lambda t}v^{(t)}\right]\\
+ & = & -\frac{1}{\lambda\left(t-1\right)}\sum_{\tau=1}^{t-1}v^{(\tau)}-\left[-\frac{1}{t\lambda\left(t-1\right)}\sum_{\tau=1}^{t-1}v^{(\tau)}+\frac{1}{\lambda t}v^{(t)}\right]\\
+ & = & \sum_{\tau=1}^{t-1}\left[\frac{1}{\lambda t\left(t-1\right)}v^{(\tau)}-\frac{1}{\lambda\left(t-1\right)}v^{(\tau)}\right]-\frac{1}{\lambda t}v^{(t)}\\
+ & = & \sum_{\tau=1}^{t-1}\left[\frac{1-t}{\lambda t\left(t-1\right)}v^{(\tau)}\right]-\frac{1}{\lambda t}v^{(t)}\\
+ & = & -\frac{1}{\lambda t}\sum_{\tau=1}^{t-1}\left[v^{(\tau)}\right]-\frac{1}{\lambda t}v^{(t)}\\
+ & = & -\frac{1}{\lambda t}\sum_{\tau=1}^{t}\left[v^{(\tau)}\right]
+\end{eqnarray*}
+
+\end_inset
+
+So we have proved the claim by induction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[Optional] We can use the previous result to get a nice equivalent formulation
+ of Pegasos.
+ Let 
+\begin_inset Formula $\theta^{(t)}=\sum_{\tau=1}^{t-1}v^{(t)}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $w^{(t+1)}=-\frac{1}{\lambda t}\theta^{(t+1)}$
+\end_inset
+
+ Then Pegasos from the previous homework is equivalent to Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Algorithm-Thetas"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+w^{(t+1)}=-\frac{1}{\lambda t}\sum_{\tau=1}^{t}v^{(\tau)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w^{(t)}=-\frac{1}{\lambda\left(t-1\right)}\sum_{\tau=1}^{t-1}v^{(\tau)}=-\frac{1}{\lambda\left(t-1\right)}\theta^{(t)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta^{(1)} & = & 0\\
+\\
+w^{(1)} & = & 0\\
+\theta^{(2)} & = & v^{(1)}\\
+w^{(2)} & = & -\frac{1}{\lambda(t=1)}v^{(1)}=-\frac{1}{\lambda1}\theta^{(2)}\\
+\theta^{(3)} & = & \theta^{(2)}+v^{(2)}\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Pegasos-Algorithm-Thetas"
+
+\end_inset
+
+Pegasos Algorithm Reformulation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+input: Training set 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ldots,(x_{n},y_{n})\in\reals^{d}\times\left\{ -1,1\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\theta^{(1)}=\left(0,\ldots,0\right)\in\reals^{d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $w^{(1)}=\left(0,\ldots,0\right)\in\reals^{d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $t=1$
+\end_inset
+
+ # step number
+\begin_inset Newline newline
+\end_inset
+
+repeat
+\begin_inset Newline newline
+\end_inset
+
+  randomly choose 
+\begin_inset Formula $j$
+\end_inset
+
+ in 
+\begin_inset Formula $1,\ldots,n$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  if 
+\begin_inset Formula $y_{j}\left\langle w^{(t)},x_{j}\right\rangle <1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $\theta^{(t+1)}=\theta^{(t)}+y_{j}x_{j}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  else
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $\theta^{(t+1)}=\theta^{(t)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  endif
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $w^{(t+1)}=-\frac{1}{\lambda t}\theta^{(t+1)}$
+\end_inset
+
+ # need not be explicitly computed
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $t=t+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+until bored
+\begin_inset Newline newline
+\end_inset
+
+return 
+\begin_inset Formula $w^{(t)}=-\frac{1}{\lambda(t-1)}\theta^{(t)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Similar to the 
+\begin_inset Formula $w=sW$
+\end_inset
+
+ decomposition from homework #3, this decomposition gives the opportunity
+ for significant speedup.
+ Explain how Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Algorithm-Thetas"
+
+\end_inset
+
+ can be implemented so that, if 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ has 
+\begin_inset Formula $s$
+\end_inset
+
+ nonzero entries, then we only need to do 
+\begin_inset Formula $O(s)$
+\end_inset
+
+ memory accesses in every pass through the loop.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution: 
+\series default
+If we store 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in a hash table (e.g.
+ a dict in Python), we can compute 
+\begin_inset Formula $\left\langle w^{(t)},x_{j}\right\rangle $
+\end_inset
+
+ on the fly by extracting only the 
+\begin_inset Formula $s$
+\end_inset
+
+ entries of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ that correspond to the 
+\begin_inset Formula $s$
+\end_inset
+
+ nonzero entries of 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+.
+ Each of these entries can be scaled by 
+\begin_inset Formula $1/\left[\left(t-1\right)\lambda\right]$
+\end_inset
+
+ to get the corresponding entries of 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+.
+ The update of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ accesses 
+\begin_inset Formula $s$
+\end_inset
+
+ of its elements at most.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Kernelized Pegasos
+\end_layout
+
+\begin_layout Standard
+Recall the SVM objective function
+\begin_inset Formula 
+\[
+\min_{w\in\reals^{n}}\frac{\lambda}{2}\|w\|^{2}+\frac{1}{m}\sum_{i=1}^{m}\max\left(0,1-y_{i}w^{T}x_{i}\right)
+\]
+
+\end_inset
+
+and the Pegasos algorithm on the training set 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ldots,(x_{n},y_{n})\in\reals^{d}\times\left\{ -1,1\right\} $
+\end_inset
+
+ (Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Algorithm"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Pegasos-Algorithm"
+
+\end_inset
+
+Pegasos Algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+input: Training set 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ldots,(x_{n},y_{n})\in\reals^{d}\times\left\{ -1,1\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $w^{(1)}=\left(0,\ldots,0\right)\in\reals^{d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $t=0$
+\end_inset
+
+ # step number
+\begin_inset Newline newline
+\end_inset
+
+repeat
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $t=t+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $\eta^{(t)}=1/\left(t\lambda\right)$
+\end_inset
+
+ # step multiplier
+\begin_inset Newline newline
+\end_inset
+
+  randomly choose 
+\begin_inset Formula $j$
+\end_inset
+
+ in 
+\begin_inset Formula $1,\ldots,n$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  if 
+\begin_inset Formula $y_{j}\left\langle w^{(t)},x_{j}\right\rangle <1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $w^{(t+1)}=(1-\eta^{(t)}\lambda)w^{(t)}+\eta^{(t)}y_{j}x_{j}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  else
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $w^{(t+1)}=(1-\eta^{(t)}\lambda)w^{(t)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+until bored
+\begin_inset Newline newline
+\end_inset
+
+return 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that in every step of Pegasos, we rescale 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ by 
+\begin_inset Formula $\left(1-\eta^{(t)}\lambda\right)=\left(1-\frac{1}{t}\right)\in\left(0,1\right)$
+\end_inset
+
+.
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+shrinks
+\begin_inset Quotes erd
+\end_inset
+
+ the entries of 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ towards 
+\begin_inset Formula $0$
+\end_inset
+
+, and it's due to the regularization term 
+\begin_inset Formula $\frac{\lambda}{2}\|w\|_{2}^{2}$
+\end_inset
+
+ in the SVM objective function.
+ Also note that if the example in a particular step, say 
+\begin_inset Formula $\left(x_{j},y_{j}\right)$
+\end_inset
+
+, is not classified with the required margin (i.e.
+ if we don't have margin 
+\begin_inset Formula $y_{j}\left\langle w^{(t)},x_{j}\right\rangle \ge1$
+\end_inset
+
+), then we also add a multiple of 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ to 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ to end up with 
+\begin_inset Formula $w^{(t+1)}$
+\end_inset
+
+.
+ This part of the adjustment comes from the empirical risk.
+ Since we initialize with 
+\begin_inset Formula $w^{(1)}=0$
+\end_inset
+
+, we are guaranteed that we can always write
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note: This resembles the conclusion of the representer theorem, but it's
+ saying something different.
+ Here, we are saying that the 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ after every step of the Pegasos algorithm lives in the span of the data.
+ The representer theorem says that a mathematical minimizer of the SVM objective
+ function (i.e.
+ what the Pegasos algorithm would converge to after infinitely many steps)
+ lies in the span of the data.
+ If, for example, we had chosen an initial 
+\begin_inset Formula $w^{(1)}$
+\end_inset
+
+ that is NOT in the span of the data, then none of the 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+'s from Pegasos would be in the span of the data.
+ However, we know Pegasos converges to a minimum of the SVM objective.
+ Thus after a very large number of steps, 
+\begin_inset Formula $w^{(t)}$
+\end_inset
+
+ would be very close to being in the span of the data.
+ It's the gradient of the regularization term that pulls us back towards
+ the span of the data.
+ This is basically because the regularization is driving all components
+ towards 
+\begin_inset Formula $0$
+\end_inset
+
+, while the empirical risk updates are only pushing things away from 
+\begin_inset Formula $0$
+\end_inset
+
+ in directions in the span of the data.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w^{(t)}=\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}
+\]
+
+\end_inset
+
+after any number of steps 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ When we kernelize Pegasos, we'll be tracking 
+\begin_inset Formula $\alpha^{(t)}=(\alpha_{1}^{(t)},\ldots,\alpha_{n}^{(t)})^{T}$
+\end_inset
+
+ directly, rather than 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Kernelize the expression for the margin.
+ That is, show that 
+\begin_inset Formula $y_{j}\left\langle w^{(t)},x_{j}\right\rangle =y_{j}K_{j\cdot}\alpha^{(t)}$
+\end_inset
+
+, where 
+\begin_inset Formula $k(x_{i},x_{j})=\left\langle x_{i},x_{j}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $K_{j\cdot}$
+\end_inset
+
+ denotes the 
+\begin_inset Formula $j$
+\end_inset
+
+th row of the kernel matrix 
+\begin_inset Formula $K$
+\end_inset
+
+ corresponding to kernel 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{j}\left\langle w^{(t)},x_{j}\right\rangle  & = & y_{j}\left\langle \sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i},x_{j}\right\rangle =y_{j}\sum_{i=1}^{n}\alpha_{i}^{(t)}k(x_{i},x_{j})=y_{j}K_{j\cdot}\alpha^{(t)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suppose we have run 
+\begin_inset Formula $t$
+\end_inset
+
+ steps of kernelized Pegasos and we have an expression for 
+\begin_inset Formula $\alpha^{(t)}$
+\end_inset
+
+.
+ By definition of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, this implies 
+\begin_inset Formula $w^{(t)}=\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}$
+\end_inset
+
+.
+ Now for the next step of Pegasos we select the point 
+\begin_inset Formula $\left(x_{j},y_{j}\right)$
+\end_inset
+
+, and suppose it does not have a margin violation.
+ Give an expression for 
+\begin_inset Formula $\alpha^{(t+1)}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\alpha^{(t)}$
+\end_inset
+
+.
+ One approach would be to guess an expression for 
+\begin_inset Formula $\alpha^{(t+1)}$
+\end_inset
+
+ and then verify that the corresponding 
+\begin_inset Formula $w^{(t+1)}=\sum_{i=1}^{n}\alpha_{i}^{(t+1)}x_{i}$
+\end_inset
+
+ is what we would get by following the Pegasos update rule on 
+\begin_inset Formula $w^{(t)}=\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+practical approach: start from 
+\begin_inset Formula $w^{(t)}=\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}$
+\end_inset
+
+, apply the Pegasos update equation to get 
+\begin_inset Formula $w^{(t+1)}$
+\end_inset
+
+ and then see how you have to define 
+\begin_inset Formula $\alpha_{i}^{(t+1)}$
+\end_inset
+
+ to get everything to work out.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+Note that if we set 
+\begin_inset Formula $\alpha^{(t+1)}=(1-\eta^{(t)}\lambda)\alpha^{(t)}$
+\end_inset
+
+, then 
+\begin_inset Formula $w^{(t+1)}=\sum_{i=1}^{n}\alpha_{i}^{(t+1)}x_{i}=(1-\eta^{(t)}\lambda)\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}=\left(1-\eta^{(t)}\lambda\right)w^{(t)}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Repeat the previous problem, but for the case that 
+\begin_inset Formula $\left(x_{j},y_{j}\right)$
+\end_inset
+
+ has a margin violation.
+ Then give the full pseudocode for kernelized Pegasos.
+ You may assume that you receive the kernel matrix 
+\begin_inset Formula $K$
+\end_inset
+
+ as input, along with the labels 
+\begin_inset Formula $y_{1},\ldots,y_{n}\in\left\{ -1,1\right\} $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+Proposal is to set 
+\begin_inset Formula $\alpha_{i}^{(t+1)}=(1-\eta^{(t)}\lambda)\alpha_{i}^{(t)}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ and set 
+\begin_inset Formula $\alpha_{j}^{(t+1)}=(1-\eta^{(t)}\lambda)\alpha_{j}^{(t)}+\eta^{(t)}y_{j}$
+\end_inset
+
+.
+ We verify that this gives the correct update for the corresponding 
+\begin_inset Formula $w^{(t+1)}$
+\end_inset
+
+ [Note: this could feasibly be done in your head, but we work out the details.]:
+\begin_inset Formula 
+\begin{eqnarray*}
+w^{(t+1)} & = & \sum_{i=1}^{n}\alpha_{i}^{(t+1)}x_{i}\\
+ & = & \sum_{i\neq j}(1-\eta^{(t)}\lambda)\alpha_{i}^{(t)}x_{i}+\left[(1-\eta^{(t)}\lambda)\alpha_{j}^{(t)}+\eta^{(t)}y_{j}\right]x_{j}\\
+ & = & \sum_{i=1}^{n}(1-\eta^{(t)}\lambda)\alpha_{i}^{(t)}x_{i}+\eta^{(t)}y_{j}x_{j}\\
+ & = & \left(1-\eta^{(t)}\lambda\right)w^{(t)}+\eta^{(t)}y_{j}x_{j}
+\end{eqnarray*}
+
+\end_inset
+
+So the kernelized Pegasos algorithm is 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Kernelized"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Pegasos-Kernelized"
+
+\end_inset
+
+Pegasos Algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+input: Kernel matrix 
+\begin_inset Formula $K\in\reals^{n\times n}$
+\end_inset
+
+, labels 
+\begin_inset Formula $y_{1},\ldots,y_{n}\in\left\{ -1,1\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\alpha^{(1)}=\left(0,\ldots,0\right)\in\reals^{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $t=0$
+\end_inset
+
+ # step number
+\begin_inset Newline newline
+\end_inset
+
+repeat
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $t=t+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  
+\begin_inset Formula $\eta^{(t)}=1/\left(t\lambda\right)$
+\end_inset
+
+ # step multiplier
+\begin_inset Newline newline
+\end_inset
+
+  randomly choose 
+\begin_inset Formula $j$
+\end_inset
+
+ in 
+\begin_inset Formula $1,\ldots,n$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  if 
+\begin_inset Formula $y_{j}\left(\sum_{i=1}^{n}\alpha_{i}\left\langle x_{i},x_{j}\right\rangle \right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $\alpha_{j}^{(t+1)}=(1-\eta^{(t)}\lambda)\alpha_{j}^{(t)}+\eta^{(t)}y_{j}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+  else
+\begin_inset Newline newline
+\end_inset
+
+    
+\begin_inset Formula $\alpha_{j}^{(t+1)}=(1-\eta^{(t)}\lambda)\alpha_{j}^{(t)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+until bored
+\begin_inset Newline newline
+\end_inset
+
+return 
+\begin_inset Formula $\alpha^{(t)}$
+\end_inset
+
+ or 
+\begin_inset Formula $w^{(t)}=\sum_{i=1}^{n}\alpha_{i}^{(t)}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] While the direct implementation of the original Pegasos required
+ updating all entries of 
+\begin_inset Formula $w$
+\end_inset
+
+ in every step, a direct kernelization of Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Algorithm"
+
+\end_inset
+
+, as we have done above, leads to updating all entries of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ in every step.
+ Give a version of the kernelized Pegasos algorithm that does not suffer
+ from this inefficiency.
+ You may try splitting the scale and direction similar to the approach of
+ the previous problem set, or you may use a decomposition based on Algorithm
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pegasos-Algorithm-Thetas"
+
+\end_inset
+
+ from the optional problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:[Optional]-Pegasos-and-SSGD"
+
+\end_inset
+
+ above.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kernel Methods: Let's Implement
+\end_layout
+
+\begin_layout Standard
+In this section you will get the opportunity to code kernel ridge regression
+ and, optionally, kernelized SVM.
+ To speed things along, we've written a great deal of support code for you,
+ which you can find in the Jupyter notebooks in the homework zip file.
+ 
+\end_layout
+
+\begin_layout Subsection
+One more review of kernelization can't hurt (no problems)
+\end_layout
+
+\begin_layout Standard
+Consider the following optimization problem on a data set 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ldots\left(x_{n},y_{n}\right)\in\reals^{d}\times\cy$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\min_{w\in\reals^{d}}R\left(\sqrt{\left\langle w,w\right\rangle }\right)+L\left(\left\langle w,x_{1}\right\rangle ,\ldots,\left\langle w,x_{n}\right\rangle \right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $w,x_{1},\ldots,x_{n}\in\reals^{d}$
+\end_inset
+
+, and 
+\begin_inset Formula $\left\langle \cdot,\cdot\right\rangle $
+\end_inset
+
+ is the standard inner product on 
+\begin_inset Formula $\reals^{d}$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $R:[0,\infty)\to\reals$
+\end_inset
+
+ is nondecreasing and gives us our regularization term, while
+\series bold
+ 
+\series default
+
+\begin_inset Formula $L:\reals^{n}\to\reals$
+\end_inset
+
+ is arbitrary
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+You may be wondering 
+\begin_inset Quotes eld
+\end_inset
+
+Where are the 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+'s?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ They're built into the function 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ For example, a square loss on a training set of size 
+\begin_inset Formula $3$
+\end_inset
+
+ could be represented as 
+\begin_inset Formula $L(s_{1},s_{2},s_{3})=\frac{1}{3}\left[\left(s_{1}-y_{1}\right)^{2}+\left(s_{2}-y_{2}\right)^{2}+\left(s_{3}-y_{3}\right)^{3}\right]$
+\end_inset
+
+, where each 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ stands for the 
+\begin_inset Formula $i$
+\end_inset
+
+th prediction 
+\begin_inset Formula $\left\langle w,x_{i}\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ and gives us our loss term.
+ We noted in lecture that this general form includes soft-margin SVM and
+ ridge regression, though not lasso regression.
+ Using the representer theorem, we showed if the optimization problem has
+ a solution, there is always a solution of the form 
+\begin_inset Formula $w=\sum_{i=1}^{n}\alpha_{i}x_{i}$
+\end_inset
+
+, for some 
+\begin_inset Formula $\alpha\in\reals^{n}$
+\end_inset
+
+.
+ Plugging this into the our original problem, we get the following 
+\begin_inset Quotes eld
+\end_inset
+
+kernelized
+\begin_inset Quotes erd
+\end_inset
+
+ optimization problem:
+\begin_inset Formula 
+\[
+\min_{\alpha\in\reals^{n}}R\left(\sqrt{\alpha^{T}K\alpha}\right)+L\left(K\alpha\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $K\in\reals^{n\times n}$
+\end_inset
+
+ is the Gram matrix (or 
+\begin_inset Quotes eld
+\end_inset
+
+kernel matrix
+\begin_inset Quotes erd
+\end_inset
+
+) defined by 
+\begin_inset Formula $K_{ij}=k(x_{i},x_{j})=\left\langle x_{i},x_{j}\right\rangle $
+\end_inset
+
+.
+ Predictions are given by
+\begin_inset Formula 
+\[
+f(x)=\sum_{i=1}^{n}\alpha_{i}k(x_{i},x),
+\]
+
+\end_inset
+
+and we can recover the original 
+\begin_inset Formula $w\in\reals^{d}$
+\end_inset
+
+ by 
+\begin_inset Formula $w=\sum_{i=1}^{n}\alpha_{i}x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+kernel trick
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ is to swap out occurrences of the kernel 
+\begin_inset Formula $k$
+\end_inset
+
+ (and the corresponding Gram matrix 
+\begin_inset Formula $K$
+\end_inset
+
+) with another kernel.
+ For example, we could replace 
+\begin_inset Formula $k(x_{i},x_{j})=\left\langle x_{i},x_{j}\right\rangle $
+\end_inset
+
+ by 
+\begin_inset Formula $k'(x_{i},x_{j})=\left\langle \psi(x_{i}),\psi(x_{j})\right\rangle $
+\end_inset
+
+ for an arbitrary feature mapping 
+\begin_inset Formula $\psi:\reals^{d}\to\reals^{D}$
+\end_inset
+
+.
+ In this case, the recovered 
+\begin_inset Formula $w\in\reals^{D}$
+\end_inset
+
+ would be 
+\begin_inset Formula $w=\sum_{i=1}^{n}\alpha_{i}\psi(x_{i})$
+\end_inset
+
+ and predictions would be 
+\begin_inset Formula $\left\langle w,\psi(x_{i})\right\rangle $
+\end_inset
+
+\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+More interestingly, we can replace 
+\begin_inset Formula $k$
+\end_inset
+
+ by another kernel 
+\begin_inset Formula $k''(x_{i},x_{j})$
+\end_inset
+
+ for which we do not even know or cannot explicitly write down a corresponding
+ feature map 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Our main example of this is the RBF kernel
+\begin_inset Formula 
+\[
+k(x,x')=\exp\left(-\frac{\|x-x'\|^{2}}{2\sigma^{2}}\right),
+\]
+
+\end_inset
+
+for which the corresponding feature map 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is infinite dimensional.
+ In this case, we cannot recover 
+\begin_inset Formula $w$
+\end_inset
+
+ since it would be infinite dimensional.
+ Predictions must be done using 
+\begin_inset Formula $\alpha\in\reals^{n}$
+\end_inset
+
+, with 
+\begin_inset Formula $f(x)=\sum_{i=1}^{n}\alpha_{i}k(x_{i},x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Your implementation of kernelized methods below should not make any reference
+ to 
+\begin_inset Formula $w$
+\end_inset
+
+ or to a feature map 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Your 
+\begin_inset Quotes eld
+\end_inset
+
+learning
+\begin_inset Quotes erd
+\end_inset
+
+ routine should return 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, rather than 
+\begin_inset Formula $w$
+\end_inset
+
+, and your prediction function should also use 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ rather than 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ This will allow us to work with kernels that correspond to infinite-dimensional
+ feature vectors.
+\end_layout
+
+\begin_layout Subsection
+Kernels and Kernel Machines
+\end_layout
+
+\begin_layout Standard
+There are many different families of kernels.
+ So far we've spoken about linear kernels, RBF/Gaussian kernels, and polynomial
+ kernels.
+ The last two kernel types have parameters.
+ In this section, we'll implement these kernels in a way that will be convenient
+ for implementing our kernelized ML methods later on.
+ For simplicity, and because it is by far the most common situation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We are noting this because one interesting aspect of kernel methods is that
+ they can act directly on an arbitrary input space 
+\begin_inset Formula $\cx$
+\end_inset
+
+ (e.g.
+ text files, music files, etc.), so long as you can define a kernel function
+ 
+\begin_inset Formula $k:\cx\times\cx\to\reals.$
+\end_inset
+
+ But we'll not consider that case here.
+\end_layout
+
+\end_inset
+
+, we will assume that our input space is 
+\begin_inset Formula $\cx=\reals^{d}$
+\end_inset
+
+.
+ This allows us to represent a collection of 
+\begin_inset Formula $n$
+\end_inset
+
+ inputs in a matrix 
+\begin_inset Formula $X\in\reals^{n\times d}$
+\end_inset
+
+, as usual.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Write functions that compute the RBF kernel 
+\begin_inset Formula $k_{\text{RBF}(\sigma)}(x,x')=\exp\left(-\|x-x'\|^{2}/\left(2\sigma^{2}\right)\right)$
+\end_inset
+
+ and the polynomial kernel 
+\begin_inset Formula $k_{\text{poly}(a,d)}(x,x')=\left(a+\left\langle x,x'\right\rangle \right)^{d}$
+\end_inset
+
+.
+ The linear kernel 
+\begin_inset Formula $k_{\text{linear}}(x,x')=\left\langle x,x'\right\rangle $
+\end_inset
+
+, has been done for you in the support code.
+ Your functions should take as input two matrices 
+\begin_inset Formula $W\in\reals^{n_{1}\times d}$
+\end_inset
+
+ and 
+\begin_inset Formula $X\in\reals^{n_{2}\times d}$
+\end_inset
+
+ and should return a matrix 
+\begin_inset Formula $M\in\reals^{n_{1}\times n_{2}}$
+\end_inset
+
+ where 
+\begin_inset Formula $M_{ij}=k(W_{i\cdot},X_{j\cdot})$
+\end_inset
+
+.
+ In words, the 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+'th entry of 
+\begin_inset Formula $M$
+\end_inset
+
+ should be kernel evaluation between 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ (the 
+\begin_inset Formula $i$
+\end_inset
+
+th row of 
+\begin_inset Formula $W$
+\end_inset
+
+) and 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ (the 
+\begin_inset Formula $j$
+\end_inset
+
+th row of 
+\begin_inset Formula $X$
+\end_inset
+
+).
+ The matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ could be called the 
+\begin_inset Quotes eld
+\end_inset
+
+cross-kernel
+\begin_inset Quotes erd
+\end_inset
+
+ matrix, by analogy to the 
+\begin_inset CommandInset href
+LatexCommand href
+name "cross-covariance matrix"
+target "https://en.wikipedia.org/wiki/Cross-covariance"
+literal "false"
+
+\end_inset
+
+.
+ For the RBF kernel, you may use the scipy function 
+\family typewriter
+cdist(X1,X2,'sqeuclidean')
+\family default
+ in the package 
+\family typewriter
+scipy.spatial.distance
+\family default
+ or (with some more work) write it in terms of the linear kernel (
+\begin_inset CommandInset href
+LatexCommand href
+name "Bauckhage's article"
+target "https://multimedia-pattern-recognition.info/fileadmin/Websites/mmprec/uploads/docs/Bauckhage/np-sp-rec-edm.pdf"
+literal "false"
+
+\end_inset
+
+ on calculating Euclidean distance matrices may be helpful).
+\end_layout
+
+\begin_layout Enumerate
+Use the linear kernel function defined in the code to compute the kernel
+ matrix on the set of points 
+\begin_inset Formula $x_{0}\in\cd_{X}=\left\{ -4,-1,0,2\right\} $
+\end_inset
+
+.
+ Include both the code and the output.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Suppose we have the data set 
+\begin_inset Formula $\cd=\left\{ (-4,2),(-1,0),(0,3),(2,5)\right\} $
+\end_inset
+
+.
+ Then by the representer theorem, the final prediction function will be
+ in the span of the functions 
+\begin_inset Formula $x\mapsto k(x_{0},x)$
+\end_inset
+
+ for 
+\begin_inset Formula $x_{0}\in\cd_{X}=\left\{ -4,-1,0,2\right\} $
+\end_inset
+
+.
+ This set of functions will look quite different depending on the kernel
+ function we use.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Plot the set of functions 
+\begin_inset Formula $x\mapsto k_{\text{linear}}(x_{0},x)$
+\end_inset
+
+ for 
+\begin_inset Formula $x_{0}\in\cd_{X}$
+\end_inset
+
+ and for 
+\begin_inset Formula $x\in[-6,6]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Plot the set of functions 
+\begin_inset Formula $x\mapsto k_{\text{poly(1,3)}}(x_{0},x)$
+\end_inset
+
+ for 
+\begin_inset Formula $x_{0}\in\cd_{X}$
+\end_inset
+
+ and for 
+\begin_inset Formula $x\in[-6,6]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Plot the set of functions 
+\begin_inset Formula $x\mapsto k_{\text{RBF(1)}}(x_{0},x)$
+\end_inset
+
+ for 
+\begin_inset Formula $x_{0}\in\cd_{X}$
+\end_inset
+
+ and for 
+\begin_inset Formula $x\in[-6,6]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+By the representer theorem, the final prediction function will be of the
+ form 
+\begin_inset Formula $f(x)=\sum_{i=1}^{n}\alpha_{i}k(x_{i},x)$
+\end_inset
+
+, where 
+\begin_inset Formula $x_{1},\ldots,x_{n}\in\cx$
+\end_inset
+
+ are the inputs in the training set.
+ This is a special case of what is sometimes called a 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "kernel machine"
+target "https://davidrosenberg.github.io/ml2015/docs/4c.kernels.pdf#page=16"
+literal "false"
+
+\end_inset
+
+
+\series default
+, which is a function of the form 
+\begin_inset Formula $f(x)=\sum_{i=1}^{r}\alpha_{i}k(\mu_{i},x)$
+\end_inset
+
+, where 
+\begin_inset Formula $\mu_{1},\ldots,\mu_{r}\in\cx$
+\end_inset
+
+ are called 
+\series bold
+prototypes
+\series default
+ or 
+\series bold
+centroids
+\series default
+ (Murphy's book Section 14.3.1.).
+ In the special case that the kernel is an RBF kernel, we get what's called
+ an 
+\series bold
+RBF Network
+\series default
+ (proposed by 
+\begin_inset CommandInset href
+LatexCommand href
+name "Broomhead and Lowe in 1988"
+target "http://sci2s.ugr.es/keel/pdf/algorithm/articulo/1988-Broomhead-CS.pdf"
+literal "false"
+
+\end_inset
+
+).
+ We can see that the prediction functions we get from our kernel methods
+ will be kernel machines in which each input in the training set 
+\begin_inset Formula $x_{1},\ldots,x_{n}$
+\end_inset
+
+ serves as a prototype point.
+ Complete the 
+\family typewriter
+predict
+\family default
+ function of the class 
+\family typewriter
+Kernel_Machine
+\family default
+ in the skeleton code.
+ Construct a 
+\family typewriter
+Kernel_Machine
+\family default
+ object with the RBF kernel (sigma=1), with prototype points at 
+\begin_inset Formula $-1,0,1$
+\end_inset
+
+ and corresponding weights 
+\begin_inset Formula $1,-1,1$
+\end_inset
+
+.
+ Plot the resulting function.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note: For this problem, and for other problems below, it may be helpful
+ to use 
+\begin_inset CommandInset href
+LatexCommand href
+name "partial application"
+target "https://en.wikipedia.org/wiki/Partial_application"
+literal "false"
+
+\end_inset
+
+ on your kernel functions.
+ For example, if your polynomial kernel function has signature 
+\family typewriter
+polynomial_kernel(W, X, offset, degree)
+\family default
+, you can write 
+\family typewriter
+k = functools.
+ partial(polynomial_kernel, offset=2, degree=2)
+\family default
+, and then a call to 
+\family typewriter
+k(W,X)
+\family default
+ is equivalent to 
+\family typewriter
+polynomial_kernel(W, X, offset=2, degree=2)
+\family default
+, the advantage being that the extra parameter settings are built into 
+\family typewriter
+k(W,X)
+\family default
+.
+ This can be convenient so that you can have a function that just takes
+ a kernel function 
+\family typewriter
+k(W,X)
+\family default
+ and doesn't have to worry about the parameter settings for the kernel.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Kernel Ridge Regression
+\end_layout
+
+\begin_layout Standard
+In the zip file for this assignment, you'll find a training and test set,
+ along with some skeleton code.
+ We're considering a one-dimensional regression problem, in which 
+\begin_inset Formula $\cx=\cy=\ca=\reals$
+\end_inset
+
+.
+ We'll fit this data using kernelized ridge regression, and we'll compare
+ the results using several different kernel functions.
+ Because the input space is one-dimensional, we can easily visualize the
+ results.
+\end_layout
+
+\begin_layout Enumerate
+Plot the training data.
+ You should note that while there is a clear relationship between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, the relationship is not linear.
+\end_layout
+
+\begin_layout Enumerate
+In a previous problem, we showed that in kernelized ridge regression, the
+ final prediction function is 
+\begin_inset Formula $f(x)=\sum_{i=1}^{n}\alpha_{i}k(x_{i},x)$
+\end_inset
+
+, where 
+\begin_inset Formula $\alpha=(\lambda I+K)^{-1}y$
+\end_inset
+
+ and 
+\begin_inset Formula $K\in\reals^{n\times n}$
+\end_inset
+
+ is the kernel matrix of the training data: 
+\begin_inset Formula $K_{ij}=k(x_{i},x_{j})$
+\end_inset
+
+, for 
+\begin_inset Formula $x_{1},\ldots,x_{n}$
+\end_inset
+
+.
+ In terms of kernel machines, 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ is the weight on the kernel function evaluated at the prototype point 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Complete the function 
+\family typewriter
+train_kernel_ridge_regression
+\family default
+ so that it performs kernel ridge regression and returns a 
+\family typewriter
+Kernel_Machine
+\family default
+ object that can be used for predicting on new points.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use the code provided to plot your fits to the training data for the RBF
+ kernel with a fixed regularization parameter of 
+\begin_inset Formula $0.0001$
+\end_inset
+
+ for 3 different values of sigma: 
+\begin_inset Formula $0.01$
+\end_inset
+
+, 
+\begin_inset Formula $0.1$
+\end_inset
+
+, and 
+\begin_inset Formula $1.0$
+\end_inset
+
+.
+ What values of sigma do you think would be more likely to over fit, and
+ which less?
+\end_layout
+
+\begin_layout Enumerate
+Use the code provided to plot your fits to the training data for the RBF
+ kernel with a fixed sigma of 
+\begin_inset Formula $0.02$
+\end_inset
+
+ and 4 different values of the regularization parameter 
+\begin_inset Formula $\lambda$
+\end_inset
+
+: 
+\begin_inset Formula $0.0001$
+\end_inset
+
+, 
+\begin_inset Formula $0.01$
+\end_inset
+
+, 
+\begin_inset Formula $0.1$
+\end_inset
+
+, and 
+\begin_inset Formula $2.0$
+\end_inset
+
+.
+ What happens to the prediction function as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Find the best hyperparameter settings (including kernel parameters and the
+ regularization parameter) for each of the kernel types.
+ Summarize your results in a table, which gives training error and test
+ error for each setting.
+ Include in your table the best settings for each kernel type, as well as
+ nearby settings that show that making small change in any one of the hyperparam
+eters in either direction will cause the performance to get worse.
+ You should use average square loss on the test set to rank the parameter
+ settings.
+ To make things easier for you, we have provided an sklearn wrapper for
+ the kernel ridge regression function we have created so that you can use
+ sklearn's GridSearchCV.
+ Note: Because of the small dataset size, these models can be fit extremely
+ fast, so there is no excuse for not doing extensive hyperparameter tuning.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Plot your best fitting prediction functions using the polynomial kernel
+ and the RBF kernel.
+ Use the domain 
+\begin_inset Formula $x\in\left(-0.5,1.5\right)$
+\end_inset
+
+.
+ Comment on the results.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The data for this problem was generated as follows: A function 
+\begin_inset Formula $f:\reals\to\reals$
+\end_inset
+
+ was chosen.
+ Then to generate a point 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+, we sampled 
+\begin_inset Formula $x$
+\end_inset
+
+ uniformly from 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+ and we sampled 
+\begin_inset Formula $\eps\sim\cn\left(0,0.1^{2}\right)$
+\end_inset
+
+ (so 
+\begin_inset Formula $\var(\eps)=0.1^{2}$
+\end_inset
+
+).
+ The final point is 
+\begin_inset Formula $\left(x,f(x)+\eps\right)$
+\end_inset
+
+.
+ What is the Bayes decision function and the Bayes risk for the loss function
+ 
+\begin_inset Formula $\ell\left(\hat{y},y\right)=\left(\hat{y}-y\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+For square loss, the Bayes decision function is 
+\begin_inset Formula $\mathbb{E\mathit{\left[Y\mid X=x\right]=}}f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The empirical risk is 
+\begin_inset Formula $\mathbb{E\mathrm{[(\mathit{f(x)+\epsilon-f)}}}^{2}]=\mathbb{E\mathrm{[\epsilon^{2}]}}=\mathbb{V\left[\epsilon\right]\mathit{+}\mathbb{E\mathrm{[\epsilon]^{2}}}}=.1^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Attempt to improve performance by using different kernel functions.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "Chapter 4"
+target "http://www.gaussianprocess.org/gpml/chapters/RW4.pdf"
+literal "false"
+
+\end_inset
+
+ from Rasmussen and Williams' book 
+\emph on
+Gaussian Processes for Machine Learning
+\emph default
+ describes many kernel functions, though they are called 
+\series bold
+covariance functions
+\series default
+ in that book (but they have exactly the same definition).
+ Note that you may also create a kernel function by first explicitly creating
+ feature vectors, if you are so inspired.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Use any machine learning model you like to get the best performance
+ you can.
+\end_layout
+
+\begin_layout Subsection
+[Optional] Kernelized Support Vector Machines with Kernelized Pegasos
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Load the SVM training and test data from the zip file.
+ Plot the training data using the code supplied.
+ Are the data linearly separable? Quadratically separable? What if we used
+ some RBF kernel?
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Unlike for kernel ridge regression, there is no closed-form solution
+ for SVM classification (kernelized or not).
+ Implement kernelized Pegasos.
+ Because we are not using a sparse representation for this data, you will
+ probably not see much gain by implementing the 
+\begin_inset Quotes eld
+\end_inset
+
+optimized
+\begin_inset Quotes erd
+\end_inset
+
+ versions described in the problems above.
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Find the best hyperparameter settings (including kernel parameters
+ and the regularization parameter) for each of the kernel types.
+ Summarize your results in a table, which gives training error and test
+ error (i.e.
+ average 
+\begin_inset Formula $0/1$
+\end_inset
+
+ loss) for each setting.
+ Include in your table the best settings for each kernel type, as well as
+ nearby settings that show that making small change in any one of the hyperparam
+eters in either direction will cause the performance to get worse.
+ You should use the 
+\begin_inset Formula $0/1$
+\end_inset
+
+ loss on the test set to rank the parameter settings.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Plot your best fitting prediction functions using the linear,
+ polynomial, and the RBF kernel.
+ The code provided may help.
+\end_layout
+
+\begin_layout Section
+Representer Theorem 
+\end_layout
+
+\begin_layout Standard
+Recall the following theorem from lecture:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Representer Theorem]
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula 
+\[
+J(w)=R\left(\|w\|\right)+L\left(\left\langle w,\psi(x_{1})\right\rangle ,\ldots,\left\langle w,\psi(x_{n})\right\rangle \right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $R:\reals^{\ge0}\to\reals$
+\end_inset
+
+ is nondecreasing (the 
+\series bold
+regularization
+\series default
+ term) and 
+\begin_inset Formula $L:\reals^{n}\to\reals$
+\end_inset
+
+ is arbitrary (the
+\series bold
+ loss 
+\series default
+term).
+ If 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ has a minimizer, then it has a minimizer of the form
+\begin_inset Formula 
+\[
+w^{*}=\sum_{i=1}^{n}\alpha_{i}\psi(x_{i}).
+\]
+
+\end_inset
+
+Furthermore, if 
+\begin_inset Formula $R$
+\end_inset
+
+ is strictly increasing, then all minimizers have this form.
+\end_layout
+
+\begin_layout Standard
+Note: There is nothing in this theorem that guarantees 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ has a minimizer at all.
+ If there is no minimizer, then this theorem does not tell us anything.
+ 
+\end_layout
+
+\begin_layout Standard
+In this problem, we will prove the part of the Representer theorem for the
+ case that 
+\begin_inset Formula $R$
+\end_inset
+
+ is strictly increasing.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $M$
+\end_inset
+
+ be a closed subspace of a Hilbert space 
+\begin_inset Formula $\ch$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $x\in\ch$
+\end_inset
+
+, let 
+\begin_inset Formula $m_{0}=\proj_{M}x$
+\end_inset
+
+ be the projection of 
+\begin_inset Formula $x$
+\end_inset
+
+ onto 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ By the Projection Theorem, we know that 
+\begin_inset Formula $(x-m_{0})\perp M$
+\end_inset
+
+.
+ Then by the Pythagorean Theorem, we know 
+\begin_inset Formula $\|x\|^{2}=\|m_{0}\|^{2}+\|x-m_{0}\|^{2}$
+\end_inset
+
+.
+ From this we concluded in lecture that 
+\begin_inset Formula $\|m_{0}\|\le\|x\|$
+\end_inset
+
+.
+ Show that we have 
+\begin_inset Formula $\|m_{0}\|=\|x\|$
+\end_inset
+
+ only when 
+\begin_inset Formula $m_{0}=x$
+\end_inset
+
+.
+ (Hint: Use the postive-definiteness of the inner product: 
+\begin_inset Formula $\left\langle x,x\right\rangle \ge0$
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle x,x\right\rangle =0\iff x=0$
+\end_inset
+
+, and the fact that we're using the norm derived from such an inner product.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: If 
+\begin_inset Formula $\|m_{0}\|=\|x\|$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $\|x-m_{0}\|^{2}=\left\langle x-m_{0},x-m_{0}\right\rangle =0$
+\end_inset
+
+, which happens only when 
+\begin_inset Formula $x-m_{0}=0$
+\end_inset
+
+, by definition of inner product.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give the proof of the Representer Theorem in the case that 
+\begin_inset Formula $R$
+\end_inset
+
+ is strictly increasing.
+ That is, show that if 
+\begin_inset Formula $R$
+\end_inset
+
+ is strictly increasing, then all minimizers have this form claimed.
+ (Hint: Consider separately the cases that 
+\begin_inset Formula $\|w\|<\|w^{*}\|$
+\end_inset
+
+ and the case 
+\begin_inset Formula $\|w\|=\|w^{*}\|$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Let's repeat the proof of the Representer Theorem: Let 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ be a minimizer.
+ Let 
+\begin_inset Formula $M=\linspan\left(\psi(x_{1}),\ldots,\psi(x_{n})\right)$
+\end_inset
+
+ [the 
+\begin_inset Quotes eld
+\end_inset
+
+span of the data
+\begin_inset Quotes erd
+\end_inset
+
+].
+ Let 
+\begin_inset Formula $w=\proj_{M}w^{*}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $\exists\alpha$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $w=\sum_{i=1}^{n}\alpha_{i}\psi(x_{i})$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $w^{\perp}:=w^{*}-w$
+\end_inset
+
+ is orthogonal to 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Since projections decrease norms, 
+\begin_inset Formula $\|w\|\le\|w^{*}\|$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\|w\|=\|w^{*}\|$
+\end_inset
+
+, then by the previous problem, we must have 
+\begin_inset Formula $w=w^{*}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ is in the span of the data (i.e.
+ has the form given).
+ If 
+\begin_inset Formula $\|w\|<\|w^{*}\|$
+\end_inset
+
+ then since 
+\begin_inset Formula $R$
+\end_inset
+
+ is strictly increasing, we must have 
+\begin_inset Formula $R(\|w\|)<R(\|w^{*}\|)$
+\end_inset
+
+.
+ We also have 
+\begin_inset Formula $L\left(\left\langle w^{*},\psi(x_{1})\right\rangle ,\ldots,\left\langle w^{*},\psi(x_{n})\right\rangle \right)=L\left(\left\langle w,\psi(x_{1})\right\rangle ,\ldots,\left\langle w,\psi(x_{n})\right\rangle \right)$
+\end_inset
+
+, since 
+\begin_inset Formula $\left\langle w^{*},\psi(x_{i})\right\rangle =\left\langle w+w^{\perp},\psi(x_{i})\right\rangle =\left\langle w,\psi(x_{i})\right\rangle $
+\end_inset
+
+.
+ Thus we must have 
+\begin_inset Formula $J(w)<J(w^{*})$
+\end_inset
+
+, which is a contradiction to our assumption that 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ is a minimizer.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suppose that 
+\begin_inset Formula $R:\reals^{\ge0}\to\reals$
+\end_inset
+
+ and 
+\begin_inset Formula $L:\reals^{n}\to\reals$
+\end_inset
+
+ are both convex functions.
+ Use properties of convex functions to 
+\series bold
+show that
+\series default
+ 
+\begin_inset Formula $w\mapsto L\left(\left\langle w,\psi(x_{1})\right\rangle ,\ldots,\left\langle w,\psi(x_{n})\right\rangle \right)$
+\end_inset
+
+ is a convex function of 
+\begin_inset Formula $w$
+\end_inset
+
+, and then that 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ is also a convex function of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ For simplicity, you may assume that our feature space is 
+\begin_inset Formula $\reals^{d}$
+\end_inset
+
+, rather than a generic Hilbert space.
+ You may also use the fact that the composition of a convex function and
+ an affine function is convex.
+ That is, suppose 
+\begin_inset Formula $f:\reals^{n}\to\reals,\ A\in\reals^{n\times m}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\reals^{n}.$
+\end_inset
+
+ Define 
+\begin_inset Formula $g:\reals^{m}\to\reals$
+\end_inset
+
+ by 
+\begin_inset Formula $g(x)=f\left(Ax+b\right)$
+\end_inset
+
+.
+ Then if 
+\begin_inset Formula $f$
+\end_inset
+
+ is convex, then so is 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ From this exercise, 
+\series bold
+we can conclude
+\series default
+ that if 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ are convex, then 
+\begin_inset Formula $J$
+\end_inset
+
+ does have a minimizer of the form 
+\begin_inset Formula $w^{*}=\sum_{i=1}^{n}\alpha_{i}\psi(x_{i})$
+\end_inset
+
+, and if 
+\begin_inset Formula $R$
+\end_inset
+
+ is also strictly increasing, then all minimizers of 
+\begin_inset Formula $J$
+\end_inset
+
+ have this form.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: We can take 
+\begin_inset Formula $A$
+\end_inset
+
+ to be a matrix whose 
+\begin_inset Formula $i$
+\end_inset
+
+th row is 
+\begin_inset Formula $\psi(x_{i})$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $Aw$
+\end_inset
+
+ is a column vector with the 
+\begin_inset Formula $i$
+\end_inset
+
+th entry 
+\begin_inset Formula $\left\langle w,\psi(x_{i})\right\rangle $
+\end_inset
+
+.
+ We can write 
+\begin_inset Formula $w\mapsto L\left(\left\langle w,\psi(x_{1})\right\rangle ,\ldots,\left\langle w,\psi(x_{n})\right\rangle \right)$
+\end_inset
+
+ as 
+\begin_inset Formula $w\mapsto L(Aw)$
+\end_inset
+
+, which is convex since 
+\begin_inset Formula $L$
+\end_inset
+
+ is convex and the fact given in the problem statement.
+ Since all norms on 
+\begin_inset Formula $\reals^{d}$
+\end_inset
+
+ are convex
+\begin_inset Formula $\|w\|$
+\end_inset
+
+ is convex.
+ Since 
+\begin_inset Formula $R$
+\end_inset
+
+ is nondecreasing and convex, we know that 
+\begin_inset Formula $w\mapsto R(\|w\|)$
+\end_inset
+
+ is convex, by the statement in BV p.
+ 84 (3.11).
+ Thus 
+\begin_inset Formula $J(w)$
+\end_inset
+
+ is convex.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ivanov and Tikhonov Regularization 
+\end_layout
+
+\begin_layout Standard
+In lecture there was a claim that the Ivanov and Tikhonov forms of ridge
+ and lasso regression are equivalent.
+ We will now prove a more general result.
+\end_layout
+
+\begin_layout Subsection
+Tikhonov optimal implies Ivanov optimal
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\phi:\cf\to\reals$
+\end_inset
+
+ be any performance measure of 
+\begin_inset Formula $f\in\cf$
+\end_inset
+
+, and let 
+\begin_inset Formula $\Omega:\cf\to[0,\infty)$
+\end_inset
+
+ be any complexity measure.
+ For example, for ridge regression over the linear hypothesis space 
+\begin_inset Formula $\cf=\left\{ f_{w}(x)=w^{T}x\mid w\in\reals^{d}\right\} $
+\end_inset
+
+, we would have 
+\begin_inset Formula $\phi(f_{w})=\frac{1}{n}\sum_{i=1}^{n}\left(w^{T}x_{i}-y_{i}\right)^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Omega(f_{w})=w^{T}w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Suppose that for some 
+\begin_inset Formula $\lambda\ge0$
+\end_inset
+
+ we have the Tikhonov regularization solution
+\begin_inset Formula 
+\begin{equation}
+f^{*}\in\argmin_{f\in\cf}\left[\phi(f)+\lambda\Omega(f)\right].\label{eq:tikhonovReg}
+\end{equation}
+
+\end_inset
+
+Show that 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ is also an Ivanov solution.
+ That is, 
+\begin_inset Formula $\exists r\ge0$
+\end_inset
+
+ such that
+\begin_inset Formula 
+\begin{equation}
+f^{*}\in\argmin_{\substack{f\in\cf}
+}\phi(f)\mbox{ subject to }\Omega(f)\le r.\label{eq:ivanovReg}
+\end{equation}
+
+\end_inset
+
+(Hint: Start by figuring out what 
+\begin_inset Formula $r$
+\end_inset
+
+ should be.
+ Then one approach is proof by contradiction: suppose 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ is not the optimum in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ivanovReg"
+
+\end_inset
+
+ and show that contradicts the fact that 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ solves 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:tikhonovReg"
+
+\end_inset
+
+.) 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: Let 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ be any solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:tikhonovReg"
+
+\end_inset
+
+, and take 
+\begin_inset Formula $r=\Omega(f^{*})$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $r\ge0$
+\end_inset
+
+ by assumption on the codomain of 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Suppose for contradiction that 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ is not a solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ivanovReg"
+
+\end_inset
+
+.
+ Then there exists some 
+\begin_inset Formula $g$
+\end_inset
+
+ with 
+\begin_inset Formula $\Omega(g)\le r$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi(g)<\phi(f^{*})$
+\end_inset
+
+.
+ This implies
+\begin_inset Formula 
+\[
+\phi(g)+\Omega(g)<\phi(f^{*})+\lambda\Omega(f^{*}),
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ would not a solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:tikhonovReg"
+
+\end_inset
+
+, contradicting our assumption.
+ Thus 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ must be a solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ivanovReg"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+[Optional] Ivanov optimal implies Tikhonov optimal (when we have Strong
+ Duality)
+\end_layout
+
+\begin_layout Standard
+For the converse, we will restrict our hypothesis space to a parametric
+ set.
+ That is, 
+\begin_inset Formula 
+\[
+\cf=\left\{ f_{w}(x):\cx\to\reals\mid w\in\reals^{d}\right\} .
+\]
+
+\end_inset
+
+So we will now write 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ as functions of 
+\begin_inset Formula $w\in\reals^{d}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ be a solution to the following Ivanov optimization problem:
+\begin_inset Formula 
+\begin{eqnarray*}
+\textrm{minimize} &  & \phi(w)\\
+\textrm{subject to} &  & \Omega(w)\le r,
+\end{eqnarray*}
+
+\end_inset
+
+for any 
+\begin_inset Formula $r\ge0$
+\end_inset
+
+.
+ Assume that strong duality holds for this optimization problem and that
+ the dual solution is attained (e.g.
+ Slater's condition would suffice).
+ Then we will show that there exists a 
+\begin_inset Formula $\lambda\ge0$
+\end_inset
+
+ such that 
+\begin_inset Formula $w^{*}\in\argmin_{w\in\reals^{d}}\left[\phi(w)+\lambda\Omega(w)\right].$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In the last two problems, we'll consider more carefully the extreme cases
+ of 
+\begin_inset Formula $r=0$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda=\infty$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Write the Lagrangian 
+\begin_inset Formula $L(w,\lambda)$
+\end_inset
+
+ for the Ivanov optimization problem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: The Lagrangian
+\begin_inset Formula 
+\begin{eqnarray*}
+L(w,\lambda) & = & \phi(w)+\lambda\left[\Omega(w)-r\right].
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Write the dual optimization problem in terms of the dual objective
+ function 
+\begin_inset Formula $g(\lambda)$
+\end_inset
+
+, and give an expression for 
+\begin_inset Formula $g(\lambda)$
+\end_inset
+
+.
+ [Writing 
+\begin_inset Formula $g(\lambda)$
+\end_inset
+
+ as an optimization problem is expected - don't try to solve it.] 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\[
+\max_{\lambda\ge0}g(\lambda)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $g(\lambda)=\min_{w}\left(\phi(w)+\lambda\left[\Omega(w)-r\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] We assumed that the dual solution is attained, so let 
+\begin_inset Formula $\lambda^{*}\in\argmax_{\lambda\ge0}g(\lambda)$
+\end_inset
+
+.
+ We also assumed strong duality, which implies 
+\begin_inset Formula $\phi(w^{*})=g(\lambda^{*})$
+\end_inset
+
+.
+ Show that the minimum in the expression for 
+\begin_inset Formula $g(\lambda^{*})$
+\end_inset
+
+ is attained at 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+.
+ [Hint: You can use the same approach we used when we derived that 
+\begin_inset CommandInset href
+LatexCommand href
+name "strong duality implies complementary slackness"
+target "https://davidrosenberg.github.io/mlcourse/Archive/2016/Lectures/3b.convex-optimization.pdf\\#page=30"
+literal "false"
+
+\end_inset
+
+.] 
+\series bold
+Conclude the proof
+\series default
+ by showing that for the choice of 
+\begin_inset Formula $\lambda=\lambda^{*}$
+\end_inset
+
+, we have 
+\begin_inset Formula $w^{*}\in\argmin_{w\in\reals^{d}}\left[\phi(w)+\lambda^{*}\Omega(w)\right].$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi(w^{*}) & = & g(\lambda^{*})\\
+ & = & \min_{w}\left(\phi(w)+\lambda^{*}\left[\Omega(w)-r\right]\right)\\
+ & \le & \phi(w^{*})+\underbrace{\lambda^{*}\left[\Omega(w^{*})-r\right]}_{\le0}\\
+ & \le & \phi(w^{*}).
+\end{eqnarray*}
+
+\end_inset
+
+So all the inequalities are equalities.
+ Thus the first inequality, which is actually an equality, shows that the
+ function 
+\begin_inset Formula $w\mapsto\phi(w)+\lambda^{*}\left[\Omega(w)-r\right]$
+\end_inset
+
+ attains a minimum at 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ also minimizes the function 
+\begin_inset Formula $w\mapsto\phi(w)+\lambda^{*}\Omega(w)$
+\end_inset
+
+, which is what we needed to show.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] The conclusion of the previous problem allows 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, which means we're not actually regularizing at all.
+ This will happen when the constraint in the Ivanov optimization problem
+ is not active.
+ That is, we'll need to take 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ whenever the solution 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ to the Ivanov optimization problem has 
+\begin_inset Formula $\Omega(w^{*})<r$
+\end_inset
+
+.
+ 
+\series bold
+Show this.
+
+\series default
+ However, consider the following condition (suggested in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kloft2009efficient"
+literal "true"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\inf_{w\in\reals^{d}}\phi(w)<\inf_{\left\{ w\mid\Omega(w)\le r\right\} }\phi(w).
+\]
+
+\end_inset
+
+This condition simply says that we can get a strictly smaller performance
+ measure (e.g.
+ we can fit the training data strictly better) if we remove the Ivanov regulariz
+ation.
+ With this additional condition, show that if 
+\begin_inset Formula $\lambda^{*}\in\argmax_{\lambda\ge0}g(\lambda)$
+\end_inset
+
+ then 
+\begin_inset Formula $\lambda^{*}>0$
+\end_inset
+
+.
+ Moreover, show that the solution 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $\Omega(w^{*})=r$
+\end_inset
+
+ – that is, the Ivanov constraint is active.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: Let 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ be a solution to the Ivanov optimization problem 
+\begin_inset Formula $\min_{\left\{ w\mid\Omega(w)\le r\right\} }\phi(w)$
+\end_inset
+
+, and suppose 
+\begin_inset Formula $\Omega(w^{*})<r$
+\end_inset
+
+.
+ By the complementary slackness conditions, this implies 
+\begin_inset Formula $\lambda^{*}=0$
+\end_inset
+
+ (also shown directly in the solution to the previous part).
+ This was the first thing to show.
+ 
+\end_layout
+
+\begin_layout Standard
+Now recall the dual function 
+\begin_inset Formula $g(\lambda)=\min_{w}\left(\phi(w)+\lambda\left[\Omega(w)-r\right]\right)$
+\end_inset
+
+.
+ Under the condition 
+\begin_inset Formula $\inf_{w\in\reals^{d}}\phi(w)<\inf_{\left\{ w\mid\Omega(w)\le r\right\} }\phi(w)$
+\end_inset
+
+, we must have 
+\begin_inset Formula 
+\begin{eqnarray*}
+g(0) & = & \min_{w}\phi(w)<\min_{\left\{ w\mid\Omega(w)\le r\right\} }\phi(w)=\phi(w^{*})=g(\lambda^{*}).
+\end{eqnarray*}
+
+\end_inset
+
+Because of the strict inequality, we conclude that 
+\begin_inset Formula $\lambda^{*}>0$
+\end_inset
+
+.
+ Again by complementary slackness, we must have 
+\begin_inset Formula $\Omega(w^{*})=r$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $r=0$
+\end_inset
+
+.
+ If the solution to the Ivanov problem 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ is also an unconstrained minimizer of 
+\begin_inset Formula $\phi(w)$
+\end_inset
+
+, then we'll have equivalence to a Tikhonov optimization problem by taking
+ any 
+\begin_inset Formula $\lambda\ge0$
+\end_inset
+
+.
+ (Since we must have 
+\begin_inset Formula $\Omega(w)=0$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ is not an unconstrained minimizer of 
+\begin_inset Formula $\phi(w)$
+\end_inset
+
+, then there is no 
+\begin_inset Formula $\lambda\in[0,\infty)$
+\end_inset
+
+ for which we get equivalence.
+ (Intuitively, 
+\begin_inset Formula $\lambda=\infty$
+\end_inset
+
+ would do it, but that's not a real number.).
+ Suppose 
+\begin_inset Formula $w_{u}^{*}$
+\end_inset
+
+ is such that 
+\begin_inset Formula $\phi(w_{u}^{*})<\phi(w^{*})$
+\end_inset
+
+.
+ Then can we ever have 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ minimizing 
+\begin_inset Formula $w\mapsto\phi(w)+\lambda\Omega(w)$
+\end_inset
+
+? Certainly not for 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi(w^{*})+\lambda\Omega(w^{*}) & >
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi(w^{*}) & = & \phi(w^{*})+\lambda\Omega(w^{*})\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\min_{w}\phi(w)+\lambda\Omega(w)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+[Optional] Ivanov implies Tikhonov for Ridge Regression.
+\end_layout
+
+\begin_layout Standard
+To show that Ivanov implies Tikhonov for the ridge regression problem (square
+ loss with 
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+ regularization), we need to demonstrate strong duality and that the dual
+ optimum is attained.
+ Both of these things are implied by Slater's constraint qualifications.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Show that the Ivanov form of ridge regression 
+\begin_inset Formula 
+\begin{eqnarray*}
+\textrm{minimize} &  & \sum_{i=1}^{n}\left(y_{i}-w^{T}x_{i}\right)^{2}\\
+\textrm{subject to} &  & w^{T}w\le r.
+\end{eqnarray*}
+
+\end_inset
+
+ is a convex optimization problem with a strictly feasible point, so long
+ as 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ (Thus implying the Ivanov and Tikhonov forms of ridge regression are equivalent
+ when 
+\begin_inset Formula $r>0$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: The Ivanov form of ridge regression is
+\begin_inset Formula 
+\begin{eqnarray*}
+\textrm{minimize} &  & \sum_{i=1}^{n}\left(y_{i}-w^{T}x_{i}\right)^{2}\\
+\textrm{subject to} &  & w^{T}w\le r.
+\end{eqnarray*}
+
+\end_inset
+
+First we show this is a convex optimization problem: The objective is convex
+ in 
+\begin_inset Formula $w$
+\end_inset
+
+ since we have a nonnegative combination of convex functions 
+\begin_inset Formula $\left(y_{i}-w^{T}x_{i}\right)^{2}$
+\end_inset
+
+.
+ Each of these expressions is convex since the square is a convex function,
+ and we're applying it to an affine transformation of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ The constraint function is also a convex function of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Slater's constraint qualification is satisfied since we can take 
+\begin_inset Formula $w=0$
+\end_inset
+
+, so long as 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ Thus we have strong duality.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
+[Optional] Novelty Detection
+\end_layout
+
+\begin_layout Plain Layout
+(Problem derived from Michael Jordan's Stat 241b Problem Set #2, Spring
+ 2004)
+\end_layout
+
+\begin_layout Plain Layout
+A novelty detection algorithm can be based on an algorithm that finds the
+ smallest possible sphere containing the data in feature space.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\phi:\cx\to\ch$
+\end_inset
+
+ be our feature map, mapping elements of the input space into our 
+\begin_inset Quotes eld
+\end_inset
+
+feature space
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\ch$
+\end_inset
+
+, which is a Hilbert space (and thus has an inner product).
+ Formulate the novelty detection algorithm described above as an optimization
+ problem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: The problem we wish to solve is
+\begin_inset Formula 
+\[
+\min_{c\in F,r\in\reals}r^{2}
+\]
+
+\end_inset
+
+ subject to 
+\begin_inset Formula 
+\begin{eqnarray*}
+||\varphi(x_{i})-c||^{2} & \leq & r^{2}\;\;\textrm{all }i
+\end{eqnarray*}
+
+\end_inset
+
+Note that this solution will be attained at 
+\begin_inset Formula $\pm r$
+\end_inset
+
+, but it is clear that the one we want is 
+\begin_inset Formula $|r|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give the Lagrangian for this problem, and write an equivalent, unconstrained
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\inf\sup$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ version of the optimization problem.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula 
+\[
+\inf_{c\in F,r\in\reals}\sup_{\lambda\geq0}r^{2}+\sum\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that we have strong duality and thus we will have an equivalent optimizatio
+n problem if we swap the inf and the sup.
+ [Hint: Use Slater's qualification conditions.] 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Find any point that satisfies the constraints strictly.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve the inner minimization problem and give the dual optimization problem.
+ [Note: You may find it convenient to define the kernel function 
+\begin_inset Formula $k(x_{i},x_{j})=\left\langle \phi(x_{i}),\phi(x_{j})\right\rangle $
+\end_inset
+
+ and to write your final problem in terms of the corresponding kernel matrix
+ 
+\begin_inset Formula $K$
+\end_inset
+
+ to simplify notation.]
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula 
+\[
+\sup_{\lambda\geq0}\inf_{c\in F,r\in\reals}r^{2}+\sum\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2})
+\]
+
+\end_inset
+
+ We can expand the inner expression (which is the Lagrangian) as
+\begin_inset Formula 
+\begin{eqnarray*}
+L(r,c,\lambda):=r^{2}+\sum\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2}) & = & r^{2}(1-\sum\lambda_{i})+\sum\lambda_{i}\left\langle \varphi(x_{i})-c,\varphi(x_{i})-c\right\rangle \\
+ & = & r^{2}(1-\sum\lambda_{i})+\sum\lambda_{i}\left(K(i,i)-2\left\langle \varphi(x_{i}),c\right\rangle +\left\langle c,c\right\rangle \right)\\
+ & = & r^{2}(1-\sum\lambda_{i})+\sum\lambda_{i}K(i,i)-\left\langle 2\sum\lambda_{i}\varphi(x_{i}),c\right\rangle +\left\langle c,c\right\rangle \sum\lambda_{i}
+\end{eqnarray*}
+
+\end_inset
+
+ The problem looks easier now that 
+\begin_inset Formula $r$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are separated.
+ Define 
+\begin_inset Formula $\theta(\lambda):=\inf_{c\in F,r\in\reals}L(r,c,\lambda)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}<0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{r\to\infty}L(r,c,\lambda)=-\infty$
+\end_inset
+
+, so 
+\begin_inset Formula $\theta(\lambda)=-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}>0$
+\end_inset
+
+, then the best we can do is to set 
+\begin_inset Formula $r=0$
+\end_inset
+
+ (boundary point is minimal).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $r$
+\end_inset
+
+ is arbitrary.
+ 
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $L(r,c,\lambda)$
+\end_inset
+
+ is quadratic in the entries of 
+\begin_inset Formula $c$
+\end_inset
+
+, thus the minimum w.r.t.
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ is attained at the unique critical point.
+ Differentiating with respect to the column vector 
+\begin_inset Formula $c$
+\end_inset
+
+ and equating to zero, we get the vector equation
+\begin_inset Formula 
+\begin{eqnarray*}
+-2\sum\lambda_{i}\varphi(x_{i})+2c\sum\lambda_{i}\\
+c & = & \frac{\sum\lambda_{i}\varphi(x_{i})}{\sum\lambda_{i}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+## BELOW HERE MAY BE BROKEN!
+\end_layout
+
+\begin_layout Standard
+Thus if 
+\begin_inset Formula $1-\sum\lambda_{i}\geq0$
+\end_inset
+
+, the minimum is attained at 
+\begin_inset Formula $c=\sum\lambda_{i}\varphi(x_{i})$
+\end_inset
+
+ and 
+\begin_inset Formula $r^{2}(1-\sum\lambda_{i})=0$
+\end_inset
+
+, and the value is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda) & = & \sum\lambda_{i}K(i,i)-2\sum_{ij}\lambda_{i}\lambda_{j}K(i,j)+\sum_{ij}\lambda_{i}\lambda_{j}K(i,j)\\
+ & = & \diag(K)^{T}\lambda-\lambda^{T}K\lambda
+\end{eqnarray*}
+
+\end_inset
+
+ So our final result for 
+\begin_inset Formula $\theta(\lambda)$
+\end_inset
+
+is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda) & = & \begin{cases}
+-\infty & \textrm{for }1-\sum\lambda_{i}<0\\
+\diag(K)^{T}\lambda-\lambda^{T}K\lambda & \textrm{for }1-\sum\lambda_{i}\geq0
+\end{cases}
+\end{eqnarray*}
+
+\end_inset
+
+Since we clearly have points for which 
+\begin_inset Formula $\lambda\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{for }1-\sum\lambda_{i}\geq0$
+\end_inset
+
+, we clearly have 
+\begin_inset Formula $\sup_{\lambda\geq0}\theta(\lambda)=\sup_{\lambda\geq0,\sum\lambda_{j}\leq1}\theta(\lambda)$
+\end_inset
+
+.
+ In fact, we can restrict our search to 
+\begin_inset Formula $\sum\lambda_{j}=1$
+\end_inset
+
+, because for 
+\begin_inset Formula $\sum\lambda_{i}\leq1$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda) & = & \sum\lambda_{i}||\varphi(x_{i})-c||^{2}
+\end{eqnarray*}
+
+\end_inset
+
+ and, written in this way, it is clear that increasing any 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ always increases 
+\begin_inset Formula $\theta(\lambda)$
+\end_inset
+
+.
+ Thus the value of the dual problem is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sup_{\lambda\geq0,\sum\lambda_{i}=1}\diag(K)^{T}\lambda-\lambda^{T}K\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write an expression for the optimal sphere in terms of the solution to the
+ dual problem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Note that our constraint set is now compact, thus the 
+\begin_inset Formula $\sup$
+\end_inset
+
+ is attained at some 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ satisfying the constraints.
+ Since there is no duality gap, we must have
+\begin_inset Formula 
+\begin{eqnarray*}
+r^{*} & = & \sqrt{\theta(\lambda^{*})}\\
+ & = & \sqrt{\diag(K)^{T}\lambda^{*}-(\lambda^{*})^{T}K\lambda^{*}}
+\end{eqnarray*}
+
+\end_inset
+
+Now the optimal center is
+\begin_inset Formula 
+\begin{eqnarray*}
+c^{*} & = & \sum\lambda_{i}^{*}\varphi(x_{i})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write down the complementary slackness conditions for this problem, and
+ characterize the points that are the 
+\begin_inset Quotes eld
+\end_inset
+
+support vectors
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: By the complementary slackness conditions, we must have
+\begin_inset Formula 
+\[
+\lambda_{i}^{*}\left[||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}\right]=0
+\]
+
+\end_inset
+
+ We call those 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ for which 
+\begin_inset Formula $\lambda_{i}^{*}>0$
+\end_inset
+
+ the support vectors.
+ Note that we can represent 
+\begin_inset Formula $c^{*}$
+\end_inset
+
+ using only the support vectors.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Briefly explain how you would apply this algorithm in practice to detect
+ 
+\begin_inset Quotes eld
+\end_inset
+
+novel
+\begin_inset Quotes erd
+\end_inset
+
+ instances.
+\end_layout
+
+\begin_layout Enumerate
+[More Optional] Redo this problem allowing some of the data to lie outside
+ of the sphere, where the number of points outside the sphere can be increased
+ or decreased by adjusting a parameter.
+ (Hint: Use slack variables).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Enumerate
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Again assume we have the standard inner product in feature space with feature
+ map 
+\begin_inset Formula $x\mapsto\varphi(x)=(\varphi_{1}(x),\varphi_{2}(x),\ldots)\in F$
+\end_inset
+
+.
+ We wish to solve
+\begin_inset Formula 
+\[
+\min_{c,r,\xi}r^{2}+b\sum\xi_{i}
+\]
+
+\end_inset
+
+subject to 
+\begin_inset Formula 
+\begin{eqnarray*}
+||\varphi(x_{i})-c||^{2} & \leq & r^{2}+\xi_{i}\;\;\textrm{all }i\\
+\xi_{i} & \geq & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is equivalent to the Lagrangian formulation:
+\begin_inset Formula 
+\[
+\inf_{c,r,\xi}\sup_{\lambda\geq0,\alpha\geq0}r^{2}+b\sum\xi_{i}+\sum_{i}\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2}-\xi_{i})-\sum_{i}\alpha_{i}\xi_{i}
+\]
+
+\end_inset
+
+ By Slater's conditions, this is equivalent to the dual problem
+\begin_inset Formula 
+\[
+\sup_{\lambda\geq0,\alpha\geq0}\inf_{c,r,\xi}r^{2}+b\sum\xi_{i}+\sum_{i}\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2}-\xi_{i})-\sum_{i}\alpha_{i}\xi_{i}
+\]
+
+\end_inset
+
+ Expanding the inner expression (which is the Lagrangian), we get
+\begin_inset Formula 
+\begin{eqnarray*}
+L(r,c,\xi,\lambda,\alpha) & := & r^{2}+b\sum\xi_{i}+\sum_{i}\lambda_{i}(||\varphi(x_{i})-c||^{2}-r^{2}-\xi_{i})-\sum_{i}\alpha_{i}\xi_{i}\\
+ & = & r^{2}(1-\sum\lambda_{i})-\sum_{i}\xi_{i}(\lambda_{i}+\alpha_{i}-b)+\sum_{i}\lambda_{i}||\varphi(x_{i})-c||^{2}
+\end{eqnarray*}
+
+\end_inset
+
+ Define 
+\begin_inset Formula $\theta(\lambda,\alpha):=\inf_{c\in F,r\in\reals,\xi\in\reals}L(r,c,\xi,\lambda,\alpha)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}<0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{r\to\inf}L(r,c,\lambda)=-\infty$
+\end_inset
+
+, so 
+\begin_inset Formula $\theta(\lambda)=-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}>0$
+\end_inset
+
+, then the best we can do is to set 
+\begin_inset Formula $r=0$
+\end_inset
+
+ (boundary point is minimal).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-\sum\lambda_{i}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $r$
+\end_inset
+
+ is arbitrary.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda_{i}+\alpha_{i}-b\neq0$
+\end_inset
+
+, then by sending 
+\begin_inset Formula $\xi_{i}\to\infty$
+\end_inset
+
+ or 
+\begin_inset Formula $\xi_{i}\rightarrow-\infty$
+\end_inset
+
+, we get 
+\begin_inset Formula $\theta(\lambda)=-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda_{i}+\alpha_{i}-b=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+ is arbitrary.
+ 
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $L(r,c,\xi,\lambda,\alpha)$
+\end_inset
+
+ is quadratic in the entries of 
+\begin_inset Formula $c$
+\end_inset
+
+, thus the minimum w.r.t.
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ is attained at the unique critical point.
+ Differentiating with respect to the column vector 
+\begin_inset Formula $c$
+\end_inset
+
+ and equating to zero, we get the vector equation
+\begin_inset Formula 
+\begin{eqnarray*}
+-2\sum\lambda_{i}\varphi(x_{i})+2c & = & 0\\
+c & = & \sum\lambda_{i}\varphi(x_{i})
+\end{eqnarray*}
+
+\end_inset
+
+ Thus if 
+\begin_inset Formula $1-\sum\lambda_{i}\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{i}+\alpha_{i}-b=0$
+\end_inset
+
+, then minimum is attained at 
+\begin_inset Formula $c=\sum\lambda_{i}\varphi(x_{i})$
+\end_inset
+
+ and 
+\begin_inset Formula $r^{2}(1-\sum\lambda_{i})=0$
+\end_inset
+
+, and the value is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda,\alpha) & = & \sum\lambda_{i}K(i,i)-2\sum_{ij}\lambda_{i}\lambda_{j}K(i,j)+\sum_{ij}\lambda_{i}\lambda_{j}K(i,j)\\
+ & = & \diag(K)^{T}\lambda-\lambda^{T}K\lambda
+\end{eqnarray*}
+
+\end_inset
+
+ So our final result for 
+\begin_inset Formula $\theta(\lambda)$
+\end_inset
+
+is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda,\alpha) & = & \begin{cases}
+-\infty & \textrm{for }1-\sum\lambda_{i}<0\textrm{ or }\lambda_{i}+\alpha_{i}-b\neq0\\
+\diag(K)^{T}\lambda-\lambda^{T}K\lambda & \textrm{for }1-\sum\lambda_{i}\geq0\textrm{ and }\lambda_{i}+\alpha_{i}-b=0
+\end{cases}
+\end{eqnarray*}
+
+\end_inset
+
+Since we clearly have points for which 
+\begin_inset Formula $\lambda\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha\geq0$
+\end_inset
+
+ satisfying the second set of constraints, 
+\begin_inset Formula $\sup_{\lambda\geq0,\alpha\geq0}\theta(\lambda)=\sup_{\lambda\geq0,\alpha\geq0,\sum\lambda_{j}\leq1,\lambda_{i}+\alpha_{i}=b}\theta(\lambda)$
+\end_inset
+
+.
+ In fact, we can restrict our search to 
+\begin_inset Formula $\sum\lambda_{j}=1$
+\end_inset
+
+, because for 
+\begin_inset Formula $\sum\lambda_{i}\leq1$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{i}+\alpha_{i}=b$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta(\lambda,\alpha) & = & \sum\lambda_{i}||\varphi(x_{i})-c||^{2}
+\end{eqnarray*}
+
+\end_inset
+
+ and, written in this way, it is clear that increasing any 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ always increases 
+\begin_inset Formula $\theta(\lambda)$
+\end_inset
+
+.
+ Thus the value of the dual problem is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sup_{\lambda\geq0,\alpha\geq0,\sum\lambda_{i}=1,\lambda_{i}+\alpha_{i}=b}\diag(K)^{T}\lambda-\lambda^{T}K\lambda
+\]
+
+\end_inset
+
+ The constraint set under the 
+\begin_inset Formula $\sup$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $\sum\lambda_{i}=1$
+\end_inset
+
+,
+\begin_inset Formula $0\leq\lambda_{i}\leq b$
+\end_inset
+
+.
+ Note that our constraint set is now compact, thus the 
+\begin_inset Formula $\sup$
+\end_inset
+
+ is attained at some 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ satisfying the constraints.
+ So the optimal center is 
+\begin_inset Formula 
+\begin{eqnarray*}
+c^{*} & = & \sum\lambda_{i}^{*}\varphi(x_{i})
+\end{eqnarray*}
+
+\end_inset
+
+We work a little more to get the optimal radius: By the KKT conditions,
+ we must have
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda_{i}^{*}\left[||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}-\xi_{i}^{*}\right] & = & 0\\
+\alpha_{i}^{*}\xi_{i}^{*}=(b-\lambda_{i}^{*})\xi_{i}^{*} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ Assuming 
+\begin_inset Formula $b>0$
+\end_inset
+
+, for each 
+\begin_inset Formula $i$
+\end_inset
+
+, either 
+\begin_inset Formula $\lambda_{i}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\xi_{i}^{*}>0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{i}^{*}=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $0<\lambda_{i}^{*}<b$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $\xi_{i}^{*}=0=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ must lie on the circle.
+ 
+\end_layout
+
+\begin_layout Standard
+If there is some 
+\begin_inset Formula $\lambda_{i}^{*}$
+\end_inset
+
+ for which 
+\begin_inset Formula $0<\lambda_{i}^{*}<b$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{eqnarray*}
+(r^{*})^{2} & = & ||\varphi(x_{i})-c^{*}||^{2}\\
+ & = & \left\langle \varphi(x_{i})-\sum\lambda_{j}^{*}\varphi(x_{j}),\varphi(x_{i})-\sum\lambda_{j}^{*}\varphi(x_{j})\right\rangle \\
+ & = & K(i,i)-2\sum_{j}\lambda_{j}^{*}K(j,i)+\sum_{jk}\lambda_{j}^{*}\lambda_{k}^{*}K(j,k)\\
+ & = & K(i,i)-2(\lambda^{*})^{T}K(:,i)+(\lambda^{*})^{T}K\lambda^{*}
+\end{eqnarray*}
+
+\end_inset
+
+The 
+\begin_inset Quotes eld
+\end_inset
+
+support vectors
+\begin_inset Quotes erd
+\end_inset
+
+ are those vectors 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ corresponding to 
+\begin_inset Formula $\lambda_{i}>0$
+\end_inset
+
+.
+ By the results below, these points are the points either on the circle
+ 
+\begin_inset Formula $(c^{*},r^{*})$
+\end_inset
+
+ or outside of it.
+\end_layout
+
+\begin_layout Standard
+What if all nonzero 
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+? Recall that 
+\begin_inset Formula $\sum_{i}\lambda_{i}^{*}=1$
+\end_inset
+
+.
+ So this amounts to 
+\begin_inset Formula $\sum_{I}\lambda_{i}^{*}=|I|b=1$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $|I|=1/b$
+\end_inset
+
+.
+ So this can only happen if 
+\begin_inset Formula $1/b$
+\end_inset
+
+ is a positive integer.
+\end_layout
+
+\begin_layout Standard
+Below are some results derived from the original constraints and the KKT
+ conditions above, possibly assuming 
+\begin_inset Formula $\lambda_{i}\in\{0,b\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda_{i}^{*}\left[||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}-\xi_{i}^{*}\right] & = & 0\\
+\alpha_{i}^{*}\xi_{i}^{*}=(b-\lambda_{i}^{*})\xi_{i}^{*} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+ implies 
+\begin_inset Formula $\xi_{i}^{*}=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}\geq0$
+\end_inset
+
+ (
+\begin_inset Formula $\geq0$
+\end_inset
+
+ follows from 
+\begin_inset Formula $\xi_{i}\geq0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi_{i}^{*}=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}>0$
+\end_inset
+
+ implies 
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi_{i}^{*}=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}=0$
+\end_inset
+
+ implies that 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ lies on the sphere of radius 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{i}^{*}=0$
+\end_inset
+
+ implies 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+ implies that 
+\begin_inset Formula $\lambda_{i}^{*}\left[||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}\right]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From the basic constraints we know that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}>0$
+\end_inset
+
+ implies 
+\begin_inset Formula $\xi_{i}^{*}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{i}=b$
+\end_inset
+
+.
+ (second implication from first and KKT)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}=0$
+\end_inset
+
+ implies 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+.
+ (show by contradiction)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}<0$
+\end_inset
+
+ implies 
+\begin_inset Formula $\lambda_{i}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+ (since 
+\begin_inset Formula $\xi_{i}^{*}\geq0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+ and 
+\begin_inset Formula $||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}=0$
+\end_inset
+
+ then 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda_{i}^{*}=b$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{i}^{*}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In general, if 
+\begin_inset Formula $0<\lambda_{i}^{*}<b$
+\end_inset
+
+, then 
+\begin_inset Formula $\xi_{i}^{*}=||\varphi(x_{i})-c^{*}||^{2}-(r^{*})^{2}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Positive Semidefinite Matrices
+\end_layout
+
+\begin_layout Standard
+In statistics and machine learning, we use positive semidefinite matrices
+ a lot.
+ Let's recall some definitions from linear algebra that will be useful here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A set of vectors 
+\begin_inset Formula $\left\{ x_{1},\ldots,x_{n}\right\} $
+\end_inset
+
+ is 
+\series bold
+orthonormal
+\series default
+ if 
+\begin_inset Formula $\left\langle x_{i},x_{i}\right\rangle =1$
+\end_inset
+
+ for any 
+\begin_inset Formula $i\in\left\{ 1,\ldots,n\right\} $
+\end_inset
+
+ (i.e.
+ 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ has unit norm), and for any 
+\begin_inset Formula $i,j\in\left\{ 1,\ldots,n\right\} $
+\end_inset
+
+ with 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ we have 
+\begin_inset Formula $\left\langle x_{i},x_{j}\right\rangle =0$
+\end_inset
+
+ (i.e.
+ 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ are orthogonal).
+\end_layout
+
+\begin_layout Definition
+Note that if the vectors are column vectors in a Euclidean space, we can
+ write this as 
+\begin_inset Formula $x_{i}^{T}x_{j}=\ind{i\neq j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i,j\in\left\{ 1,\ldots,n\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A matrix is 
+\series bold
+orthogonal 
+\series default
+if it is a square matrix with orthonormal columns.
+ 
+\end_layout
+
+\begin_layout Definition
+It follows from the definition that if a matrix 
+\begin_inset Formula $M\in\reals^{n\times n}$
+\end_inset
+
+ is orthogonal, then 
+\begin_inset Formula $M^{T}M=I$
+\end_inset
+
+, where 
+\begin_inset Formula $I$
+\end_inset
+
+ is the 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ identity matrix.
+ Thus 
+\begin_inset Formula $M^{T}=M^{-1}$
+\end_inset
+
+, and so 
+\begin_inset Formula $MM^{T}=I$
+\end_inset
+
+ as well.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ is 
+\series bold
+symmetric 
+\series default
+if 
+\begin_inset Formula $M=M^{T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For a square matrix 
+\begin_inset Formula $M$
+\end_inset
+
+, if 
+\begin_inset Formula $Mv=\lambda v$
+\end_inset
+
+ for some column vector 
+\begin_inset Formula $v$
+\end_inset
+
+ and scalar 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, then 
+\begin_inset Formula $v$
+\end_inset
+
+ is called an 
+\series bold
+eigenvector
+\series default
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the corresponding 
+\series bold
+eigenvalue
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Spectral Theorem]
+\end_layout
+
+\end_inset
+
+A real, symmetric matrix 
+\begin_inset Formula $M\in\reals^{n\times n}$
+\end_inset
+
+ can be diagonalized as 
+\begin_inset Formula $M=Q\Sigma Q^{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $Q\in\reals^{n\times n}$
+\end_inset
+
+ is an orthogonal matrix whose columns are a set of orthonormal eigenvectors
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+, and 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is a diagonal matrix of the corresponding eigenvalues.
+ 
+\end_layout
+
+\begin_layout Definition
+A real, symmetric matrix 
+\begin_inset Formula $M\in\reals^{n\times n}$
+\end_inset
+
+ is 
+\series bold
+positive semidefinite (psd)
+\series default
+ if for any 
+\begin_inset Formula $x\in\reals^{n}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+x^{T}Mx\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Note that unless otherwise specified, when a matrix is described as positive
+ semidefinite, we are implicitly assuming it is real and symmetric (or complex
+ and Hermitian in certain contexts, though not here).
+\end_layout
+
+\begin_layout Definition
+As an exercise in matrix multiplication, note that for any matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ with columns 
+\begin_inset Formula $a_{1},\ldots,a_{d}$
+\end_inset
+
+, that is 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}| &  & |\\
+a_{1} & \cdots & a_{d}\\
+| &  & |
+\end{pmatrix}\in\reals^{n\times d},
+\]
+
+\end_inset
+
+we have
+\begin_inset Formula 
+\[
+A^{T}MA=\begin{pmatrix}a_{1}^{T}Ma_{1} & a_{1}^{T}Ma_{2} & \cdots & a_{1}^{T}Ma_{d}\\
+a_{2}^{T}Ma_{1} & a_{2}^{T}Ma_{2} & \cdots & a_{2}^{T}Ma_{d}\\
+\vdots & \vdots & \cdots & \vdots\\
+a_{d}^{T}Ma_{1} & a_{d}^{T}Ma_{2} & \cdots & a_{d}^{T}Ma_{d}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+So 
+\begin_inset Formula $M$
+\end_inset
+
+ is psd if and only if for any 
+\begin_inset Formula $A\in\reals^{n\times d}$
+\end_inset
+
+, we have 
+\begin_inset Formula $\diag(A^{T}MA)=\left(a_{1}^{T}Ma_{1},\ldots,a_{d}^{T}Ma_{d}\right)^{T}\succeq0$
+\end_inset
+
+, where 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ is elementwise inequality, and 
+\begin_inset Formula $0$
+\end_inset
+
+ is a 
+\begin_inset Formula $d\times1$
+\end_inset
+
+ column vector of 
+\begin_inset Formula $0$
+\end_inset
+
+'s .
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Enumerate
+Give an example of an orthogonal matrix that is not symmetric.
+ (Hint: You can use a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix with only the entries -1, 0, and 1.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use the definition of a psd matrix and the spectral theorem to show that
+ all eigenvalues of a positive semidefinite matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ are non-negative.
+ [Hint: By Spectral theorem, 
+\begin_inset Formula $\Sigma=Q^{T}MQ$
+\end_inset
+
+ for some 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ What if you take 
+\begin_inset Formula $A=Q$
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+exercise in matrix multiplication
+\begin_inset Quotes erd
+\end_inset
+
+ described above?] 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ Let 
+\begin_inset Formula $M\in\reals^{n\times n}$
+\end_inset
+
+ be a psd matrix.
+ By the spectral theorem, we can write 
+\begin_inset Formula $M=Q\Sigma Q^{T}$
+\end_inset
+
+.
+ Then by the argument above, 
+\begin_inset Formula 
+\[
+\diag(Q^{T}MQ)=\diag(\Sigma)\succeq0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In this problem, we show that a psd matrix is a matrix version of a non-negative
+ scalar, in that they both have a 
+\begin_inset Quotes eld
+\end_inset
+
+square root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Show that a symmetric matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ can be expressed as 
+\begin_inset Formula $M=BB^{T}$
+\end_inset
+
+ for some matrix 
+\begin_inset Formula $B$
+\end_inset
+
+, if and only if 
+\begin_inset Formula $M$
+\end_inset
+
+ is psd.
+ [Hint: To show 
+\begin_inset Formula $M=BB^{T}$
+\end_inset
+
+ implies 
+\begin_inset Formula $M$
+\end_inset
+
+ is psd, use the fact that for any vector 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $v^{T}v\ge0$
+\end_inset
+
+.
+ To show that 
+\begin_inset Formula $M$
+\end_inset
+
+ psd implies 
+\begin_inset Formula $M=BB^{T}$
+\end_inset
+
+ for some 
+\begin_inset Formula $B$
+\end_inset
+
+, use the Spectral Theorem.]
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\end_layout
+
+\begin_layout Standard
+If we can write 
+\begin_inset Formula $M=BB^{T}$
+\end_inset
+
+, then 
+\begin_inset Formula $M$
+\end_inset
+
+ is symmetric and 
+\begin_inset Formula $x^{T}Mx=x^{T}BB^{T}x=(B^{T}x)^{T}(B^{T}x)=||B^{T}x||^{2}\geq0$
+\end_inset
+
+, for any 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $A$
+\end_inset
+
+ is symmetric positive semidefinite.
+ Conversely, if 
+\begin_inset Formula $M$
+\end_inset
+
+ is psd, then by the Spectral Theorem there exists 
+\begin_inset Formula $Q$
+\end_inset
+
+ orthogonal and 
+\begin_inset Formula $\Sigma=\diag(\sigma_{1},\ldots,\sigma_{d})$
+\end_inset
+
+ such that 
+\begin_inset Formula $M=Q\Sigma Q^{T}$
+\end_inset
+
+.
+ By the previous problem 
+\begin_inset Formula $\sigma_{i}\geq0$
+\end_inset
+
+, so we can define 
+\begin_inset Formula $\Sigma^{1/2}:=\diag(\sigma_{1}^{1/2},\ldots,\sigma_{d}^{1/2})$
+\end_inset
+
+ and write 
+\begin_inset Formula 
+\begin{eqnarray*}
+M & = & Q\Sigma^{1/2}\Sigma^{1/2}Q^{T}\\
+ & = & BB^{T}
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $B:=Q\Sigma^{1/2}$
+\end_inset
+
+.
+ Note that we can also write
+\begin_inset Formula 
+\[
+M=Q\Sigma^{1/2}Q^{T}Q\Sigma^{1/2}Q^{T}=C^{2},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $C=Q\Sigma^{1/2}Q^{T}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $M$
+\end_inset
+
+ has a 
+\begin_inset Quotes eld
+\end_inset
+
+square root
+\begin_inset Quotes erd
+\end_inset
+
+, just like non-negative real numbers.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Positive Definite Matrices
+\end_layout
+
+\begin_layout Definition
+A real, symmetric matrix 
+\begin_inset Formula $M\in\reals^{n\times n}$
+\end_inset
+
+ is 
+\series bold
+positive definite
+\series default
+ (spd) if for any 
+\begin_inset Formula $x\in\reals^{n}$
+\end_inset
+
+ with 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+x^{T}Mx>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that all eigenvalues of a symmetric positive definite matrix are positive.
+ [Hint: You can use the same method as you used for psd matrices above.]
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $M$
+\end_inset
+
+ be a symmetric positive definite matrix.
+ By the spectral theorem, 
+\begin_inset Formula $M=Q\Sigma Q^{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is a diagonal matrix of the eigenvalues of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ By the previous problem, all diagonal entries of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ are positive.
+ If 
+\begin_inset Formula $\Sigma=\diag\left(\sigma_{1},\ldots,\sigma_{n}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\Sigma^{-1}=\diag\left(\sigma_{1}^{-1},\ldots,\sigma_{n}^{-1}\right)$
+\end_inset
+
+.
+ Show that the matrix 
+\begin_inset Formula $Q\Sigma^{-1}Q^{T}$
+\end_inset
+
+ is the inverse of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Since positive semidefinite matrices may have eigenvalues that are zero,
+ we see by the previous problem that not all psd matrices are invertible.
+ Show that if 
+\begin_inset Formula $M$
+\end_inset
+
+ is a psd matrix and 
+\begin_inset Formula $I$
+\end_inset
+
+ is the identity matrix, then 
+\begin_inset Formula $M+\lambda I$
+\end_inset
+
+ is symmetric positive definite for any 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+, and give an expression for the inverse of 
+\begin_inset Formula $M+\lambda I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+ be symmetric matrices, with 
+\begin_inset Formula $M$
+\end_inset
+
+ positive semidefinite and 
+\begin_inset Formula $N$
+\end_inset
+
+ positive definite.
+ Use the definitions of psd and spd to show that 
+\begin_inset Formula $M+N$
+\end_inset
+
+ is symmetric positive definite.
+ Thus 
+\begin_inset Formula $M+N$
+\end_inset
+
+ is invertible.
+ (Hint: For any 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, show that 
+\begin_inset Formula $x^{T}(M+N)x>0$
+\end_inset
+
+.
+ Also note that 
+\begin_inset Formula $x^{T}(M+N)x=x^{T}Mx+x^{T}Nx$
+\end_inset
+
+.) 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,6622 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\end_preamble
+\options ruled
+\use_default_options false
+\begin_modules
+algorithm2e
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 60
+InsetLayout Flex:Code
+    LyxType               charstyle
+    LabelString           code
+    LatexType             command
+    LatexName             code
+    Font
+      Family              Typewriter
+    EndFont
+    Preamble
+    \newcommand{\code}[1]{\texttt{#1}}
+    EndPreamble
+    InToc                 true
+    HTMLTag               code
+ResetsFont true
+End
+\end_local_layout
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch solutions
+\selected 0
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\loss}{\ell}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+{\mbox{argmax}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\mbox{argmin}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nll}{\text{NLL}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Homework 5: Conditional Probability Models
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instructions
+\series default
+: Your answers to the questions below, including plots and mathematical
+ work, should be submitted as a single PDF file.
+ It's preferred that you write your answers using software that typesets
+ mathematics (e.g.
+ \SpecialChar LaTeX
+, \SpecialChar LyX
+, or MathJax via iPython), though if you need to you may scan handwritten
+ work.
+ You may find the 
+\begin_inset CommandInset href
+LatexCommand href
+name "minted"
+target "https://github.com/gpoore/minted"
+literal "false"
+
+\end_inset
+
+ package convenient for including source code in your \SpecialChar LaTeX
+ document.
+ If you are using \SpecialChar LyX
+, then the 
+\begin_inset CommandInset href
+LatexCommand href
+name "listings"
+target "https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+literal "false"
+
+\end_inset
+
+ package tends to work better.
+\end_layout
+
+\begin_layout Section
+Introduction 
+\end_layout
+
+\begin_layout Standard
+In this homework we'll be investigating conditional probability models,
+ with a focus on various interpretations of logistic regression, with and
+ without regularization.
+ Along the way we'll discuss the calibration of probability predictions,
+ both in the limit of infinite training data and in a more bare-hands way.
+ On the Bayesian side, we'll recreate from scratch the Bayesian linear gaussian
+ regression example we discussed in lecture.
+ We'll also have several optional problems that work through many basic
+ concepts in Bayesian statistics via one of the simplest problems there
+ is: estimating the probability of heads in a coin flip.
+ Later we'll extend this to the probability of estimating click-through
+ rates in mobile advertising.
+ Along the way we'll encounter empirical Bayes and hierarchical models.
+ 
+\end_layout
+
+\begin_layout Section
+From Scores to Conditional Probabilities
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This problem is based on Section 7.5.3 of Schapire and Freund's book 
+\emph on
+Boosting: Foundations and Algorithms
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should make a more generic derivation of the probability in terms of the
+ derivative of the loss function, as given in Schapire's book: 
+\begin_inset Formula 
+\[
+p(x)=\frac{1}{1+\frac{\ell'(f(x))}{l'(-f(x))}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+BUT seems like to get 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ you need to inverse the derivative of the loss function?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's consider the classification setting, in which 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ldots,\left(x_{n},y_{n}\right)\in\cx\times\left\{ -1,1\right\} $
+\end_inset
+
+ are sampled i.i.d.
+ from some unknown distribution.
+ For a prediction function 
+\begin_inset Formula $f:\cx\to\reals$
+\end_inset
+
+, we define the 
+\series bold
+margin 
+\series default
+on an example 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ to be 
+\begin_inset Formula $m=yf(x)$
+\end_inset
+
+.
+ Since our class predictions are given by 
+\begin_inset Formula $\sign(f(x))$
+\end_inset
+
+, we see that a prediction is correct iff 
+\begin_inset Formula $m(x)>0$
+\end_inset
+
+.
+ It's tempting to interpret the magnitude of the score 
+\begin_inset Formula $\left|f(x)\right|$
+\end_inset
+
+ as a measure of confidence.
+ However, it's hard to interpret the magnitudes beyond saying one prediction
+ score is more or less confident than another, and without any scale to
+ this 
+\begin_inset Quotes eld
+\end_inset
+
+confidence score
+\begin_inset Quotes erd
+\end_inset
+
+, it's hard to know what to do with it.
+ In this problem, we investigate how we can translate the score into a probabili
+ty, which is much easier to interpret.
+ In other words, we are looking for a way to convert score function 
+\begin_inset Formula $f(x)\in\reals$
+\end_inset
+
+ into a conditional probability distribution 
+\begin_inset Formula $x\mapsto p(y=1\mid x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In this problem we will consider 
+\series bold
+margin-based losses
+\series default
+, which are loss functions of the form 
+\begin_inset Formula $\left(y,f(x)\right)\mapsto\ell\left(yf(x)\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $m=yf(x)$
+\end_inset
+
+ is called the 
+\series bold
+margin
+\series default
+.
+ We are interested in how we can go from an empirical risk minimizer for
+ a margin-based loss, 
+\begin_inset Formula $\hat{f}=\argmin_{f\in\cf}\sum_{i=1}^{n}\ell\left(y_{i}f(x_{i})\right)$
+\end_inset
+
+, to a conditional probability estimator 
+\begin_inset Formula $\hat{\pi}(x)\approx p(y=1\mid x)$
+\end_inset
+
+.
+ Our approach will be to try to find a way to use the Bayes
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Don't be confused – it's Bayes as in 
+\begin_inset Quotes eld
+\end_inset
+
+Bayes optimal
+\begin_inset Quotes erd
+\end_inset
+
+, as we discussed at the beginning of the course, not Bayesian as we've
+ discussed more recently.
+\end_layout
+
+\end_inset
+
+ prediction function
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In this context, the Bayes prediction function is often referred to as the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+population minimizer.
+\begin_inset Quotes erd
+\end_inset
+
+ In our case, 
+\begin_inset Quotes eld
+\end_inset
+
+population
+\begin_inset Quotes erd
+\end_inset
+
+ refers to the fact that we are minimizing with respect to the true distribution
+, rather than a sample.
+ The term 
+\begin_inset Quotes eld
+\end_inset
+
+population
+\begin_inset Quotes erd
+\end_inset
+
+ arises from the context where we are using a sample to approximate some
+ statistic of an entire population (e.g.
+ a population of people or trees).
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $f^{*}=\argmin_{f}\ex_{x,y}\left[\ell(yf(x)\right]$
+\end_inset
+
+ to get the true conditional probability 
+\begin_inset Formula $\pi(x)=p(y=1\mid x$
+\end_inset
+
+), and then apply the same mapping to the empirical risk minimizer.
+ While there is plenty that can go wrong with this 
+\begin_inset Quotes eld
+\end_inset
+
+plug-in
+\begin_inset Quotes erd
+\end_inset
+
+ approach (primarily, the empirical risk minimizer from a [limited] hypothesis
+ space 
+\begin_inset Formula $\cf$
+\end_inset
+
+ may be a poor estimate for the Bayes prediction function), it is at least
+ well-motivated, and it can work well in practice.
+ And 
+\series bold
+please note
+\series default
+ that we can do better than just hoping for success: if you have enough
+ validation data, you can directly assess how well 
+\begin_inset Quotes eld
+\end_inset
+
+calibrated
+\begin_inset Quotes erd
+\end_inset
+
+ the predicted probabilities are.
+ This blog post has some discussion of calibration plots: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://jmetzen.github.io/2015-04-14/calibration.html"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It turns out it is straightforward to find the Bayes prediction function
+ 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ for margin losses, at least in terms of the data-generating distribution:
+ For any given 
+\begin_inset Formula $x\in\cx$
+\end_inset
+
+, we'll find the best possible prediction 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+.
+ This will be the 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ that minimizes
+\begin_inset Formula 
+\[
+\ex_{y}\left[\ell\left(y\hat{y}\right)\mid x\right].
+\]
+
+\end_inset
+
+If we can calculate this 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\cx$
+\end_inset
+
+, then we will have determined 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+.
+ We will simply take
+\begin_inset Formula 
+\[
+f^{*}(x)=\argmin_{\hat{y}}\ex_{y}\left[\ell\left(y\hat{y}\right)\mid x\right].
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It may be intuitively obvious that this 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ is the risk minimizer.
+ Here's a mathematical proof: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\min_{f}\ex_{x,y}\ell\left(yf(x)\right) & = & \min_{f}\ex_{x}\left[\ex_{y}\left[\ell\left(yf(x)\right)\mid x\right]\right]\\
+ & \ge & \ex_{x}\left[\min_{\hat{y}}\ex_{y}\left[\ell\left(y\hat{y}\right)\mid x\right]\right]\text{ (this is actually an equality)}\\
+ & = & \ex_{x}\left[\ex_{y}\left[\ell\left(yf^{*}(x)\right)\mid x\right]\right]\\
+ & = & \ex_{x,y}\ell\left(yf^{*}(x)\right).
+\end{eqnarray*}
+
+\end_inset
+
+But of course we must also have 
+\begin_inset Formula $\min_{f}\ex_{x,y}\ell\left(yf(x)\right)\le\ex_{x,y}\ell\left(yf^{*}(x)\right)$
+\end_inset
+
+.
+ So the inequality must actually be an equality, and thus the minimum is
+ attained at 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Below we'll calculate 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+ for several loss functions.
+ It will be convenient to let 
+\begin_inset Formula $\pi(x)=p\left(y=1\mid x\right)$
+\end_inset
+
+ in the work below.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+We'll start with a general case.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write 
+\begin_inset Formula $\ex_{y}\left[\ell\left(yf(x)\right)\mid x\right]$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\pi(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\ell(-f(x))$
+\end_inset
+
+, and 
+\begin_inset Formula $\ell\left(f(x)\right)$
+\end_inset
+
+.
+ [Hint: Use the fact that 
+\begin_inset Formula $y\in\left\{ -1,1\right\} $
+\end_inset
+
+.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\ex_{y}\left[\ell\left(yf(x)\right)\mid x\right] & = & \ell\left(f(x)\right)\pi(x)+\ell\left(-f(x)\right)\left[1-\pi(x)\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Let 
+\begin_inset Formula $\ell(m)$
+\end_inset
+
+ be a margin-based loss function that has derivative 
+\begin_inset Formula $\ell'(m)$
+\end_inset
+
+.
+ Give an expression for the Bayes prediction function 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+ and the conditional probability function 
+\begin_inset Formula $\pi(x)=p(y=1\mid x)$
+\end_inset
+
+.
+ [Hint: Differentiate the expression in the previous problem with respect
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ To make things a little less confusing, and also to write less, you may
+ find it useful to change variables a bit: Fix an 
+\begin_inset Formula $x\in\cx$
+\end_inset
+
+.
+ Then write 
+\begin_inset Formula $p=\pi(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{y}=f(x)$
+\end_inset
+
+.
+ After substituting these into the expression you had for the previous problem,
+ you'll want to find 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ that minimizes the expression.
+ Use differential calculus.
+ Once you've done it for a single 
+\begin_inset Formula $x$
+\end_inset
+
+, it's easy to write the solution as a function of 
+\begin_inset Formula $x$
+\end_inset
+
+.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: Fox a fixed 
+\begin_inset Formula $x$
+\end_inset
+
+, the expression above becomes 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ex_{y}\left[\ell\left(y\hat{y}\right)\mid x\right] & = & \ell\left(\hat{y}\right)p+\ell\left(-\hat{y}\right)\left[1-p\right]
+\end{eqnarray*}
+
+\end_inset
+
+First order conditions are then
+\begin_inset Formula 
+\begin{eqnarray*}
+\ell'\left(\hat{y}\right)p-\ell'(-\hat{y})\left[1-p\right] & = & 0\\
+\iff
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that the Bayes prediction function 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+ for the exponential loss function 
+\begin_inset Formula $\ell\left(y,f(x)\right)=e^{-yf(x)}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+f^{*}(x)=\frac{1}{2}\ln\left(\frac{\pi(x)}{1-\pi(x)}\right),
+\]
+
+\end_inset
+
+where we've assumed 
+\begin_inset Formula $\pi(x)\in\left(0,1\right)$
+\end_inset
+
+.
+ Also, show that given the Bayes prediction function 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+, we can recover the conditional probabilities by
+\begin_inset Formula 
+\[
+\pi(x)=\frac{1}{1+e^{-2f^{*}(x)}}.
+\]
+
+\end_inset
+
+[Hint: Differentiate the expression in the previous problem with respect
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ To make things a little less confusing, and also to write less, you may
+ find it useful to change variables a bit: Fix an 
+\begin_inset Formula $x\in\cx$
+\end_inset
+
+.
+ Then write 
+\begin_inset Formula $p=\pi(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{y}=f(x)$
+\end_inset
+
+.
+ After substituting these into the expression you had for the previous problem,
+ you'll want to find 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ that minimizes the expression.
+ Use differential calculus.
+ Once you've done it for a single 
+\begin_inset Formula $x$
+\end_inset
+
+, it's easy to write the solution as a function of 
+\begin_inset Formula $x$
+\end_inset
+
+.] 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Fix 
+\begin_inset Formula $x$
+\end_inset
+
+, then we want to find 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ minimizing 
+\begin_inset Formula $pe^{-\hat{y}}+\left(1-p\right)e^{\hat{y}}$
+\end_inset
+
+.
+ Our first order condition is
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{\hat{y}}\left(pe^{-\hat{y}}+\left(1-p\right)e^{\hat{y}}\right) & = & pe^{-\hat{y}}-\left(1-p\right)e^{\hat{y}}=0\\
+\iff\frac{p}{1-p} & = & e^{2\hat{y}}\\
+\end{eqnarray*}
+
+\end_inset
+
+Rearranging this expression we get
+\begin_inset Formula 
+\[
+p=\frac{e^{2\hat{y}}}{1+e^{2\hat{y}}}=\frac{1}{1+e^{-2\hat{y}}}.
+\]
+
+\end_inset
+
+Manipulating it a different way, we get
+\begin_inset Formula 
+\[
+\hat{y}=\frac{1}{2}\ln\left(\frac{p}{1-p}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that the Bayes prediction function 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+ for the logistic loss function 
+\begin_inset Formula $\ell\left(y,f(x)\right)=\ln\left(1+e^{-yf(x)}\right)$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+f^{*}(x)=\ln\left(\frac{\pi(x)}{1-\pi(x)}\right)
+\]
+
+\end_inset
+
+and the conditional probabilities are given by
+\begin_inset Formula 
+\[
+\pi(x)=\frac{1}{1+e^{-f^{*}(x)}}.
+\]
+
+\end_inset
+
+ Again, we may assume that 
+\begin_inset Formula $\pi(x)\in(0,1)$
+\end_inset
+
+.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Fix 
+\begin_inset Formula $x$
+\end_inset
+
+, then we want to find 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ minimizing 
+\begin_inset Formula $p\ln\left(1+e^{-\hat{y}}\right)+\left(1-p\right)\ln\left(1+e^{\hat{y}}\right)$
+\end_inset
+
+.
+ Our first order condition is
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{\hat{y}}\left(p\ln\left(1+e^{-\hat{y}}\right)+\left(1-p\right)\ln\left(1+e^{\hat{y}}\right)\right) & = & \frac{-pe^{-\hat{y}}}{1+e^{-\hat{y}}}+\frac{\left(1-p\right)e^{\hat{y}}}{1+e^{\hat{y}}}=0\\
+\iff\frac{\left(1-p\right)e^{\hat{y}}}{1+e^{\hat{y}}} & = & \frac{p}{1+e^{\hat{y}}}\\
+\iff e^{\hat{y}} & = & \frac{p}{1-p}\\
+\iff\hat{y} & = & \ln\left(\frac{p}{1-p}\right)\\
+\iff p & = & \frac{e^{\hat{y}}}{1+e^{\hat{y}}}=\frac{1}{1+e^{-\hat{y}}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Show that the Bayes prediction function 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+ for the hinge loss function 
+\begin_inset Formula $\ell\left(y,f(x)\right)=\max\left(0,1-yf(x)\right)$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+f^{*}(x)=\sign\left(\pi(x)-\frac{1}{2}\right).
+\]
+
+\end_inset
+
+Note that it is impossible to recover 
+\begin_inset Formula $\pi(x)$
+\end_inset
+
+ from 
+\begin_inset Formula $f^{*}(x)$
+\end_inset
+
+ in this scenario.
+ However, in practice we work with an empirical risk minimizer, from which
+ we may still be able to recover a reasonable estimate for 
+\begin_inset Formula $\pi(x)$
+\end_inset
+
+.
+ An early approach to this problem is known as 
+\begin_inset Quotes eld
+\end_inset
+
+Platt scaling
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://en.wikipedia.org/wiki/Platt_scaling"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Fix 
+\begin_inset Formula $x$
+\end_inset
+
+, then we want to find 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ minimizing 
+\begin_inset Formula $r\left(\hat{y}\right)=p\max\left(0,1-\hat{y}\right)+\left(1-p\right)\max\left(0,1+\hat{y}\right)$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $p\in\left(0,1\right)$
+\end_inset
+
+, this function goes to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $\hat{y}\to\pm\infty$
+\end_inset
+
+.
+ Also, the function is piecewise linear.
+ Thus the function has a minimum and it occurs at a 
+\begin_inset Quotes eld
+\end_inset
+
+kink
+\begin_inset Quotes erd
+\end_inset
+
+, or a point of non-differentiability of the function.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+kinks
+\begin_inset Quotes erd
+\end_inset
+
+ are at 
+\begin_inset Formula $\hat{y}=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{y}=1$
+\end_inset
+
+.
+ The function values at these points are 
+\begin_inset Formula $r\left(1\right)=2\left(1-p\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $r(-1)=2p$
+\end_inset
+
+.
+ So the minimizer is at 
+\begin_inset Formula $\hat{y}=1$
+\end_inset
+
+ if 
+\begin_inset Formula $\frac{p}{1-p}>1$
+\end_inset
+
+ and at 
+\begin_inset Formula $\hat{y}=-1$
+\end_inset
+
+ if 
+\begin_inset Formula $\frac{p}{1-p}<1$
+\end_inset
+
+.
+ Otherwise, all 
+\begin_inset Formula $\hat{y}\in[1,1]$
+\end_inset
+
+ give equal function values.
+ This is equivalent to saying the minimizer occurs at 
+\begin_inset Formula $\sign\left(p-\frac{1}{2}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logistic Regression
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:erm-bernoulli-setup"
+
+\end_inset
+
+Equivalence of ERM and probabilistic approaches
+\end_layout
+
+\begin_layout Standard
+In lecture we discussed two different ways to end up with logistic regression.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ERM approach:
+\series default
+ Consider the classification setting with input space 
+\begin_inset Formula $\cx=\reals^{d}$
+\end_inset
+
+, outcome space 
+\begin_inset Formula $\cy_{\pm}=\left\{ -1,1\right\} $
+\end_inset
+
+, and action space 
+\begin_inset Formula $\ca_{\text{\reals}}=\reals$
+\end_inset
+
+, with the hypothesis space of linear score functions 
+\begin_inset Formula $\cf_{\text{score}}=\left\{ x\mapsto x^{T}w\mid w\in\reals^{d}\right\} $
+\end_inset
+
+.
+ Consider the margin-based loss function 
+\begin_inset Formula $\ell_{\text{logistic}}(m)=\log\left(1+e^{-m}\right)$
+\end_inset
+
+ and the training data 
+\begin_inset Formula $\cd=\left((x_{1},y_{1}),\ldots,(x_{n},y_{n})\right)$
+\end_inset
+
+.
+ Then the empirical risk objective function for hypothesis space 
+\begin_inset Formula $\cf_{\text{score}}$
+\end_inset
+
+ and the logistic loss over 
+\begin_inset Formula $\cd$
+\end_inset
+
+ is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\hat{R}_{n}(w) & = & \frac{1}{n}\sum_{i=1}^{n}\ell_{\text{logistic}}(y_{i}w^{T}x_{i})\\
+ & = & \frac{1}{n}\sum_{i=1}^{n}\log\left(1+\exp\left(-y_{i}w^{T}x_{i}\right)\right).
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bernoulli regression with logistic transfer function:
+\series default
+ Consider the conditional probability modeling setting with input space
+ 
+\begin_inset Formula $\cx=\reals^{d}$
+\end_inset
+
+, outcome space 
+\begin_inset Formula $\cy_{0/1}=\left\{ 0,1\right\} $
+\end_inset
+
+, and action space 
+\begin_inset Formula $\ca_{[0,1]}=[0,1]$
+\end_inset
+
+, where an action corresponds to the predicted probability that an outcome
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Define the 
+\series bold
+standard logistic function
+\series default
+ as 
+\begin_inset Formula $\phi(\eta)=1/\left(1+e^{-\eta}\right)$
+\end_inset
+
+ and the hypothesis space 
+\begin_inset Formula $\cf_{\text{prob}}=\left\{ x\mapsto\phi(w^{T}x)\mid w\in\reals^{d}\right\} $
+\end_inset
+
+.
+ Suppose for every 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ in the dataset 
+\begin_inset Formula $\cd$
+\end_inset
+
+ above, we define 
+\begin_inset Formula $y_{i}'=\begin{cases}
+1 & y_{i}=1\\
+0 & y_{i}=-1
+\end{cases}$
+\end_inset
+
+, and let 
+\begin_inset Formula $\cd'$
+\end_inset
+
+ be the resulting collection of 
+\begin_inset Formula $\left(x_{i},y_{i}'\right)$
+\end_inset
+
+ pairs.
+ Then the negative log-likelihood (NLL) objective function for 
+\begin_inset Formula $\cf_{\text{prob}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\cd'$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+\nll(w) & = & -\sum_{i=1}^{n}y_{i}'\log\phi(w^{T}x_{i})+\left(1-y_{i}'\right)\log\left(1-\phi(w^{T}x_{i})\right)\\
+ & = & \sum_{i=1}^{n}\left[-y_{i}'\log\phi(w^{T}x_{i})\right]+\left(y_{i}'-1\right)\log\left(1-\phi(w^{T}x_{i})\right)
+\end{eqnarray*}
+
+\end_inset
+
+If 
+\begin_inset Formula $\hat{w}_{\text{prob}}$
+\end_inset
+
+ minimizes 
+\begin_inset Formula $\nll(w)$
+\end_inset
+
+, then 
+\begin_inset Formula $x\mapsto\phi(x^{T}\hat{w}_{\text{prob}})$
+\end_inset
+
+ is a maximum likelihood prediction function over the hypothesis space 
+\begin_inset Formula $\cf_{\text{prob}}$
+\end_inset
+
+ for the dataset 
+\begin_inset Formula $\cd'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Show that
+\series default
+ 
+\begin_inset Formula $n\hat{R}_{n}(w)=\nll(w)$
+\end_inset
+
+ for all 
+\begin_inset Formula $w\in\reals^{d}$
+\end_inset
+
+.
+ And thus the two approaches are equivalent, in that they produce the same
+ prediction functions.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $y_{i}'=1$
+\end_inset
+
+, then 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+ and the 
+\begin_inset Formula $i$
+\end_inset
+
+th summand in 
+\begin_inset Formula $\nll(w)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+-\log\phi(w^{T}x_{i}) & = & -\log\left(\frac{1}{1+\exp(-w^{T}x_{i})}\right)=\log\left(1+\exp(-y_{i}w^{T}x_{i})\right),
+\end{eqnarray*}
+
+\end_inset
+
+ which is the 
+\begin_inset Formula $i$
+\end_inset
+
+th summand of 
+\begin_inset Formula $n\hat{R}_{n}(w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $y_{i}'=0$
+\end_inset
+
+, then 
+\begin_inset Formula $y_{i}=-1$
+\end_inset
+
+ and the 
+\begin_inset Formula $i$
+\end_inset
+
+th summand in 
+\begin_inset Formula $\nll(w)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+-\log\left(1-\phi(w^{T}x_{i})\right) & = & -\log\left(1-\frac{1}{1+\exp\left(-w^{T}x_{i}\right)}\right)\\
+ & = & -\log\left(\frac{\exp\left(-w^{T}x_{i}\right)}{1+\exp\left(-w^{T}x_{i}\right)}\right)\\
+ & = & \log\left(\frac{1+\exp\left(-w^{T}x_{i}\right)}{\exp\left(-w^{T}x_{i}\right)}\right)\\
+ & = & \log\left(1+\exp\left(w^{T}x_{i}\right)\right)\\
+ & = & \log\left(1+\exp\left(-y_{i}w^{T}x_{i}\right)\right),
+\end{eqnarray*}
+
+\end_inset
+
+which is the 
+\begin_inset Formula $i$
+\end_inset
+
+th summand of 
+\begin_inset Formula $n\hat{R}_{n}(w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Give an expression for the gradient of NLL(w): First, show that for 
+\begin_inset Formula $\phi(\eta)=1/\left(1+e^{-\eta}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $\phi'(\eta)=\phi(\eta)(1-\phi(\eta)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\del_{w}\text{NLL}(w) & = & \sum_{i=1}^{n}\left[-y_{i}'\del_{w}\log\phi(w^{T}x_{i})\right]+\left(y_{i}'-1\right)\del_{w}\log\left(1-\phi(w^{T}x_{i})\right)\\
+ & = & \sum_{i=1}^{n}\left[-y_{i}'\frac{\phi'(w^{T}x_{i})x_{i}}{\phi(w^{T}x_{i})}\right]-\left(y_{i}'-1\right)\frac{\phi'(w^{T}x_{i})x_{i}}{1-\phi(w^{T}x_{i})}\\
+ & = & \sum_{i=1}^{n}\left[-y_{i}'\frac{\phi(w^{T}x_{i})\left[1-\phi(w^{T}x_{i})\right]x_{i}}{\phi(w^{T}x_{i})}\right]-\left(y_{i}'-1\right)\frac{\phi(w^{T}x_{i})\left[1-\phi(w^{T}x_{i})\right]x_{i}}{1-\phi(w^{T}x_{i})}\\
+ & = & \sum_{i=1}^{n}\left[-y_{i}'\left[1-\phi(w^{T}x_{i})\right]x_{i}\right]-\left(y_{i}'-1\right)\phi(w^{T}x_{i})x_{i}\\
+ & = & \sum_{i=1}^{n}\left(-y_{i}'x_{i}+y_{i}'\phi(w^{T}x_{i})x_{i}-y_{i}'\phi(w^{T}x_{i})x_{i}+\phi(w^{T}x_{i})x_{i}\right)\\
+ & = & \sum_{i=1}^{n}\left(-y_{i}'x_{i}+\phi(w^{T}x_{i})x_{i}\right)\\
+ & = & \sum_{i=1}^{n}\left(\phi(w^{T}x_{i})-y_{i}'\right)x_{i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Numerical Overflow and the log-sum-exp trick
+\end_layout
+
+\begin_layout Standard
+Suppose we want to calculate 
+\begin_inset Formula $\log\left(\exp(\eta)\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $\eta=1000.42$
+\end_inset
+
+.
+ If we compute this literally in Python, we will get an overflow (try it!),
+ since numpy gets infinity for 
+\begin_inset Formula $e^{1000.42}$
+\end_inset
+
+, and log of infinity is still infinity.
+ On the other hand, we can help out with some math: obviously 
+\begin_inset Formula $\log\left(\exp(\eta)\right)=\eta$
+\end_inset
+
+, and there's no issue.
+ 
+\end_layout
+
+\begin_layout Standard
+It turns out, 
+\begin_inset Formula $\log(\exp(\eta))$
+\end_inset
+
+ and the problem with its calculation is a special case of the 
+\begin_inset CommandInset href
+LatexCommand href
+name "LogSumExp"
+target "https://en.wikipedia.org/wiki/LogSumExp"
+literal "false"
+
+\end_inset
+
+ function that shows up frequently in machine learning.
+ We define
+\begin_inset Formula 
+\[
+\text{LogSumExp}(x_{1},\ldots,x_{n})=\log\left(e^{x_{1}}+\cdots+e^{x_{n}}\right).
+\]
+
+\end_inset
+
+Note that this will overflow if any of the 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+'s are large (more than 709).
+ To compute this on a computer, we can use the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+log-sum-exp trick
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We let 
+\begin_inset Formula $x^{*}=\max\left(x_{1},\ldots,x_{n}\right)$
+\end_inset
+
+ and compute LogSumExp as
+\begin_inset Formula 
+\[
+\text{LogSumExp}(x_{1},\ldots,x_{n})=x^{*}+\log\left[e^{x_{1}-x^{*}}+\cdots+e^{x_{n}-x^{*}}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that the new expression for LogSumExp is valid.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LogSumExp}(x_{1},\ldots,x_{n}) & = & \log\left[e^{x^{*}}e^{-x^{*}}\left(e^{x_{1}}+\cdots+e^{x_{n}}\right)\right]\\
+ & = & x^{*}+\log\left[e^{x_{1}-x^{*}}+\cdots+e^{x_{n}-x^{*}}\right].
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\exp\left(x_{i}-x^{*}\right)\in(0,1]$
+\end_inset
+
+ for any 
+\begin_inset Formula $i$
+\end_inset
+
+, and thus the exp calculations will not overflow.
+ 
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: We always have 
+\begin_inset Formula $e^{x}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{i}-x^{*}\le0$
+\end_inset
+
+ for any 
+\begin_inset Formula $i$
+\end_inset
+
+, and 
+\begin_inset Formula $e^{x}\leq1$
+\end_inset
+
+ for 
+\begin_inset Formula $x\le0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Above we've only spoken about the exp overflowing.
+ However, the log part can also have problems by becoming negative infinity
+ for arguments very close to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Explain why the 
+\begin_inset Formula $\log$
+\end_inset
+
+ term in our expression 
+\begin_inset Formula $\log\left[e^{x_{1}-x^{*}}+\cdots+e^{x_{n}-x^{*}}\right]$
+\end_inset
+
+ will never be 
+\begin_inset Quotes eld
+\end_inset
+
+-inf
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: The summand corresponding to 
+\begin_inset Formula $x_{i}=x^{*}$
+\end_inset
+
+ will be 
+\begin_inset Formula $e^{0}=1$
+\end_inset
+
+.
+ Since all summands are nonnegative, the argument of the log is always at
+ least 
+\begin_inset Formula $1$
+\end_inset
+
+, and thus the result will always be at least 
+\begin_inset Formula $0$
+\end_inset
+
+ (and thus not -inf).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In the objective functions for logistic regression, there are expressions
+ of the form 
+\begin_inset Formula $\log\left(1+e^{-s}\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ Note that a naive implementation gives 
+\begin_inset Formula $0$
+\end_inset
+
+ for 
+\begin_inset Formula $s>36$
+\end_inset
+
+ and inf for 
+\begin_inset Formula $s<-709$
+\end_inset
+
+.
+ Show how to use the numpy function
+\shape italic
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "logaddexp"
+target "https://docs.scipy.org/doc/numpy/reference/generated/numpy.logaddexp.html"
+literal "false"
+
+\end_inset
+
+ 
+\emph on
+to correctly compute 
+\begin_inset Formula $\log\left(1+e^{-s}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\emph on
+[In another problem, we'll consider whether this limited domain of accuracy
+ for the naive implementation actually matters in practice for logistic
+ regression.]
+\end_layout
+
+\end_inset
+
+
+\shape default
+\emph default
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{logaddexp}(0,-s) & = & \log\left(e^{0}+e^{-s}\right)=\log\left(1+e^{-s}\right).
+\end{eqnarray*}
+
+\end_inset
+
+(Just the first expression is sufficient.) 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Regularized-Logistic-Regression"
+
+\end_inset
+
+Regularized Logistic Regression
+\end_layout
+
+\begin_layout Standard
+For a dataset 
+\begin_inset Formula $\cd=\left((x_{1},y_{1}),\ldots,(x_{n},y_{n})\right)$
+\end_inset
+
+ drawn from 
+\begin_inset Formula $\reals^{d}\times\left\{ -1,1\right\} $
+\end_inset
+
+, the regularized logistic regression objective function can be defined
+ as
+\begin_inset Formula 
+\begin{eqnarray*}
+J_{\text{logistic}}(w) & = & \hat{R}_{n}(w)+\lambda\|w\|^{2}\\
+ & = & \frac{1}{n}\sum_{i=1}^{n}\log\left(1+\exp\left(-y_{i}w^{T}x_{i}\right)\right)+\lambda\|w\|^{2}.
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Prove that the objective function 
+\begin_inset Formula $J_{\text{logistic}}(w)$
+\end_inset
+
+ is convex.
+ You may use any facts mentioned in the 
+\begin_inset CommandInset href
+LatexCommand href
+name "convex optimization notes"
+target "https://davidrosenberg.github.io/mlcourse/Notes/convex-optimization.pdf"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+See notebook.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complete the 
+\family typewriter
+f_objective
+\family default
+ function in the skeleton code, which computes the objective function for
+ 
+\begin_inset Formula $J_{\text{logistic}}(w)$
+\end_inset
+
+.
+ Make sure to use the log-sum-exp trick to get accurate calculations and
+ to prevent overflow.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+See notebook.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complete the 
+\family typewriter
+fit_logistic_regression_function
+\family default
+ in the skeleton code using the 
+\family typewriter
+minimize
+\family default
+ function from 
+\family typewriter
+scipy.optimize
+\family default
+.
+ 
+\family typewriter
+ridge_regression.py
+\family default
+ from Homework 2 gives an example of how to use the 
+\family typewriter
+minimize
+\family default
+ function.
+ Use this function to train a model on the provided data.
+ Make sure to take the appropriate preprocessing steps, such as standardizing
+ the data and adding a column for the bias term.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+See notebook.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+ regularization parameter that minimizes the log-likelihood on the validation
+ set.
+ Plot the log-likelihood for different values of the regularization parameter.
+ 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+See notebook.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Based on the Bernoulli regression development of logistic regression, it
+ seems reasonable to interpret the prediction 
+\begin_inset Formula $f(x)=\phi(w^{T}x)=1/\left(1+e^{-w^{T}x}\right)$
+\end_inset
+
+ as the probability that 
+\begin_inset Formula $y=1$
+\end_inset
+
+, for a randomly drawn pair 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+ Since we only have a finite sample (and we are regularizing, which will
+ bias things a bit) there is a question of how well 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "calibrated"
+target "https://en.wikipedia.org/wiki/Calibration_(statistics)"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ our predicted probabilities are.
+ Roughly speaking, we say 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is well calibrated if we look at all examples 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ for which 
+\begin_inset Formula $f(x)\approx0.7$
+\end_inset
+
+ and we find that close to 
+\begin_inset Formula $70\%$
+\end_inset
+
+ of those examples have 
+\begin_inset Formula $y=1$
+\end_inset
+
+, as predicted...
+ and then we repeat that for all predicted probabilities in 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+ To see how well-calibrated our predicted probabilities are, break the predictio
+ns on the validation set into groups based on the predicted probability
+ (you can play with the size of the groups to get a result you think is
+ informative).
+ For each group, examine the percentage of positive labels.
+ You can make a table or graph.
+ Summarize the results.
+ You may get some ideas and references from 
+\begin_inset CommandInset href
+LatexCommand href
+name "scikit-learn's discussion"
+target "http://scikit-learn.org/stable/modules/calibration.html"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] If you can, create a dataset for which the log-sum-exp trick
+ is actually necessary for your implementation of regularized logistic regressio
+n.
+ If you don't think such a dataset exists, explain why.
+ If you like, you may consider the case of SGD optimization.
+ [This problem is intentionally open-ended.
+ You're meant to think, explore, and experiment.
+ Points assigned for interesting insights.]
+\end_layout
+
+\begin_layout Section
+Bayesian Logistic Regression with Gaussian Priors
+\end_layout
+
+\begin_layout Standard
+Let's return to the setup described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:erm-bernoulli-setup"
+
+\end_inset
+
+ and, in particular, to the Bernoulli regression setting with logistic transfer
+ function.
+ We had the following hypothesis space of conditional probability functions:
+\begin_inset Formula 
+\[
+\cf_{\text{prob}}=\left\{ x\mapsto\phi(w^{T}x)\mid w\in\reals^{d}\right\} .
+\]
+
+\end_inset
+
+Now let's consider the Bayesian setting, where we induce a prior on 
+\begin_inset Formula $\cf_{\text{prob}}$
+\end_inset
+
+ by taking a prior 
+\begin_inset Formula $p(w)$
+\end_inset
+
+ on the parameter 
+\begin_inset Formula $w\in\reals^{d}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For the dataset 
+\begin_inset Formula $\cd'$
+\end_inset
+
+ described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:erm-bernoulli-setup"
+
+\end_inset
+
+, give an expression for the posterior density 
+\begin_inset Formula $p(w\mid\cd')$
+\end_inset
+
+ in terms of the negative log-likelihood function 
+\begin_inset Formula 
+\begin{eqnarray*}
+\nll_{\cd'}(w) & = & -\sum_{i=1}^{n}y_{i}'\log\phi(w^{T}x_{i})+\left(1-y_{i}'\right)\log\left(1-\phi(w^{T}x_{i})\right)
+\end{eqnarray*}
+
+\end_inset
+
+and a prior density 
+\begin_inset Formula $p(w)$
+\end_inset
+
+ (up to a proportionality constant is fine).
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: By Bayes rule we have
+\begin_inset Formula 
+\begin{eqnarray*}
+p(w\mid\cd') & \propto & p(\cd'\mid w)p(w)\\
+ & = & \exp(-\nll_{\cd'}(w))p(w)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suppose we take a prior on 
+\begin_inset Formula $w$
+\end_inset
+
+ of the form 
+\begin_inset Formula $w\sim\cn(0,\Sigma)$
+\end_inset
+
+.
+ Find a covariance matrix 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ such that MAP estimate for 
+\begin_inset Formula $w$
+\end_inset
+
+ after observing data 
+\begin_inset Formula $\cd'$
+\end_inset
+
+ is the same as the minimizer of the regularized logistic regression function
+ defined in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Regularized-Logistic-Regression"
+
+\end_inset
+
+ (and prove it).
+ [Hint: Consider minimizing the negative log posterior of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Also, remember you can drop any terms from the objective function that
+ don't depend on 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Also, you may freely use results of previous problems.]
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: The prior density is 
+\begin_inset Formula 
+\begin{eqnarray*}
+p(w) & = & \left|2\pi\Sigma\right|^{-1/2}\exp\left(-\frac{1}{2}w^{T}\Sigma^{-1}w\right).
+\end{eqnarray*}
+
+\end_inset
+
+The MAP estimate is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+w_{\text{MAP}} & = & \argmax_{w\in\reals^{d}}\exp(-\nll_{\cd'}(w))p(w)\\
+ & = & \argmin_{w\in\reals^{d}}\left(-\log\left[\exp(-\nll_{\cd'}(w))p(w)\right]\right)\\
+ & = & \argmin_{w\in\reals^{d}}\left(\nll_{\cd'}(w)-\log\left[p(w)\right]\right)\\
+ & = & \argmin_{w\in\reals^{d}}\left(\nll_{\cd'}(w)+\frac{1}{2}w^{T}\Sigma^{-1}w\right)\\
+ & = & \argmin_{w\in\reals^{d}}\left(n\hat{R}_{n}(w)+\frac{1}{2}w^{T}\Sigma^{-1}w\right)\\
+ & = & \argmin_{w\in\reals^{d}}\left(\hat{R}_{n}(w)+\frac{1}{2n}w^{T}\Sigma^{-1}w\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+If we take 
+\begin_inset Formula $\Sigma=\frac{1}{2n\lambda}I$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+w_{\text{MAP}}=\argmin_{w\in\reals^{d}}\left(\hat{R}_{n}(w)+\lambda\|w\|^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In the Bayesian approach, the prior should reflect your beliefs about the
+ parameters before seeing the data and, in particular, should be independent
+ on the eventual size of your dataset.
+ Following this, you choose a prior distribution 
+\begin_inset Formula $w\sim\cn(0,I)$
+\end_inset
+
+.
+ For a dataset 
+\begin_inset Formula $\cd$
+\end_inset
+
+ of size 
+\begin_inset Formula $n$
+\end_inset
+
+, how should you choose 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ in our regularized logistic regression objective function so that the minimizer
+ is equal to the mode of the posterior distribution of 
+\begin_inset Formula $w$
+\end_inset
+
+ (i.e.
+ is equal to the MAP estimator).
+ 
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: Taking 
+\begin_inset Formula $\Sigma=I$
+\end_inset
+
+ corresponds to 
+\begin_inset Formula $\frac{1}{2n\lambda}=1$
+\end_inset
+
+.
+ This corresponds to 
+\begin_inset Formula $\lambda=\frac{1}{2n}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bayesian Linear Regression - Implementation
+\end_layout
+
+\begin_layout Standard
+In this problem, we will implement Bayesian Gaussian linear regression,
+ essentially reproducing the example 
+\begin_inset CommandInset href
+LatexCommand href
+name "from lecture"
+target "https://davidrosenberg.github.io/mlcourse/Archive/2016/Lectures/13a.bayesian-regression.pdf#page=12"
+literal "false"
+
+\end_inset
+
+, which in turn is based on the example in Figure 3.7 of Bishop's 
+\emph on
+Pattern Recognition and Machine Learning
+\emph default
+ (page 155).
+ We've provided plotting functionality in "support_code.py".
+ Your task is to complete "problem.py".
+ The implementation uses np.matrix objects, and you are welcome to use
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+However, in practice we are usually interested in computing the product
+ of a matrix inverse and a vector, i.e.
+ 
+\begin_inset Formula $X^{-1}b$
+\end_inset
+
+.
+ In this case, it's usually faster and more accurate to use a library's
+ algorithms for solving a system of linear equations.
+ Note that 
+\begin_inset Formula $y=X^{-1}b$
+\end_inset
+
+ is just the solution to the linear system 
+\begin_inset Formula $Xy=b$
+\end_inset
+
+.
+ See for example 
+\begin_inset CommandInset href
+LatexCommand href
+name "John Cook's blog post"
+target "https://www.johndcook.com/blog/2010/01/19/dont-invert-that-matrix/"
+literal "false"
+
+\end_inset
+
+ for discussion.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+and the 
+\begin_inset CommandInset href
+LatexCommand href
+name "follow up with timings"
+target "http://civilstat.com/2015/07/dont-invert-that-matrix-why-and-how/"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ the np.matrix.getI method.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Implement likelihood_func.
+\end_layout
+
+\begin_layout Enumerate
+Implement get_posterior_params.
+\end_layout
+
+\begin_layout Enumerate
+Implement get_predictive_params.
+\end_layout
+
+\begin_layout Enumerate
+Run 
+\begin_inset Quotes eld
+\end_inset
+
+python problem.py
+\begin_inset Quotes erd
+\end_inset
+
+ from inside the Bayesian Regression directory to do the regression and
+ generate the plots.
+ This runs through the regression with three different settings for the
+ prior covariance.
+ You may want to change the default behavior in support_code.make_plots from
+ plt.show, to saving the plots for inclusion in your homework submission.
+\end_layout
+
+\begin_layout Enumerate
+Comment on your results.
+ In particular, discuss how each of the following change with sample size
+ and with the strength of the prior:  (i) the likelihood function, (ii)
+ the posterior distribution, and (iii) the posterior predictive distribution.
+\end_layout
+
+\begin_layout Enumerate
+Our work above was very much 
+\begin_inset Quotes eld
+\end_inset
+
+full Bayes
+\begin_inset Quotes erd
+\end_inset
+
+, in that rather than coming up with a single prediction function, we have
+ a whole distribution over posterior prediction functions.
+ However, sometimes we want a single prediction function, and a common approach
+ is to use the MAP estimate – that is, choose the prediction function that
+ has the highest posterior likelihood.
+ As we discussed in class, for this setting, we can get the MAP estimate
+ using ridge regression.
+ Use ridge regression to get the MAP prediction function corresponding to
+ the first prior covariance (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Sigma=\frac{1}{2}I$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, per the support code).
+ What value did you use for the regularization coefficient? Why? 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This would be a great slot for a Bayesian model selection problem with marginal
+ likelihoods!!! [Optional] Now let's try Bayesian linear regression on a
+ more interesting hypothesis space.
+ We will once again revisit regression dataset krr-train.txt, for which the
+ input, outcome, and action spaces are all 
+\begin_inset Formula $\reals$
+\end_inset
+
+.
+ The requirement for this problem is to create a set of features of the
+ form 
+\begin_inset Formula $\phi_{i}(x)=\ind{x\le i/n}$
+\end_inset
+
+, for 
+\begin_inset Formula $i=1,\ldots,n$
+\end_inset
+
+, for (
+\end_layout
+
+\begin_layout Plain Layout
+Also, in future could investigate what happens whem the variance on y|x
+ is too small.
+ When there's also a very weak prior, we get a very tight posterior and
+ very small variance on the predictive distributions.
+ So we're really not much better than MLE estimation.
+ https://github.com/yousuketakada/prml_errata/issues/10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+[Optional] Coin Flipping: Maximum Likelihood
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suppose we flip a coin and get the following sequence of heads
+ and tails:
+\begin_inset Formula 
+\[
+\cd=(H,H,T)
+\]
+
+\end_inset
+
+Give an expression for the probability of observing 
+\begin_inset Formula $\cd$
+\end_inset
+
+ given that the probability of heads is 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ That is, give an expression for 
+\begin_inset Formula $p\left(\cd\mid\theta\right)$
+\end_inset
+
+.
+ This is called the 
+\series bold
+likelihood of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ for the data 
+\begin_inset Formula $\cd$
+\end_inset
+
+
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: 
+\begin_inset Formula 
+\[
+p\left(\cd\mid\theta\right)=\theta^{2}\left(1-\theta\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] How many different sequences of 3 coin tosses have 
+\begin_inset Formula $2$
+\end_inset
+
+ heads and 1 tail? If we toss the coin 
+\begin_inset Formula $3$
+\end_inset
+
+ times, what is the probability of 2 heads and 
+\begin_inset Formula $1$
+\end_inset
+
+ tail? (Answer should be in terms of 
+\begin_inset Formula $\theta$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Let's do the more general case of 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ heads and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ tails.
+ Let 
+\begin_inset Formula $n=n_{h}+n_{t}$
+\end_inset
+
+ be the total number of coin flips.
+ We simply need to choose 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ slots out of 
+\begin_inset Formula $n$
+\end_inset
+
+ to have the head flips.
+ There are 
+\begin_inset Formula $\binom{n}{n_{h}}$
+\end_inset
+
+ ways to do this.
+ Thus the probability is 
+\begin_inset Formula $\binom{n}{n_{h}}\theta^{n_{h}}\left(1-\theta\right)^{n_{t}}$
+\end_inset
+
+.
+ For the case of 
+\begin_inset Formula $3$
+\end_inset
+
+ coins and 
+\begin_inset Formula $2$
+\end_inset
+
+ heads, there are 
+\begin_inset Formula $3$
+\end_inset
+
+ ways to do it, and the probability is 
+\begin_inset Formula $3\theta^{2}\left(1-\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] More generally, give an expression for the likelihood 
+\begin_inset Formula $p(\cd\mid\theta)$
+\end_inset
+
+ for a particular sequence of flips 
+\begin_inset Formula $\cd$
+\end_inset
+
+ that has 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ heads and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ tails.
+ Make sure you have expressions that make sense even for 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{h}=0$
+\end_inset
+
+, and other boundary cases.
+ You may use the convention that 
+\begin_inset Formula $0^{0}=1$
+\end_inset
+
+, or you can break your expression into cases if needed.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION:
+\begin_inset Formula 
+\[
+p(\cd\mid\theta)=\theta^{n_{h}}\left(1-\theta\right)^{n_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Show that the maximum likelihood estimate of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ given we observed a sequence with 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ heads and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ tails is
+\begin_inset Formula 
+\[
+\hat{\theta}_{\text{MLE}}=\frac{n_{h}}{n_{h}+n_{t}}.
+\]
+
+\end_inset
+
+You may assume that 
+\begin_inset Formula $n_{h}+n_{t}\ge1$
+\end_inset
+
+.
+ (Hint: Maximizing the log-likelihood is equivalent and is often easier.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+As usual, make sure everything make sense for the boundary cases, such as
+ data with only heads.
+\end_layout
+
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: The log-likelihood is
+\begin_inset Formula 
+\begin{eqnarray*}
+\ell(\theta) & = & n_{h}\log\theta+n_{t}\log(1-\theta).
+\end{eqnarray*}
+
+\end_inset
+
+Differentiating with respect to 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and equating to zero, we get
+\begin_inset Formula 
+\begin{eqnarray*}
+n_{h}\frac{1}{\theta}-n_{t}\frac{1}{1-\theta} & = & 0\\
+\iff n_{h}\left(1-\theta\right)-n_{t}\theta & = & 0\\
+\iff-\theta\left(n_{t}+n_{h}\right)+n_{h} & = & 0\\
+\iff\theta & = & \frac{n_{h}}{n_{t}+n_{h}}.
+\end{eqnarray*}
+
+\end_inset
+
+Thus any local maximum must occur at 
+\begin_inset Formula $n_{h}/\left(n_{t}+n_{h}\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\ell(\theta)$
+\end_inset
+
+ is concave, it must attain its maximum at 
+\begin_inset Formula $n_{h}/\left(n_{t}+n_{h}\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Better justification for concavity.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If 
+\begin_inset Formula $n_{h}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\ell(\theta)$
+\end_inset
+
+ is clearly maximized at 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+.
+ Similarly, if 
+\begin_inset Formula $n_{t}=0$
+\end_inset
+
+ then the maximum is at 
+\begin_inset Formula $\theta=1$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $n_{h}/\left(n_{t}+n_{h}\right)$
+\end_inset
+
+ gives the MLE for all values of 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+[Optional] Coin Flipping: Bayesian Approach with Beta Prior
+\end_layout
+
+\begin_layout Standard
+We'll now take a Bayesian approach to the coin flipping problem, in which
+ we treat 
+\begin_inset Formula $\theta$
+\end_inset
+
+ as a random variable sampled from some prior distribution 
+\begin_inset Formula $p(\theta)$
+\end_inset
+
+.
+ We'll represent the 
+\begin_inset Formula $i$
+\end_inset
+
+th coin flip by a random variable 
+\begin_inset Formula $X_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $X_{i}=1$
+\end_inset
+
+ if the 
+\begin_inset Formula $i$
+\end_inset
+
+th flip is heads.
+ We assume that the 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+'s are conditionally independent given 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ This means that the joint distribution of the coin flips and 
+\begin_inset Formula $\theta$
+\end_inset
+
+ factorizes as follows:
+\begin_inset Formula 
+\begin{eqnarray*}
+p(x_{1},\ldots,x_{n},\theta) & = & p(\theta)p(x_{1},\ldots,x_{n}\mid\theta)\mbox{ (always true)}\\
+ & = & p(\theta)\prod_{i=1}^{n}p(x_{i}\mid\theta)\text{ (by conditional independence).}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suppose that our prior distribution on 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is 
+\begin_inset Formula $\mbox{Beta}(h,t)$
+\end_inset
+
+, for some 
+\begin_inset Formula $h,t>0$
+\end_inset
+
+.
+ That is, 
+\begin_inset Formula $p(\theta)\propto\theta^{h-1}\left(1-\theta\right)^{t-1}$
+\end_inset
+
+.
+ Suppose that our sequence of flips 
+\begin_inset Formula $\cd$
+\end_inset
+
+ has 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ heads and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ tails.
+ Show that the posterior distribution for 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is 
+\begin_inset Formula $\mbox{Beta}(h+n_{h},t+n_{t})$
+\end_inset
+
+.
+ That is, show that
+\begin_inset Formula 
+\[
+p(\theta\mid\cd)\propto\theta^{h-1+n_{h}}\left(1-\theta\right)^{t-1+n_{t}}.
+\]
+
+\end_inset
+
+We say that the Beta distribution is 
+\series bold
+conjugate
+\series default
+ to the Bernoulli distribution since the prior and the posterior are both
+ in the same family of distributions (i.e.
+ both Beta distributions).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION:
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\theta\mid\cd) & \propto & p(\theta)p(\cd\mid\theta)\\
+ & = & \theta^{h-1}\left(1-\theta\right)^{t-1}\theta^{n_{h}}\left(1-\theta\right)^{n_{t}}\\
+ & = & \theta^{n_{h}+h-1}\left(1-\theta\right)^{n_{t}+t-1},
+\end{eqnarray*}
+
+\end_inset
+
+which is the density for the 
+\begin_inset Formula $\mbox{Beta}(h+n_{h},t+n_{t})$
+\end_inset
+
+ distribution.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Give expressions for the MLE, the MAP, and the posterior mean
+ estimates of 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ [Hint: You may use the fact that a 
+\begin_inset Formula $\mbox{Beta}(h,t)$
+\end_inset
+
+ distribution has mean 
+\begin_inset Formula $h/(h+t)$
+\end_inset
+
+ and has mode 
+\begin_inset Formula $\left(h-1\right)/\left(h+t-2\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $h,t>1$
+\end_inset
+
+.
+ For the Bayesian solutions, you should note that as 
+\begin_inset Formula $h+t$
+\end_inset
+
+ gets very large, and assuming we keep the ratio 
+\begin_inset Formula $h/(h+t)$
+\end_inset
+
+ fixed, the posterior mean and MAP approach the prior mean 
+\begin_inset Formula $h/\left(h+t\right)$
+\end_inset
+
+, while for fixed 
+\begin_inset Formula $h$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+, the posterior mean approaches the MLE as the sample size 
+\begin_inset Formula $n=n_{h}+n_{t}\to\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: As shown above, the MLE is
+\begin_inset Formula 
+\[
+\hat{\theta}_{\text{MLE}}=\frac{n_{h}}{n_{h}+n_{t}}.
+\]
+
+\end_inset
+
+The MAP estimate is the mode of the posterior distribution, which is
+\begin_inset Formula 
+\[
+\hat{\theta}_{\text{MAP}}=\frac{h+n_{h}-1}{h+n_{h}+t+n_{t}-2},
+\]
+
+\end_inset
+
+and the posterior mean is
+\begin_inset Formula 
+\[
+\hat{\theta}_{\text{POSTERIOR MEAN}}=\frac{h+n_{h}}{h+n_{h}+t+n_{t}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] What happens to 
+\begin_inset Formula $\hat{\theta}_{\text{MLE }}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\theta}_{\text{MAP}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\hat{\theta}_{\text{POSTERIOR MEAN}}$
+\end_inset
+
+ as the number of coin flips 
+\begin_inset Formula $n=n_{h}+n_{t}$
+\end_inset
+
+ approaches infinity? 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: They all converge to 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ When we don't have many coin flips, 
+\begin_inset Formula $\hat{\theta}_{\text{MAP}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\theta}_{\text{POSTERIOR MEAN}}$
+\end_inset
+
+ are biased towards an estimate that has high likelihood under our prior.
+ As we get more data, the effect of the prior gradually vanishes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] The MAP and posterior mean estimators of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ were derived from a Bayesian perspective.
+ Let's now evaluate them from a frequentist perspective.
+ Suppose 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is fixed and unknown.
+ Which of the MLE, MAP, and posterior mean estimators give 
+\series bold
+unbiased
+\series default
+ estimates of 
+\begin_inset Formula $\theta$
+\end_inset
+
+, if any? [Hint: The answer may depend on the parameters 
+\begin_inset Formula $h$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ of the prior.
+ Also, let's consider the total number of flips 
+\begin_inset Formula $n=n_{h}+n_{t}$
+\end_inset
+
+ to be given (not random), while 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ are random, with 
+\begin_inset Formula $n_{h}=n-n_{t}$
+\end_inset
+
+.]
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+SOLUTION: The MLE is unbiased in this case.
+ In general, the others are biased.
+ The posterior mean can get arbitrarily close to unbiased as 
+\begin_inset Formula $h,t\to0$
+\end_inset
+
+.
+ The MAP is biased unless 
+\begin_inset Formula $h=t=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suppose somebody gives you a coin and asks you to give an estimate
+ of the probability of heads, but you can only toss the coin 
+\begin_inset Formula $3$
+\end_inset
+
+ times.
+ You have no particular reason to believe this is an unfair coin.
+ Would you prefer the MLE or the posterior mean as a point estimate of 
+\begin_inset Formula $\theta$
+\end_inset
+
+? If the posterior mean, what would you use for your prior?
+\end_layout
+
+\begin_layout Section
+[Optional] Hierarchical Bayes for Click-Through Rate Estimation
+\end_layout
+
+\begin_layout Standard
+In mobile advertising, ads are often displayed inside apps on a phone or
+ tablet device.
+ When an ad is displayed, this is called an 
+\begin_inset Quotes eld
+\end_inset
+
+impression.
+\begin_inset Quotes erd
+\end_inset
+
+ If the user clicks on the ad, that is called a 
+\begin_inset Quotes eld
+\end_inset
+
+click.
+\begin_inset Quotes erd
+\end_inset
+
+ The probability that an impression leads to a click is called the 
+\begin_inset Quotes eld
+\end_inset
+
+click-through rate
+\begin_inset Quotes erd
+\end_inset
+
+ (CTR).
+ 
+\end_layout
+
+\begin_layout Standard
+Suppose we have 
+\begin_inset Formula $d=1000$
+\end_inset
+
+ apps.
+ For various reasons
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The primary reason is that different apps place the ads differently, making
+ it more or less difficult to avoid clicking the ad.
+\end_layout
+
+\end_inset
+
+, each app tends to have a different overall CTR.
+ For the purposes of designing an ad campaign, we want estimates of all
+ the app-level CTRs, which we'll denote by 
+\begin_inset Formula $\theta_{1},\ldots,\theta_{1000}$
+\end_inset
+
+.
+ Of course, the particular user seeing the impression and the particular
+ ad that is shown have an effect on the CTR, but we'll ignore these issues
+ for now.
+ [Because so many clicks on mobile ads are accidental, it turns out that
+ the overall app-level CTR often dominates the effect of the particular
+ user and the specific ad.] 
+\end_layout
+
+\begin_layout Standard
+If we have enough impressions for a particular app, then the empirical fraction
+ of clicks will give a good estimate for the actual CTR.
+ However, if we have relatively few impressions, we'll have some problems
+ using the empirical fraction.
+ Typical CTRs are less than 1%, so it takes a fairly large number of observation
+s to get a good estimate of CTR.
+ For example, even with 
+\begin_inset Formula $100$
+\end_inset
+
+ impressions, the only possible CTR estimates given by the MLE would be
+ 
+\begin_inset Formula $0\%,1\%,2\%,\ldots,100\%$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $0\%$
+\end_inset
+
+ estimate is almost certainly much too low, and anything 
+\begin_inset Formula $2\%$
+\end_inset
+
+ or higher is almost certainly much too high.
+ Our goal is to come up with reasonable point estimates for 
+\begin_inset Formula $\theta_{1},\ldots,\theta_{1000}$
+\end_inset
+
+, even when we have very few observations for some apps.
+ 
+\end_layout
+
+\begin_layout Standard
+If we wanted to apply the Bayesian approach worked out in the previous problem,
+ we could come up with a prior that seemed reasonable.
+ For example, we could use the following 
+\begin_inset Formula $\mbox{Beta}(3,400)$
+\end_inset
+
+ as a prior distribution on each 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/beta3-400.png
+	lyxscale 20
+	height 2in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this basic Bayesian approach, the parameters 
+\begin_inset Formula $3$
+\end_inset
+
+ and 
+\begin_inset Formula $400$
+\end_inset
+
+ would be chosen by the data scientist based on prior experience, or 
+\begin_inset Quotes eld
+\end_inset
+
+best guess
+\begin_inset Quotes erd
+\end_inset
+
+, but without looking at the new data.
+ Another approach would be to use the data to help you choose the parameters
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ in 
+\begin_inset Formula $\mbox{Beta}(a,b)$
+\end_inset
+
+.
+ This would 
+\series bold
+not
+\series default
+ be a Bayesian approach, though it is frequently used in practice.
+ One method in this direction is called 
+\series bold
+empirical Bayes
+\series default
+.
+ Empirical Bayes can be considered a frequentist approach, in which we estimate
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ from the data 
+\begin_inset Formula $\cd$
+\end_inset
+
+ using some estimation technique, such as maximum likelihood.
+ The proper Bayesian approach to this type of thing is called 
+\series bold
+hierarchical Bayes
+\series default
+, in which we put another prior distribution on 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ We'll investigate each of these approaches below.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ Below we will see why empirical Bayes can be seen as an approximation to
+ hierarchical Bayes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Mathematical Description
+\end_layout
+
+\begin_layout Standard
+We'll now give a mathematical description of our model, assuming the prior
+ parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are directly chosen by the data scientist.
+ Let 
+\begin_inset Formula $n_{1},\ldots,n_{d}$
+\end_inset
+
+ be the number of impressions we observe for each of the 
+\begin_inset Formula $d$
+\end_inset
+
+ apps.
+ In this problem, we will not consider these to be random numbers.
+ For the 
+\begin_inset Formula $i$
+\end_inset
+
+th app, let 
+\begin_inset Formula $c_{i}^{1},\ldots,c_{i}^{n_{i}}\in\left\{ 0,1\right\} $
+\end_inset
+
+ be indicator variables determining whether or not each impression was clicked.
+ That is, 
+\begin_inset Formula $c_{i}^{j}=\ind{j\mbox{th impression on }i\mbox{th app was clicked}}$
+\end_inset
+
+.
+ We can summarize the data on the 
+\begin_inset Formula $i$
+\end_inset
+
+th app by 
+\begin_inset Formula $\cd_{i}=\left(x_{i},n_{i}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $x_{i}=\sum_{j=1}^{n_{i}}c_{i}^{j}$
+\end_inset
+
+ is the total number of impressions that were clicked for app 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\theta=(\theta_{1},\ldots,\theta_{d})$
+\end_inset
+
+, where 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ is the CTR for app 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In our Bayesian approach, we act as though the data were generated as follows:
+\end_layout
+
+\begin_layout Enumerate
+Sample 
+\begin_inset Formula $\theta_{1},\ldots,\theta_{d}$
+\end_inset
+
+ i.i.d.
+ from Beta
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each app 
+\begin_inset Formula $i$
+\end_inset
+
+, sample 
+\begin_inset Formula $c_{i}^{1},\ldots,c_{i}^{n_{i}}$
+\end_inset
+
+ i.i.d.
+ from Bernoulli
+\begin_inset Formula $(\theta_{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+[Optional] 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Empirical-Bayes-single-app"
+
+\end_inset
+
+Empirical Bayes for a single app
+\end_layout
+
+\begin_layout Standard
+We start by working out some details for Bayesian inference for a single
+ app.
+ That is, suppose we only have the data 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ from app 
+\begin_inset Formula $i$
+\end_inset
+
+, and nothing else.
+ Mathematically, this is exactly the same setting as the coin tossing setting
+ above, but here we push it further.
+\end_layout
+
+\begin_layout Enumerate
+Give an expression for 
+\begin_inset Formula $p(\cd_{i}\mid\theta_{i})$
+\end_inset
+
+, the likelihood of 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ given the probability of click 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, in terms of 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION:
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\cd_{i}\mid\theta_{i}) & = & \theta_{i}^{x_{i}}\left(1-\theta_{i}\right)^{n_{i}-x_{i}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We will take our prior distribution on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ to be 
+\begin_inset Formula $\mbox{Beta}(a,b)$
+\end_inset
+
+.
+ The corresponding probability density function is given by
+\begin_inset Formula 
+\[
+p(\theta_{i})=\mbox{Beta}(\theta_{i};a,b)=\frac{1}{B(a,b)}\theta_{i}^{a-1}\left(1-\theta_{i}\right)^{b-1},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $B(a,b)$
+\end_inset
+
+ is called the Beta function.
+ Explain (without calculation) why we must have
+\begin_inset Formula 
+\[
+\int\theta_{i}^{a-1}\left(1-\theta_{i}\right)^{b-1}\,d\theta_{i}=B(a,b).
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+ 
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Since 
+\begin_inset Formula $\mbox{Beta}(\theta_{i};a,b)$
+\end_inset
+
+ is a density function in 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, it must integrate to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ This explains the integral expression.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give an expression for the posterior distribution 
+\begin_inset Formula $p(\theta_{i}\mid\cd_{i})$
+\end_inset
+
+.
+ In this case, include the constant of proportionality.
+ In other words, do not use the 
+\begin_inset Quotes eld
+\end_inset
+
+is proportional to
+\begin_inset Quotes erd
+\end_inset
+
+ sign 
+\begin_inset Formula $\propto$
+\end_inset
+
+ in your final expression.
+ You 
+\series bold
+may 
+\series default
+reference the Beta function defined above.
+ [Hint: This problem is essentially a repetition of an earlier problem.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: (Same calculation as in earlier problem)
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\theta_{i}\mid\cd_{i}) & \propto & p(\theta_{i})p(\cd_{i}\mid\theta_{i})\\
+ & = & \frac{1}{B(a,b)}\theta_{i}^{a-1}\left(1-\theta_{i}\right)^{b-1}\theta_{i}^{x_{i}}\left(1-\theta_{i}\right)^{n_{i}-x_{i}}\\
+ & \propto & \theta_{i}^{a+x_{i}-1}\left(1-\theta_{i}\right)^{b+n_{i}-x_{i}-1}.
+\end{eqnarray*}
+
+\end_inset
+
+Since this is proportional to the 
+\begin_inset Formula $\mbox{Beta}(a+x_{i},b+n_{i}-x_{i})$
+\end_inset
+
+ density over 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $p(\theta_{i}\mid\cd_{i})$
+\end_inset
+
+ is density on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, we must actually have
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\theta_{i}\mid\cd_{i}) & = & \mbox{Beta}(\theta_{i};a+x_{i},b+n_{i}-x_{i})\\
+ & = & \frac{\theta^{a+x_{i}-1}\left(1-\theta\right)^{b+n_{i}-x_{i}-1}}{B(a+x_{i},b+n_{i}-x_{i})}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Give a closed form expression for 
+\begin_inset Formula $p(\cd_{i})$
+\end_inset
+
+, the marginal likelihood of 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+, in terms of the 
+\begin_inset Formula $a,b,x_{i},$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+.
+ You may use the normalization function 
+\begin_inset Formula $B(\cdot,\cdot)$
+\end_inset
+
+ for convenience, but you should not have any integrals in your solution.
+ (Hint: 
+\begin_inset Formula $p(\cd_{i})=\int p\left(\cd_{i}\mid\theta_{i}\right)p(\theta_{i})\,d\theta_{i}$
+\end_inset
+
+, and the answer will be a ratio of two beta function evaluations.)
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: We have 
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\cd_{i}) & = & \int p\left(\cd_{i}\mid\theta_{i}\right)p(\theta_{i})\,d\theta_{i}\\
+ & = & \int\frac{1}{B(a,b)}\theta_{i}^{a-1}\left(1-\theta_{i}\right)^{b-1}\theta_{i}^{x_{i}}\left(1-\theta_{i}\right)^{n_{i}-x_{i}}\,d\theta_{i}\\
+ & = & \frac{B(a+x_{i},b+n_{i}-x_{i})}{B(a,b)}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Let's write our full dataset as 
+\begin_inset Formula $\cd=\left(\cd_{1},\ldots,\cd_{d}\right)$
+\end_inset
+
+.
+ Give an expression for the joint likelihood of 
+\begin_inset Formula $\cd$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ The expression should include 
+\begin_inset Formula $a,b,\theta_{i},x_{i},$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+.
+ You may write 
+\begin_inset Formula $\mbox{Beta}(\theta_{i};a,b)$
+\end_inset
+
+ for the 
+\begin_inset Formula $\mbox{Beta}(a,b)$
+\end_inset
+
+ density function evaluated at 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION:
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\cd,\theta) & = & \prod_{i=1}^{d}p(\cd_{i},\theta_{i})\\
+ & = & \prod_{i=1}^{d}p(\cd_{i}\mid\theta_{i})p(\theta_{i})\\
+ & = & \prod_{i=1}^{d}\theta_{i}^{x_{i}}\left(1-\theta_{i}\right)^{n_{i}-x_{i}}\mbox{Beta}(\theta_{i};a,b)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The maximum likelihood estimate for 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ is 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $p_{\text{MLE}}(\cd_{i})$
+\end_inset
+
+ be the marginal likelihood of 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ when we use a prior on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ that puts all of its probability mass at 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula 
+\begin{eqnarray*}
+p_{\text{MLE}}(\cd_{i}) & = & p\left(\cd_{i}\mid\theta_{i}=\frac{x_{i}}{n_{i}}\right)p\left(\theta_{i}=\frac{x_{i}}{n_{i}}\right)\\
+ & = & p\left(\cd_{i}\mid\theta_{i}=\frac{x_{i}}{n_{i}}\right).
+\end{eqnarray*}
+
+\end_inset
+
+Explain why, or prove, that 
+\begin_inset Formula $p_{\text{MLE}}(\cd_{i})$
+\end_inset
+
+ is larger than 
+\begin_inset Formula $p(\cd_{i})$
+\end_inset
+
+ for any other prior we might put on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+.
+ If it's too hard to reason about all possible priors, it's fine to just
+ consider all Beta priors.
+ [Hint: This does not require much or any calculation.
+ It may help to think about the integral 
+\begin_inset Formula $p(\cd_{i})=\int p\left(\cd_{i}\mid\theta_{i}\right)p(\theta_{i})\,d\theta_{i}$
+\end_inset
+
+ as a weighted average of 
+\begin_inset Formula $p(\cd_{i}\mid\theta_{i})$
+\end_inset
+
+ for different values of 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, where the weights are 
+\begin_inset Formula $p(\theta_{i})$
+\end_inset
+
+.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Explanation is that 
+\begin_inset Formula $p(\cd_{i})=\int p\left(\cd_{i}\mid\theta_{i}\right)p(\theta_{i})\,d\theta_{i}$
+\end_inset
+
+ is essentially taking a weighted average over values of 
+\begin_inset Formula $p(\cd_{i}\mid\theta_{i})$
+\end_inset
+
+ over 
+\begin_inset Formula $\theta_{i}\in\left[0,1\right]$
+\end_inset
+
+, where the weight is determined by 
+\begin_inset Formula $p(\theta_{i})$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $p(\cd_{i}\mid\theta_{i})$
+\end_inset
+
+ is maximized at 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+, the averaging can only be worse than putting all the weight at 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+.
+ It's a simple proof, but it requires Lebesgue integration to account for
+ any possible distribution.
+ Let 
+\begin_inset Formula $P$
+\end_inset
+
+ be any probability distribution on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ Then the marginal probability of 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ for prior 
+\begin_inset Formula $P$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\cd_{i}) & = & \int p\left(\cd_{i}\mid\theta_{i}\right)\,dP(\theta_{i})\\
+ & \le & \int p_{\text{MLE}}(\cd_{i})\,dP(\theta_{i})\\
+ & = & p_{\text{MLE}}(\cd_{i})\int1\,dP(\theta_{i})\\
+ & = & p_{\text{MLE}}(\cd_{i}).
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+One approach to getting an 
+\series bold
+empirical Bayes
+\series default
+ estimate of the parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is to use maximum likelihood.
+ Such an empirical Bayes estimate is often called an 
+\series bold
+ML-2
+\series default
+ estimate, since it's maximum likelihood, but at a higher level in the Bayesian
+ hierarchy.
+ To emphasize the dependence of the likelihood of 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ on the parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, we'll now write it as 
+\begin_inset Formula $p(\cd_{i}\mid a,b)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that this is a slight (though common) abuse of notation, because 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are not random variables in this setting.
+ It might be more appropriate to write this as 
+\begin_inset Formula $p(\cd_{i};a,b)$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{a,b}(\cd_{i})$
+\end_inset
+
+.
+ But this isn't very common.
+\end_layout
+
+\end_inset
+
+.
+ The empirical Bayes estimates for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are given by
+\begin_inset Formula 
+\[
+(\hat{a},\hat{b})=\argmax_{\left(a,b\right)\in(0,\infty)\times(0,\infty)}p(\cd_{i}\mid a,b).
+\]
+
+\end_inset
+
+To make things concrete, suppose we observed 
+\begin_inset Formula $x_{i}=3$
+\end_inset
+
+ clicks out of 
+\begin_inset Formula $n_{i}=500$
+\end_inset
+
+ impressions.
+ A plot of 
+\begin_inset Formula $p(\cd_{i}\mid a,b)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is given in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single-app-contour-plot"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/single-app-marginal-lik-contour-plot.png
+	lyxscale 50
+	height 2.5in
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:single-app-contour-plot"
+
+\end_inset
+
+A plot of 
+\begin_inset Formula $p(\cd_{i}\mid a,b)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+It appears from this plot that the likelihood will keep increasing as 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ increase, at least if 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ maintain a particular ratio.
+ Indeed, this likelihood function never attains its maximum, so we cannot
+ use ML-2 here.
+ Explain what's happening to the prior as we continue to increase the likelihood.
+ [Hint: It is a property of the Beta distribution (not difficult to see),
+ that for any 
+\begin_inset Formula $\theta\in\left(0,1\right)$
+\end_inset
+
+, there is a Beta distribution with expected value 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and variance less than 
+\begin_inset Formula $\eps$
+\end_inset
+
+, for any 
+\begin_inset Formula $\eps>0$
+\end_inset
+
+.
+ What's going in here is similar to what happens when you attempt to fit
+ a gaussian distribution 
+\begin_inset Formula $\cn(\mu,\sigma^{2})$
+\end_inset
+
+ to a single data point using maximum likelihood.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+SOLUTION: Again, everything comes down to the fact that 
+\begin_inset Formula 
+\[
+p(\cd_{i})=\int p\left(\cd_{i}\mid\theta_{i}\right)\,dP(\theta_{i})
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula $p(\cd_{i}\mid\theta_{i}=x_{i}/n_{i})\ge p(\cd_{i}\mid\theta)$
+\end_inset
+
+ for all 
+\begin_inset Formula $\theta\in[0,1]$
+\end_inset
+
+.
+ The more the prior distribution 
+\begin_inset Formula $P$
+\end_inset
+
+ is concentrated around the MLE, the larger 
+\begin_inset Formula $p(\cd_{i})$
+\end_inset
+
+ will get.
+ Since we can take a sequence of beta priors with expected value 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+ and variance going to 
+\begin_inset Formula $0$
+\end_inset
+
+, we can always increase the likelihood.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+We show this mathematically as follows: Fix 
+\begin_inset Formula $\theta\in(0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $X\sim\beta(n,n(1-\theta)/\theta)$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+\ex[X]=\frac{n}{n+n(1-\theta)/\theta}=\theta
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+n\var[X]=\frac{n^{3}(1-\theta)/\theta}{n^{3}(1+(1-\theta)/\theta)^{2}(2+(1-\theta)/\theta)}\to C>0,
+\]
+
+\end_inset
+
+as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.(This shows that we can find a sequence of beta priors with EV 
+\begin_inset Formula $x_{i}/n_{i}$
+\end_inset
+
+ and variance going to 
+\begin_inset Formula $0$
+\end_inset
+
+.) By Chebyshev's inequality, we see that 
+\begin_inset Formula 
+\[
+\Pr(|X-\theta|\geq n^{-1/4})\leq\sqrt{n}\var[X]\to0.
+\]
+
+\end_inset
+
+Thus, for all 
+\begin_inset Formula $n$
+\end_inset
+
+ sufficiently large we have 
+\begin_inset Formula 
+\[
+\Pr(|X-\theta|<n^{-1/4})\geq1/2
+\]
+
+\end_inset
+
+giving 
+\begin_inset Formula 
+\[
+\int_{\theta-n^{-1/4}}^{\theta+n^{-1/4}}p(x)\,dx\geq1/2.
+\]
+
+\end_inset
+
+This implies there must be, for all sufficiently large 
+\begin_inset Formula $n$
+\end_inset
+
+, an 
+\begin_inset Formula $x\in[\theta-n^{-1/4},\theta+n^{-1/4}]$
+\end_inset
+
+ with 
+\begin_inset Formula $p(x)\geq n^{1/4}/4$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+[Optional] 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Empirical-Bayes-multiple-apps"
+
+\end_inset
+
+Empirical Bayes Using All App Data
+\end_layout
+
+\begin_layout Standard
+In the previous section, we considered working with data from a single app.
+ With a fixed prior, such as Beta(3,400), our Bayesian estimates for 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ seem more reasonable to me
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I say 
+\begin_inset Quotes eld
+\end_inset
+
+to me
+\begin_inset Quotes erd
+\end_inset
+
+, since I am the one who chose the prior.
+ You may have an entirely different prior, and think that my estimates are
+ terrible.
+\end_layout
+
+\end_inset
+
+ than the MLE when our sample size 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ is small.
+ The fact that these estimates seem reasonable is an immediate consequence
+ of the fact that I chose the prior to give high probability to estimates
+ that seem reasonable to me, before ever seeing the data.
+ Our earlier attempt to use empirical Bayes (ML-2) to choose the prior in
+ a data-driven way was not successful.
+ With only a single app, we were essentially overfitting the prior to the
+ data we have.
+ In this section, we'll consider using the data from all the apps, in which
+ case empirical Bayes makes more sense.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\cd=\left(\cd_{1},\ldots,\cd_{d}\right)$
+\end_inset
+
+ be the data from all the apps.
+ Give an expression for 
+\begin_inset Formula $p(\cd\mid a,b)$
+\end_inset
+
+, the 
+\series bold
+marginal likelihood
+\series default
+ of 
+\begin_inset Formula $\cd$
+\end_inset
+
+.
+ Expression should be in terms of 
+\begin_inset Formula $a,b,x_{i},n_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,\ldots,d$
+\end_inset
+
+.
+ Assume data from different apps are independent.
+ (Hint: This problem should be easy, based on a problem from the previous
+ section.)
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Since 
+\begin_inset Formula $\cd_{1},\ldots,\cd_{d}$
+\end_inset
+
+ are independent we have
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\cd) & = & \prod_{i=1}^{d}p(\cd_{i})\\
+ & = & \prod_{i=1}^{d}\frac{B(a+x_{i},b+n_{i}-x_{i})}{B(a,b)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Explain why 
+\begin_inset Formula $p(\theta_{i}\mid\cd)=p(\theta_{i}\mid\cd_{i})$
+\end_inset
+
+, according to our model.
+ In other words, once we choose values for parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, information about one app does not give any information about other apps.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Each 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ depends only on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+, and the 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+'s are independent.
+ So 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+ gives no information about 
+\begin_inset Formula $\cd_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $j\neq i$
+\end_inset
+
+.
+ That's sufficient.
+ But a mathy proof would be the following: Write 
+\begin_inset Formula $\cd_{-i}$
+\end_inset
+
+ for the data from all apps except the 
+\begin_inset Formula $i$
+\end_inset
+
+'th.
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\theta_{i}\mid\cd) & = & p(\theta_{i},\cd)/p(\cd)\\
+ & = & p(\theta_{i}\cd_{i},\cd_{-i})/p(\cd)\\
+ & = & p(\theta_{i},\cd_{i})p(\cd_{-i})/p(\cd)\mbox{ (by independence assumptions)}\\
+ & \propto & p(\theta_{i},\cd_{i})\mbox{ (where constant of proportionality doesn't depend on }\theta_{i})\\
+ & \propto & p\left(\theta_{i}\mid\cd_{i}\right)\mbox{ (where constant of proportionality doesn't depend on }\theta_{i}).
+\end{eqnarray*}
+
+\end_inset
+
+Since two distributions on 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ are proportional, they must actually be equal.
+ So 
+\begin_inset Formula $p(\theta_{i}\mid\cd)=p(\theta_{i}\mid\cd_{i})$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suppose we have data from 6 apps.
+ 3 of the apps have a fair number of impressions, and 3 have relatively
+ few.
+ Suppose we observe the following:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num Clicks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num Impressions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Compute the empirical Bayes estimates for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ (Recall, this amounts to computing 
+\begin_inset Formula $(\hat{a},\hat{b})=\argmax_{\left(a,b\right)\in\reals^{>0}\times\reals^{>0}}p(\cd\mid a,b).$
+\end_inset
+
+) This will require solving an optimization problem, for which you are free
+ to use any optimization software you like (perhaps 
+\begin_inset CommandInset href
+LatexCommand href
+name "scipy.optimize"
+target "https://docs.scipy.org/doc/scipy/reference/optimize.html"
+literal "false"
+
+\end_inset
+
+ would be useful).
+ The empirical Bayes prior is then Beta
+\begin_inset Formula $(\hat{a},\hat{b})$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+ are our ML-2 estimates.
+ Give the corresponding prior mean and standard deviation for this prior.
+\begin_inset Branch solutions
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: My calculations give 
+\begin_inset Formula $\hat{a}=6.47$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{b}=1181.4$
+\end_inset
+
+.
+ Prior mean is .54% and prior SD is .21%.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complete the following table:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NumClicks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NumImpressions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MAP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PosteriorMean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PosteriorSD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Make sure to take a look at the PosteriorSD values and note which are big
+ and which are small.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NumClicks 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NumImpressions 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLE 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MAP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PosteriorMean 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PosteriorSD 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.07% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.78% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.79% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.02% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.43% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.46% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.54% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.54% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.63% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.23% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+[Optional] Hierarchical Bayes
+\end_layout
+
+\begin_layout Standard
+In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Empirical-Bayes-multiple-apps"
+
+\end_inset
+
+ we managed to get empirical Bayes ML-II estimates for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ by assuming we had data from multiple apps.
+ However, we didn't really address the issue that ML-II, as a maximum likelihood
+ method, is prone to overfitting if we don't have enough data (in this case,
+ enough apps).
+ Moreover, a true Bayesian would reject this approach, since we're using
+ our data to determine our prior.
+ If we don't have enough confidence to choose parameters for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ without looking at the data, then the only proper Bayesian approach is
+ to put another prior on the parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ If you are very uncertain about values for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, you could put priors on them that have high variance.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suppose 
+\begin_inset Formula $P$
+\end_inset
+
+ is the Beta
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ distribution.
+ Conceptually, rather than putting priors on 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, it's easier to reason about priors on the mean 
+\begin_inset Formula $m$
+\end_inset
+
+ and the variance 
+\begin_inset Formula $v$
+\end_inset
+
+ of 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ If we parameterize 
+\begin_inset Formula $P$
+\end_inset
+
+ by its mean 
+\begin_inset Formula $m$
+\end_inset
+
+ and the variance 
+\begin_inset Formula $v$
+\end_inset
+
+, give an expression for the density function 
+\begin_inset Formula $\mbox{Beta}(\theta;m,v)$
+\end_inset
+
+.
+ You are free to use the internet to get this expression – just be confident
+ it's correct.
+ [Hint: To derive this, you may find it convenient to write some expression
+ in terms of 
+\begin_inset Formula $\eta=a+b$
+\end_inset
+
+.]
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: We have these simultaneous equations:
+\begin_inset Formula 
+\begin{eqnarray*}
+v & = & \frac{ab}{\left(a+b\right)^{2}\left(a+b+1\right)}\\
+m & = & \frac{a}{a+b}
+\end{eqnarray*}
+
+\end_inset
+
+Noting that 
+\begin_inset Formula $1-m=b/(a+b)$
+\end_inset
+
+, and letting 
+\begin_inset Formula $\eta=a+b$
+\end_inset
+
+, we see that
+\begin_inset Formula 
+\begin{eqnarray*}
+\nu & = & \frac{m(1-m)}{\eta+1}
+\end{eqnarray*}
+
+\end_inset
+
+and so
+\begin_inset Formula 
+\[
+\eta=a+b=\frac{m(1-m)}{v}-1.
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+which must be 
+\begin_inset Formula $>0$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $v<m(1-m)$
+\end_inset
+
+, which we will use below.
+ 
+\end_layout
+
+\end_inset
+
+ We also get
+\begin_inset Formula 
+\begin{eqnarray*}
+v & = & \left(\frac{a}{a+b}\right)\left(\frac{b}{a+b}\right)\left(\frac{1}{a+b+1}\right)\\
+ & = & \frac{m\left(1-m\right)}{\frac{a}{m}+1}\\
+\implies a & = & m\left[\frac{m(1-m)}{v}-1\right]=m\eta\\
+\implies b & = & \eta-a=\left(1-m\right)\left[\frac{m(1-m)}{v}-1\right]=\left(1-m\right)\eta.
+\end{eqnarray*}
+
+\end_inset
+
+So
+\begin_inset Formula 
+\[
+\mbox{Beta}(\theta;m,v)=\frac{1}{B(m\eta,(1-m)\eta)}\theta_{i}^{m\eta-1}\left(1-\theta_{i}\right)^{(1-m)\eta-1},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\eta=a+b=\frac{m(1-m)}{v}-1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Suggest a prior distribution to put on 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ [Hint: You might want to use one of the distribution families given 
+\begin_inset CommandInset href
+LatexCommand href
+name "in this lecture"
+target "https://davidrosenberg.github.io/mlcourse/Archive/2016/Lectures/10b.conditional-probability-models.pdf#page=6"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Since 
+\begin_inset Formula $m\in(0,1)$
+\end_inset
+
+, a Beta prior is most obvious.
+ Since 
+\begin_inset Formula $v\in(0,\infty)$
+\end_inset
+
+, a Gamma distribution would work.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Once we have our prior on 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+, we can go 
+\begin_inset Quotes eld
+\end_inset
+
+full Bayesian
+\begin_inset Quotes erd
+\end_inset
+
+ and compute posterior distributions on 
+\begin_inset Formula $\theta_{1},\ldots,\theta_{d}$
+\end_inset
+
+.
+ However, these no longer have closed forms.
+ We would have to use approximation techniques, typically either a Monte
+ Carlo sampling approach or a variational method, which are beyond the scope
+ of this course
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+If you're very ambitious, you could try out a package like 
+\begin_inset CommandInset href
+LatexCommand href
+name "PyStan"
+target "https://pystan.readthedocs.io/en/latest/"
+literal "false"
+
+\end_inset
+
+ to see what happens.
+\end_layout
+
+\end_inset
+
+.
+ After observing the data 
+\begin_inset Formula $\mbox{\cd}$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ will have some posterior distribution 
+\begin_inset Formula $p(m,v\mid\cd)$
+\end_inset
+
+.
+ We can approximate that distribution by a point mass at the mode of that
+ distribution 
+\begin_inset Formula $\left(m_{\text{MAP}},v_{\text{MAP}}\right)=\argmax_{m,v}p(m,v\mid\cd)$
+\end_inset
+
+.
+
+\series bold
+ Give expressions
+\series default
+ for the posterior distribution 
+\begin_inset Formula $p(\theta_{1},\ldots,\theta_{d}\mid\cd)$
+\end_inset
+
+, with and without this approximation.
+ You do not need to give any explicit expressions here.
+ It's fine to have expressions like 
+\begin_inset Formula $p(\theta_{1},\ldots,\theta_{d}\mid m,v)$
+\end_inset
+
+ in your solution.
+ Without the approximation, you will probably need some integrals.
+ It's these integrals that we need sampling or variational approaches to
+ approximate.
+ While one can see this approach as a way to approximate the proper Bayesian
+ approach, one could also be skeptical and say this is just another way
+ to determine your prior from the data.
+ The estimators 
+\begin_inset Formula $\left(m_{\text{MAP}},v_{\text{MAP}}\right)$
+\end_inset
+
+ are often called 
+\series bold
+MAP-II estimators
+\series default
+, since they are MAP estimators at a higher level of the Bayesian hierarchy.
+ 
+\begin_inset Branch solutions
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+SOLUTION: Without the approximation, it's 
+\begin_inset Formula 
+\begin{eqnarray*}
+p(\theta_{1},\ldots,\theta_{d}\mid\cd) & = & \int_{0}^{\infty}\int_{0}^{1}p(\theta_{1},\ldots,\theta_{d}\mid m,v)p(m,v\mid\cd)\,dm\,dv
+\end{eqnarray*}
+
+\end_inset
+
+and with the approximation, it's
+\begin_inset Formula 
+\[
+p(\theta_{1},\ldots,\theta_{d}\mid\cd)\approx p(\theta_{1},\ldots,\theta_{d}\mid m_{\text{MAP}},v_{\text{MAP}}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
